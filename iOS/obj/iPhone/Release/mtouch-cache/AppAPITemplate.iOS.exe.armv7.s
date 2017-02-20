@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 4,1
-	.asciz "Mono AOT Compiler 4.6.0 (tarball Fri Sep  9 12:44:38 EDT 2016)"
+	.asciz "Mono AOT Compiler 4.6.2 (tarball Tue Dec 20 02:39:29 EST 2016)"
 	.asciz "AppAPITemplate.iOS.exe"
 	.asciz ""
 
@@ -287,7 +287,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "7F7910B3-C5A9-4B1D-85CC-96331827F686"
+	.asciz "0C757ACD-2539-434C-9FA3-87809CD8FB3F"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -370,7 +370,7 @@ _mono_aot_file_info:
 	.long 32,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 183,216,230,151,6,120,188,36,89,22,68,68,80,102,139,215
+	.byte 52,213,154,156,156,102,222,161,17,53,170,158,169,225,104,33
 	.globl _mono_aot_module_AppAPITemplate_iOS_info
 	.align 2
 _mono_aot_module_AppAPITemplate_iOS_info:

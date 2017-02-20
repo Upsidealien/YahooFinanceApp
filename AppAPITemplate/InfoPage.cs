@@ -16,9 +16,8 @@ namespace AppAPITemplate
 		static Label One = new Label
 		{
 			Text = "",
-			TextColor = Color.White,
-			FontSize = 50,
-	        BackgroundColor = Color.Aqua,
+			TextColor = Color.Gray,
+			FontSize = 25,
 	        HorizontalTextAlignment = TextAlignment.Center,
 	        VerticalTextAlignment = TextAlignment.Center,
 			HorizontalOptions = LayoutOptions.Fill,
@@ -31,6 +30,32 @@ namespace AppAPITemplate
 		static Label Two = new Label
 		{
 			Text = "",
+			HorizontalTextAlignment = TextAlignment.Center,
+			VerticalTextAlignment = TextAlignment.Center,
+			HorizontalOptions = LayoutOptions.FillAndExpand,
+			TextColor = Color.Gray,
+			FontFamily = Device.OnPlatform(
+				"Oswald-Bold",
+				null,
+				null
+			),
+		};
+		static Label TitleOne = new Label
+		{
+			Text = "Days Low",
+			HorizontalTextAlignment = TextAlignment.Center,
+			VerticalTextAlignment = TextAlignment.Center,
+			HorizontalOptions = LayoutOptions.FillAndExpand,
+			TextColor = Color.Gray,
+			FontFamily = Device.OnPlatform(
+				"Oswald-Bold",
+				null,
+				null
+			),
+		};
+		static Label TitleTwo = new Label
+		{
+			Text = "Days High",
 			HorizontalTextAlignment = TextAlignment.Center,
 			VerticalTextAlignment = TextAlignment.Center,
 			HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -59,7 +84,9 @@ namespace AppAPITemplate
 		static Label Four = new Label
 		{
 			Text = "",
-			HorizontalOptions = LayoutOptions.Start,
+			HorizontalTextAlignment = TextAlignment.Center,
+			VerticalTextAlignment = TextAlignment.Center,
+			HorizontalOptions = LayoutOptions.FillAndExpand,
 			TextColor = Color.Gray,
 			FontFamily = Device.OnPlatform(
 				"Oswald-Bold",
@@ -70,7 +97,9 @@ namespace AppAPITemplate
 		static Label Five = new Label
 		{
 			Text = "",
-			HorizontalOptions = LayoutOptions.Start,
+			HorizontalTextAlignment = TextAlignment.Center,
+			VerticalTextAlignment = TextAlignment.Center,
+			HorizontalOptions = LayoutOptions.FillAndExpand,
 			TextColor = Color.Gray,
 			FontFamily = Device.OnPlatform(
 				"Oswald-Bold",
@@ -92,30 +121,9 @@ namespace AppAPITemplate
 					WidthRequest = 0,
 					HorizontalOptions = LayoutOptions.FillAndExpand,
 					Children = {
-
-								new Label
-									{
-										Text = "Day Low",
-										HorizontalOptions = LayoutOptions.Start,
-										TextColor = Color.Gray,
-										FontFamily = Device.OnPlatform(
-											"Oswald-Bold",
-											null,
-											null
-										),
-									},
-								new Label
-									{
-										Text = "Day High",
-										HorizontalOptions = LayoutOptions.Start,
-										TextColor = Color.Gray,
-										FontFamily = Device.OnPlatform(
-											"Oswald-Bold",
-											null,
-											null
-										),
-									},
-								},
+						TitleOne,
+						Four,
+					}
 				});
 					
 				Children.Add(new StackLayout
@@ -124,7 +132,7 @@ namespace AppAPITemplate
 					WidthRequest = 0,
 					HorizontalOptions = LayoutOptions.FillAndExpand,
 					Children = {
-						Four,
+						TitleTwo,
 						Five
 					},
 				});
@@ -160,6 +168,7 @@ namespace AppAPITemplate
 		{
 			currentItem = item;
 			Content = new InfoPageLayout();
+
 		}
 
 
@@ -167,10 +176,9 @@ namespace AppAPITemplate
 		{
 			base.OnAppearing();
 
-
 			List<string> list = await CallAPI(currentItem);
-			One.Text = list[0];
-			Two.Text = list[1];
+			Title = list[0];
+			One.Text = list[1];
 			Three.Text = list[2];
 			Four.Text = list[3];
 			Five.Text = list[4];

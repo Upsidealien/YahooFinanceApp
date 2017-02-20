@@ -1,11 +1,10 @@
-﻿<Properties StartupConfiguration="{F9CFF05C-68E2-412C-A22E-9993C08A5BF4}|Default">
-  <MonoDevelop.Ide.Workbench>
+﻿<Properties StartupConfiguration="{99DBB8B7-8DDD-4112-8F92-BAEE8DDD2B8A}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppAPITemplate/InfoPage.cs">
     <Files>
-      <File FileName="iOS/Info.plist" />
-      <File FileName="iOS/Entitlements.plist" />
+      <File FileName="AppAPITemplate/InfoPage.cs" Line="94" Column="9" />
     </Files>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Release|iPhone" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>

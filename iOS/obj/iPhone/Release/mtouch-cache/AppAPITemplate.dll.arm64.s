@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 4.6.0 (tarball Fri Sep  9 12:44:29 EDT 2016)"
+	.asciz "Mono AOT Compiler 4.6.2 (tarball Tue Dec 20 02:40:33 EST 2016)"
 	.asciz "AppAPITemplate.dll"
 	.asciz ""
 
@@ -3611,7 +3611,13 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #792]
+ldr x1, [x16, #792]
+.word 0xaa1903e0
+bl _p_7
+
+adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
+add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
+ldr x0, [x16, #800]
 bl _p_2
 .word 0xf90013a0
 bl _p_77
@@ -3689,7 +3695,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #800]
+ldr x15, [x16, #808]
 bl _p_78
 .word 0x910003bf
 .word 0xa8cc7bfd
@@ -3722,7 +3728,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #808]
+ldr x1, [x16, #816]
 .word 0xd2800001
 .word 0xf9000fa1
 .word 0xf90013a1
@@ -3758,13 +3764,13 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #816]
+ldr x15, [x16, #824]
 bl _p_79
 .word 0xf9403ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #808]
+ldr x15, [x16, #816]
 bl _p_80
 .word 0x910003bf
 .word 0xa8ca7bfd
@@ -3828,7 +3834,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #824]
+ldr x15, [x16, #832]
 bl _p_81
 .word 0xf94043a0
 
@@ -3852,14 +3858,14 @@ AppAPITemplate_InfoPage_ConstructQuery_AppAPITemplate_MenuItem:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #832]
+ldr x0, [x16, #840]
 .word 0xf9400ba1
 .word 0xf940003e
 .word 0xf9400821
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x2, [x16, #840]
+ldr x2, [x16, #848]
 bl _p_63
 .word 0x910003bf
 .word 0xa8c27bfd
@@ -3881,12 +3887,12 @@ AppAPITemplate_InfoPage_ConstructList_string:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #848]
+ldr x0, [x16, #856]
 bl _p_2
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #856]
+ldr x1, [x16, #864]
 .word 0xf9400021
 .word 0xf9004fa1
 .word 0xf9000801
@@ -3902,7 +3908,7 @@ bl _p_21
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #872]
 .word 0xf9400000
 .word 0xb5000240
 
@@ -3912,7 +3918,7 @@ ldr x1, [x16, #304]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x2, [x16, #872]
+ldr x2, [x16, #880]
 .word 0xd2800000
 bl _p_22
 
@@ -3924,23 +3930,23 @@ bl _p_24
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #872]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #872]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #864]
+ldr x0, [x16, #872]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #880]
+ldr x0, [x16, #888]
 .word 0xf9400000
 .word 0xaa0203f8
 .word 0xaa0103f7
@@ -3953,7 +3959,7 @@ ldr x0, [x16, #328]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004fa0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -3987,23 +3993,23 @@ bl _p_28
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #880]
+ldr x0, [x16, #888]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #880]
+ldr x0, [x16, #888]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #880]
+ldr x0, [x16, #888]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #896]
 .word 0xf9400000
 .word 0xaa0203f6
 .word 0xaa0103f5
@@ -4011,7 +4017,7 @@ ldr x0, [x16, #888]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4057,23 +4063,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #896]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #896]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #888]
+ldr x0, [x16, #896]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #896]
+ldr x0, [x16, #904]
 .word 0xf9400000
 .word 0xaa0203f4
 .word 0xaa0103f3
@@ -4081,7 +4087,7 @@ ldr x0, [x16, #896]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4127,23 +4133,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #896]
+ldr x0, [x16, #904]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #896]
+ldr x0, [x16, #904]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #896]
+ldr x0, [x16, #904]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #912]
 .word 0xf9400000
 .word 0xf90033a2
 .word 0xaa0103f9
@@ -4151,7 +4157,7 @@ ldr x0, [x16, #904]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4197,23 +4203,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #912]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #912]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #904]
+ldr x0, [x16, #912]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #912]
+ldr x0, [x16, #920]
 .word 0xf9400000
 .word 0xf90037a2
 .word 0xaa0103fa
@@ -4221,7 +4227,7 @@ ldr x0, [x16, #912]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4267,23 +4273,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #912]
+ldr x0, [x16, #920]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #912]
+ldr x0, [x16, #920]
 .word 0xf9400000
 .word 0xf9401004
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #912]
+ldr x0, [x16, #920]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #920]
+ldr x3, [x16, #928]
 .word 0xaa0403e0
 .word 0xf9402fa2
 .word 0xf9004ba4
@@ -4294,7 +4300,7 @@ ldr x3, [x16, #920]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #928]
+ldr x3, [x16, #936]
 .word 0xf94037a0
 .word 0xaa1a03e1
 .word 0xf94037a4
@@ -4305,7 +4311,7 @@ ldr x3, [x16, #928]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #936]
+ldr x3, [x16, #944]
 .word 0xf94033a0
 .word 0xaa1903e1
 .word 0xf94033a4
@@ -4316,7 +4322,7 @@ ldr x3, [x16, #936]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #944]
+ldr x3, [x16, #952]
 .word 0xaa1403e0
 .word 0xaa1303e1
 .word 0xf9400e90
@@ -4335,7 +4341,7 @@ ldr x3, [x16, #944]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #952]
+ldr x0, [x16, #960]
 .word 0xf9400000
 .word 0xb5000240
 
@@ -4345,7 +4351,7 @@ ldr x1, [x16, #304]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x2, [x16, #872]
+ldr x2, [x16, #880]
 .word 0xd2800000
 bl _p_22
 
@@ -4357,23 +4363,23 @@ bl _p_24
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #952]
+ldr x0, [x16, #960]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #952]
+ldr x0, [x16, #960]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #952]
+ldr x0, [x16, #960]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #968]
 .word 0xf9400000
 .word 0xaa0203f8
 .word 0xaa0103f7
@@ -4386,7 +4392,7 @@ ldr x0, [x16, #328]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004fa0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4420,23 +4426,23 @@ bl _p_28
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #968]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #968]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #960]
+ldr x0, [x16, #968]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #968]
+ldr x0, [x16, #976]
 .word 0xf9400000
 .word 0xaa0203f6
 .word 0xaa0103f5
@@ -4444,7 +4450,7 @@ ldr x0, [x16, #968]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4490,23 +4496,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #968]
+ldr x0, [x16, #976]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #968]
+ldr x0, [x16, #976]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #968]
+ldr x0, [x16, #976]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #976]
+ldr x0, [x16, #984]
 .word 0xf9400000
 .word 0xaa0203f4
 .word 0xaa0103f3
@@ -4514,7 +4520,7 @@ ldr x0, [x16, #976]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4560,23 +4566,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #976]
+ldr x0, [x16, #984]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #976]
+ldr x0, [x16, #984]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #976]
+ldr x0, [x16, #984]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #984]
+ldr x0, [x16, #992]
 .word 0xf9400000
 .word 0xf90033a2
 .word 0xaa0103f9
@@ -4584,7 +4590,7 @@ ldr x0, [x16, #984]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4630,23 +4636,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #984]
+ldr x0, [x16, #992]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #984]
+ldr x0, [x16, #992]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #984]
+ldr x0, [x16, #992]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #992]
+ldr x0, [x16, #1000]
 .word 0xf9400000
 .word 0xf90037a2
 .word 0xaa0103fa
@@ -4654,7 +4660,7 @@ ldr x0, [x16, #992]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4700,23 +4706,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #992]
+ldr x0, [x16, #1000]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #992]
+ldr x0, [x16, #1000]
 .word 0xf9400000
 .word 0xf9401004
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #992]
+ldr x0, [x16, #1000]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #920]
+ldr x3, [x16, #928]
 .word 0xaa0403e0
 .word 0xf9402fa2
 .word 0xf9004ba4
@@ -4727,7 +4733,7 @@ ldr x3, [x16, #920]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #928]
+ldr x3, [x16, #936]
 .word 0xf94037a0
 .word 0xaa1a03e1
 .word 0xf94037a4
@@ -4738,7 +4744,7 @@ ldr x3, [x16, #928]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #936]
+ldr x3, [x16, #944]
 .word 0xf94033a0
 .word 0xaa1903e1
 .word 0xf94033a4
@@ -4768,7 +4774,7 @@ ldr x3, [x16, #368]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1000]
+ldr x0, [x16, #1008]
 .word 0xf9400000
 .word 0xb5000240
 
@@ -4778,7 +4784,7 @@ ldr x1, [x16, #304]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x2, [x16, #872]
+ldr x2, [x16, #880]
 .word 0xd2800000
 bl _p_22
 
@@ -4790,23 +4796,23 @@ bl _p_24
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1000]
+ldr x0, [x16, #1008]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1000]
+ldr x0, [x16, #1008]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1000]
+ldr x0, [x16, #1008]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1016]
 .word 0xf9400000
 .word 0xaa0203f8
 .word 0xaa0103f7
@@ -4819,7 +4825,7 @@ ldr x0, [x16, #328]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004fa0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4853,23 +4859,23 @@ bl _p_28
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1016]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1016]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1008]
+ldr x0, [x16, #1016]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1016]
+ldr x0, [x16, #1024]
 .word 0xf9400000
 .word 0xaa0203f6
 .word 0xaa0103f5
@@ -4877,7 +4883,7 @@ ldr x0, [x16, #1016]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4923,23 +4929,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1016]
+ldr x0, [x16, #1024]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1016]
+ldr x0, [x16, #1024]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1016]
+ldr x0, [x16, #1024]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1024]
+ldr x0, [x16, #1032]
 .word 0xf9400000
 .word 0xaa0203f4
 .word 0xaa0103f3
@@ -4947,7 +4953,7 @@ ldr x0, [x16, #1024]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -4993,23 +4999,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1024]
+ldr x0, [x16, #1032]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1024]
+ldr x0, [x16, #1032]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1024]
+ldr x0, [x16, #1032]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1032]
+ldr x0, [x16, #1040]
 .word 0xf9400000
 .word 0xf90033a2
 .word 0xaa0103f9
@@ -5017,7 +5023,7 @@ ldr x0, [x16, #1032]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5063,23 +5069,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1032]
+ldr x0, [x16, #1040]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1032]
+ldr x0, [x16, #1040]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1032]
+ldr x0, [x16, #1040]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1040]
+ldr x0, [x16, #1048]
 .word 0xf9400000
 .word 0xf90037a2
 .word 0xaa0103fa
@@ -5087,7 +5093,7 @@ ldr x0, [x16, #1040]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5133,23 +5139,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1040]
+ldr x0, [x16, #1048]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1040]
+ldr x0, [x16, #1048]
 .word 0xf9400000
 .word 0xf9401004
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1040]
+ldr x0, [x16, #1048]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #920]
+ldr x3, [x16, #928]
 .word 0xaa0403e0
 .word 0xf9402fa2
 .word 0xf9004ba4
@@ -5160,7 +5166,7 @@ ldr x3, [x16, #920]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #928]
+ldr x3, [x16, #936]
 .word 0xf94037a0
 .word 0xaa1a03e1
 .word 0xf94037a4
@@ -5171,7 +5177,7 @@ ldr x3, [x16, #928]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #936]
+ldr x3, [x16, #944]
 .word 0xf94033a0
 .word 0xaa1903e1
 .word 0xf94033a4
@@ -5182,7 +5188,7 @@ ldr x3, [x16, #936]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #1048]
+ldr x3, [x16, #1056]
 .word 0xaa1403e0
 .word 0xaa1303e1
 .word 0xf9400e90
@@ -5201,7 +5207,7 @@ ldr x3, [x16, #1048]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1056]
+ldr x0, [x16, #1064]
 .word 0xf9400000
 .word 0xb5000240
 
@@ -5211,7 +5217,7 @@ ldr x1, [x16, #304]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x2, [x16, #872]
+ldr x2, [x16, #880]
 .word 0xd2800000
 bl _p_22
 
@@ -5223,23 +5229,23 @@ bl _p_24
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1056]
+ldr x0, [x16, #1064]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1056]
+ldr x0, [x16, #1064]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1056]
+ldr x0, [x16, #1064]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1064]
+ldr x0, [x16, #1072]
 .word 0xf9400000
 .word 0xaa0203f8
 .word 0xaa0103f7
@@ -5252,7 +5258,7 @@ ldr x0, [x16, #328]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004fa0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5286,23 +5292,23 @@ bl _p_28
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1064]
+ldr x0, [x16, #1072]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1064]
+ldr x0, [x16, #1072]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1064]
+ldr x0, [x16, #1072]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1072]
+ldr x0, [x16, #1080]
 .word 0xf9400000
 .word 0xaa0203f6
 .word 0xaa0103f5
@@ -5310,7 +5316,7 @@ ldr x0, [x16, #1072]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5356,23 +5362,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1072]
+ldr x0, [x16, #1080]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1072]
+ldr x0, [x16, #1080]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1072]
+ldr x0, [x16, #1080]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1080]
+ldr x0, [x16, #1088]
 .word 0xf9400000
 .word 0xaa0203f4
 .word 0xaa0103f3
@@ -5380,7 +5386,7 @@ ldr x0, [x16, #1080]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5426,23 +5432,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1080]
+ldr x0, [x16, #1088]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1080]
+ldr x0, [x16, #1088]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1080]
+ldr x0, [x16, #1088]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1088]
+ldr x0, [x16, #1096]
 .word 0xf9400000
 .word 0xf90033a2
 .word 0xaa0103f9
@@ -5450,7 +5456,7 @@ ldr x0, [x16, #1088]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5496,23 +5502,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1088]
+ldr x0, [x16, #1096]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1088]
+ldr x0, [x16, #1096]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1088]
+ldr x0, [x16, #1096]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1104]
 .word 0xf9400000
 .word 0xf90037a2
 .word 0xaa0103fa
@@ -5520,7 +5526,7 @@ ldr x0, [x16, #1096]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5566,23 +5572,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1104]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1104]
 .word 0xf9400000
 .word 0xf9401004
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1096]
+ldr x0, [x16, #1104]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #920]
+ldr x3, [x16, #928]
 .word 0xaa0403e0
 .word 0xf9402fa2
 .word 0xf9004ba4
@@ -5593,7 +5599,7 @@ ldr x3, [x16, #920]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #928]
+ldr x3, [x16, #936]
 .word 0xf94037a0
 .word 0xaa1a03e1
 .word 0xf94037a4
@@ -5604,7 +5610,7 @@ ldr x3, [x16, #928]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #936]
+ldr x3, [x16, #944]
 .word 0xf94033a0
 .word 0xaa1903e1
 .word 0xf94033a4
@@ -5615,7 +5621,7 @@ ldr x3, [x16, #936]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #1104]
+ldr x3, [x16, #1112]
 .word 0xaa1403e0
 .word 0xaa1303e1
 .word 0xf9400e90
@@ -5634,7 +5640,7 @@ ldr x3, [x16, #1104]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1112]
+ldr x0, [x16, #1120]
 .word 0xf9400000
 .word 0xb5000240
 
@@ -5644,7 +5650,7 @@ ldr x1, [x16, #304]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x2, [x16, #872]
+ldr x2, [x16, #880]
 .word 0xd2800000
 bl _p_22
 
@@ -5656,23 +5662,23 @@ bl _p_24
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1112]
+ldr x0, [x16, #1120]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1112]
+ldr x0, [x16, #1120]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1112]
+ldr x0, [x16, #1120]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1120]
+ldr x0, [x16, #1128]
 .word 0xf9400000
 .word 0xaa0203f8
 .word 0xaa0103f7
@@ -5680,12 +5686,12 @@ ldr x0, [x16, #1120]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1128]
+ldr x0, [x16, #1136]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004fa0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5720,23 +5726,23 @@ bl _p_28
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1120]
+ldr x0, [x16, #1128]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1120]
+ldr x0, [x16, #1128]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1120]
+ldr x0, [x16, #1128]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1136]
+ldr x0, [x16, #1144]
 .word 0xf9400000
 .word 0xaa0203f6
 .word 0xaa0103f5
@@ -5749,7 +5755,7 @@ ldr x0, [x16, #328]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004fa0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5783,23 +5789,23 @@ bl _p_28
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1136]
+ldr x0, [x16, #1144]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1136]
+ldr x0, [x16, #1144]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1136]
+ldr x0, [x16, #1144]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1144]
+ldr x0, [x16, #1152]
 .word 0xf9400000
 .word 0xaa0203f4
 .word 0xaa0103f3
@@ -5807,7 +5813,7 @@ ldr x0, [x16, #1144]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5853,23 +5859,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1144]
+ldr x0, [x16, #1152]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1144]
+ldr x0, [x16, #1152]
 .word 0xf9400000
 .word 0xf9401002
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1144]
+ldr x0, [x16, #1152]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xf9400000
 .word 0xf90033a2
 .word 0xaa0103f9
@@ -5877,7 +5883,7 @@ ldr x0, [x16, #1152]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #872]
+ldr x0, [x16, #880]
 .word 0xf9004ba0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -5923,23 +5929,23 @@ bl _p_30
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xf9400000
 .word 0xf9401004
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1152]
+ldr x0, [x16, #1160]
 .word 0xf9400001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #920]
+ldr x3, [x16, #928]
 .word 0xaa0403e0
 .word 0xf9402fa2
 .word 0xf9004ba4
@@ -5950,7 +5956,7 @@ ldr x3, [x16, #920]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x3, [x16, #1160]
+ldr x3, [x16, #1168]
 .word 0xf94033a0
 .word 0xaa1903e1
 .word 0xf94033a4
@@ -6022,7 +6028,7 @@ AppAPITemplate_InfoPage__cctor:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1168]
+ldr x0, [x16, #1176]
 bl _p_2
 .word 0xf9016ba0
 bl _p_84
@@ -6041,7 +6047,7 @@ bl _p_85
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1176]
+ldr x0, [x16, #1184]
 .word 0xf9400001
 .word 0xf900d3a1
 .word 0xf9400401
@@ -6075,7 +6081,7 @@ bl _p_87
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1184]
+ldr x0, [x16, #1192]
 .word 0xf9400001
 .word 0xf900b3a1
 .word 0xf9400401
@@ -6113,7 +6119,7 @@ bl _p_90
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1192]
+ldr x0, [x16, #1200]
 .word 0xb9800000
 .word 0xb9013ba0
 .word 0xaa0203e0
@@ -6124,11 +6130,11 @@ bl _p_91
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1208]
+ldr x15, [x16, #1216]
 .word 0xd2800001
 .word 0xd2800002
 bl _p_92
@@ -6142,12 +6148,12 @@ bl _p_93
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1224]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1168]
+ldr x0, [x16, #1176]
 bl _p_2
 .word 0xf90147a0
 bl _p_84
@@ -6178,7 +6184,7 @@ bl _p_90
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1224]
+ldr x0, [x16, #1232]
 .word 0xb9800000
 .word 0xb90133a0
 .word 0xaa0203e0
@@ -6190,7 +6196,7 @@ bl _p_91
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1232]
+ldr x0, [x16, #1240]
 .word 0xf9400001
 .word 0xf9008ba1
 .word 0xf9400401
@@ -6215,11 +6221,11 @@ bl _p_86
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1208]
+ldr x15, [x16, #1216]
 .word 0xd2800001
 .word 0xd2800002
 bl _p_92
@@ -6233,12 +6239,12 @@ bl _p_93
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1240]
+ldr x0, [x16, #1248]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1168]
+ldr x0, [x16, #1176]
 bl _p_2
 .word 0xf9012ba0
 bl _p_84
@@ -6263,7 +6269,7 @@ bl _p_94
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1224]
+ldr x0, [x16, #1232]
 .word 0xb9800000
 .word 0xb900eba0
 .word 0xaa0203e0
@@ -6275,7 +6281,7 @@ bl _p_91
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1224]
+ldr x0, [x16, #1232]
 .word 0xb9800000
 .word 0xb900e3a0
 .word 0xaa0203e0
@@ -6299,7 +6305,7 @@ bl _p_89
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1232]
+ldr x0, [x16, #1240]
 .word 0xf9400001
 .word 0xf90063a1
 .word 0xf9400401
@@ -6324,11 +6330,11 @@ bl _p_86
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1208]
+ldr x15, [x16, #1216]
 .word 0xd2800001
 .word 0xd2800002
 bl _p_92
@@ -6342,12 +6348,12 @@ bl _p_93
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1248]
+ldr x0, [x16, #1256]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1168]
+ldr x0, [x16, #1176]
 bl _p_2
 .word 0xf90107a0
 bl _p_84
@@ -6366,7 +6372,7 @@ bl _p_85
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1256]
+ldr x0, [x16, #1264]
 .word 0xb9800000
 .word 0xb9009ba0
 .word 0xaa0203e0
@@ -6378,7 +6384,7 @@ bl _p_91
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1232]
+ldr x0, [x16, #1240]
 .word 0xf9400001
 .word 0xf9003fa1
 .word 0xf9400401
@@ -6403,11 +6409,11 @@ bl _p_86
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1208]
+ldr x15, [x16, #1216]
 .word 0xd2800001
 .word 0xd2800002
 bl _p_92
@@ -6421,12 +6427,12 @@ bl _p_93
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1264]
+ldr x0, [x16, #1272]
 .word 0xf9000001
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1168]
+ldr x0, [x16, #1176]
 bl _p_2
 .word 0xf900f3a0
 bl _p_84
@@ -6445,7 +6451,7 @@ bl _p_85
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1256]
+ldr x0, [x16, #1264]
 .word 0xb9800000
 .word 0xb90053a0
 .word 0xaa0203e0
@@ -6457,7 +6463,7 @@ bl _p_91
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1232]
+ldr x0, [x16, #1240]
 .word 0xf9400001
 .word 0xf9001ba1
 .word 0xf9400401
@@ -6482,11 +6488,11 @@ bl _p_86
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1208]
+ldr x15, [x16, #1216]
 .word 0xd2800001
 .word 0xd2800002
 bl _p_92
@@ -6500,7 +6506,7 @@ bl _p_93
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1272]
+ldr x0, [x16, #1280]
 .word 0xf9000001
 .word 0x910003bf
 .word 0xa9407bfd
@@ -6551,7 +6557,7 @@ bl _p_98
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1288]
 bl _p_2
 .word 0xf900c7a0
 bl _p_96
@@ -6574,7 +6580,7 @@ bl _p_94
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1224]
+ldr x0, [x16, #1232]
 .word 0xb9800000
 .word 0xb900b3a0
 .word 0xaa0203e0
@@ -6590,7 +6596,7 @@ bl _p_91
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1168]
+ldr x0, [x16, #1176]
 bl _p_2
 .word 0xf900b7a0
 bl _p_84
@@ -6600,7 +6606,7 @@ bl _p_84
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1288]
+ldr x1, [x16, #1296]
 .word 0xaa0203e0
 .word 0xf940005e
 bl _p_85
@@ -6608,7 +6614,7 @@ bl _p_85
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1256]
+ldr x0, [x16, #1264]
 .word 0xb9800000
 .word 0xb900aba0
 .word 0xaa0203e0
@@ -6620,7 +6626,7 @@ bl _p_91
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1232]
+ldr x0, [x16, #1240]
 .word 0xf9400001
 .word 0xf90047a1
 .word 0xf9400401
@@ -6645,11 +6651,11 @@ bl _p_86
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1208]
+ldr x15, [x16, #1216]
 .word 0xd2800001
 .word 0xd2800002
 bl _p_92
@@ -6666,7 +6672,7 @@ bl _p_93
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6679,7 +6685,7 @@ ldr x15, [x16, #1296]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1168]
+ldr x0, [x16, #1176]
 bl _p_2
 .word 0xf9009ba0
 bl _p_84
@@ -6689,7 +6695,7 @@ bl _p_84
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1304]
+ldr x1, [x16, #1312]
 .word 0xaa0203e0
 .word 0xf940005e
 bl _p_85
@@ -6697,7 +6703,7 @@ bl _p_85
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1256]
+ldr x0, [x16, #1264]
 .word 0xb9800000
 .word 0xb90063a0
 .word 0xaa0203e0
@@ -6709,7 +6715,7 @@ bl _p_91
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1232]
+ldr x0, [x16, #1240]
 .word 0xf9400001
 .word 0xf90023a1
 .word 0xf9400401
@@ -6734,11 +6740,11 @@ bl _p_86
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1200]
+ldr x0, [x16, #1208]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1208]
+ldr x15, [x16, #1216]
 .word 0xd2800001
 .word 0xd2800002
 bl _p_92
@@ -6755,7 +6761,7 @@ bl _p_93
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6767,7 +6773,7 @@ ldr x15, [x16, #1296]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6777,7 +6783,7 @@ ldr x15, [x16, #1296]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1288]
 bl _p_2
 .word 0xf9007ba0
 bl _p_96
@@ -6800,7 +6806,7 @@ bl _p_94
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1224]
+ldr x0, [x16, #1232]
 .word 0xb9800000
 .word 0xb9001ba0
 .word 0xaa0203e0
@@ -6815,14 +6821,14 @@ bl _p_91
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1264]
+ldr x0, [x16, #1272]
 .word 0xf9400001
 .word 0xaa0203e0
 .word 0xf9400042
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6834,14 +6840,14 @@ ldr x15, [x16, #1296]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1272]
+ldr x0, [x16, #1280]
 .word 0xf9400001
 .word 0xaa0203e0
 .word 0xf9400042
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6853,7 +6859,7 @@ ldr x15, [x16, #1296]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6893,51 +6899,14 @@ bl _p_98
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1224]
 .word 0xf9400001
 .word 0xaa0203e0
 .word 0xf9400042
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
-.word 0x928004f0
-.word 0xf2bffff0
-.word 0xf8706850
-.word 0xd63f0200
-.word 0xf940af42
-
-adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
-add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1240]
-.word 0xf9400001
-.word 0xaa0203e0
-.word 0xf9400042
-
-adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
-add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
-.word 0x928004f0
-.word 0xf2bffff0
-.word 0xf8706850
-.word 0xd63f0200
-.word 0xf940af40
-.word 0xf90017a0
-
-adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
-add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1312]
-bl _p_2
-.word 0xf90013a0
-bl _p_100
-.word 0xf94013a1
-.word 0xf94017a2
-.word 0xaa0203e0
-.word 0xf9400042
-
-adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
-add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6953,7 +6922,44 @@ ldr x0, [x16, #1248]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
+.word 0x928004f0
+.word 0xf2bffff0
+.word 0xf8706850
+.word 0xd63f0200
+.word 0xf940af40
+.word 0xf90017a0
+
+adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
+add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
+ldr x0, [x16, #1320]
+bl _p_2
+.word 0xf90013a0
+bl _p_100
+.word 0xf94013a1
+.word 0xf94017a2
+.word 0xaa0203e0
+.word 0xf9400042
+
+adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
+add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
+ldr x15, [x16, #1304]
+.word 0x928004f0
+.word 0xf2bffff0
+.word 0xf8706850
+.word 0xd63f0200
+.word 0xf940af42
+
+adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
+add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
+ldr x0, [x16, #1256]
+.word 0xf9400001
+.word 0xaa0203e0
+.word 0xf9400042
+
+adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
+add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -6994,7 +7000,7 @@ AppAPITemplate_InfoPage__OnAppearingc__async0_MoveNext:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1320]
+ldr x0, [x16, #1328]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -7028,7 +7034,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1328]
+ldr x1, [x16, #1336]
 .word 0xf9400000
 .word 0xaa0003e1
 .word 0xf940003e
@@ -7052,7 +7058,7 @@ ldr x1, [x16, #1328]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1336]
+ldr x15, [x16, #1344]
 bl _p_103
 .word 0x14000079
 .word 0xf9400fa0
@@ -7062,7 +7068,7 @@ bl _p_103
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1328]
+ldr x15, [x16, #1336]
 bl _p_104
 .word 0xaa0003e1
 .word 0xf94053a0
@@ -7073,7 +7079,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1216]
+ldr x0, [x16, #1224]
 .word 0xf9400000
 .word 0xf9004ba0
 .word 0xf9400fa0
@@ -7090,7 +7096,7 @@ bl _p_85
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1240]
+ldr x0, [x16, #1248]
 .word 0xf9400000
 .word 0xf90047a0
 .word 0xf9400fa0
@@ -7107,7 +7113,7 @@ bl _p_85
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1248]
+ldr x0, [x16, #1256]
 .word 0xf9400000
 .word 0xf90043a0
 .word 0xf9400fa0
@@ -7124,7 +7130,7 @@ bl _p_85
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1264]
+ldr x0, [x16, #1272]
 .word 0xf9400000
 .word 0xf9003fa0
 .word 0xf9400fa0
@@ -7141,7 +7147,7 @@ bl _p_85
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1272]
+ldr x0, [x16, #1280]
 .word 0xf9400000
 .word 0xf9003ba0
 .word 0xf9400fa0
@@ -7239,7 +7245,7 @@ AppAPITemplate_InfoPage__CallAPIc__async1_MoveNext:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1344]
+ldr x0, [x16, #1352]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -7294,7 +7300,7 @@ ldr x1, [x16, #496]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1352]
+ldr x15, [x16, #1360]
 bl _p_107
 .word 0x14000040
 .word 0xf9400fa0
@@ -7342,7 +7348,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #808]
+ldr x15, [x16, #816]
 bl _p_109
 bl _p_40
 .word 0xf90037a0
@@ -7360,7 +7366,7 @@ bl _p_41
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #808]
+ldr x15, [x16, #816]
 .word 0xaa1a03e1
 bl _p_110
 .word 0xf9400bba
@@ -7387,7 +7393,7 @@ AppAPITemplate_InfoPage__CallAPIc__async1_SetStateMachine_System_Runtime_Compile
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #808]
+ldr x15, [x16, #816]
 .word 0xf9400fa1
 bl _p_111
 .word 0x910003bf
@@ -7426,7 +7432,7 @@ AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_MoveNext:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1360]
+ldr x0, [x16, #1368]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -7470,7 +7476,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1368]
+ldr x0, [x16, #1376]
 .word 0x8b010000
 .word 0xf9400000
 .word 0xd61f0000
@@ -7530,7 +7536,7 @@ ldr x1, [x16, #496]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1376]
+ldr x15, [x16, #1384]
 bl _p_113
 .word 0x9400001a
 .word 0x1400004f
@@ -7744,7 +7750,7 @@ bl _p_114
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1168]
+ldr x0, [x16, #1176]
 bl _p_2
 .word 0xf9007ba0
 bl _p_84
@@ -7761,7 +7767,7 @@ bl _p_115
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1384]
+ldr x1, [x16, #1392]
 .word 0xf9400021
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -7774,7 +7780,7 @@ bl _p_116
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1168]
+ldr x0, [x16, #1176]
 bl _p_2
 .word 0xf90073a0
 bl _p_84
@@ -7784,7 +7790,7 @@ bl _p_84
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1232]
+ldr x0, [x16, #1240]
 .word 0xf9400001
 .word 0xf9002fa1
 .word 0xf9400401
@@ -7809,7 +7815,7 @@ bl _p_86
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1384]
+ldr x1, [x16, #1392]
 .word 0xf9400021
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
@@ -7823,7 +7829,7 @@ bl _p_116
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1280]
+ldr x0, [x16, #1288]
 bl _p_2
 .word 0xf9006ba0
 bl _p_96
@@ -7866,7 +7872,7 @@ bl _p_118
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -7881,7 +7887,7 @@ ldr x15, [x16, #1296]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1296]
+ldr x15, [x16, #1304]
 .word 0x928004f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -7910,7 +7916,7 @@ wrapper_delegate_invoke_System_EventHandler_1_Xamarin_Forms_ItemTappedEventArgs_
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000680
 .word 0x14000001
@@ -7977,7 +7983,7 @@ Lme_3a:
 	.align 4
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
-.file 2 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
+.file 2 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
 .loc 2 78 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
@@ -8344,7 +8350,7 @@ wrapper_delegate_invoke_System_Predicate_1_AppAPITemplate_MenuItem_invoke_bool_T
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -8423,7 +8429,7 @@ wrapper_delegate_invoke_System_Action_1_AppAPITemplate_MenuItem_invoke_void_T_Ap
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -8499,7 +8505,7 @@ wrapper_delegate_invoke_System_Comparison_1_AppAPITemplate_MenuItem_invoke_int_T
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -8582,7 +8588,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Collections_Generic_List_1_A
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -8657,7 +8663,7 @@ wrapper_delegate_invoke_System_Func_1_System_Collections_Generic_List_1_AppAPITe
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -8730,7 +8736,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Col
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -8805,7 +8811,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -8880,7 +8886,7 @@ wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -8953,7 +8959,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Thr
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -9028,7 +9034,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -9105,7 +9111,7 @@ wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -9181,7 +9187,7 @@ wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncR
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -9261,7 +9267,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -9338,7 +9344,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Collections_Gen
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -9415,7 +9421,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -9481,7 +9487,7 @@ Lme_51:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_1_TResult_BOOL__ctor
 System_Threading_Tasks_Task_1_TResult_BOOL__ctor:
-.file 3 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
+.file 3 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
 .loc 3 91 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -10581,7 +10587,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__TaskWhenAnyCastm__0_System_Threading
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1400]
+ldr x0, [x16, #1408]
 .word 0x3980ac10
 .word 0xd2800051
 .word 0x8a110210
@@ -10617,7 +10623,7 @@ Lme_6c:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor
 System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor:
-.file 4 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
+.file 4 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
 .loc 4 93 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -10836,7 +10842,7 @@ bl _p_190
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1408]
+ldr x1, [x16, #1416]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xf90043bf
@@ -10870,7 +10876,7 @@ bl _p_194
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1416]
+ldr x0, [x16, #1424]
 .word 0x39400000
 .word 0x340000e0
 .loc 4 580 0
@@ -11065,7 +11071,7 @@ bl _p_193
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1424]
+ldr x0, [x16, #1432]
 .word 0xf9003fa0
 .word 0xaa1603e0
 .word 0xf94002de
@@ -11087,7 +11093,7 @@ bl _p_207
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1416]
+ldr x0, [x16, #1424]
 .word 0x39400000
 .word 0x34000080
 .loc 4 833 0
@@ -11122,7 +11128,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1432]
+ldr x0, [x16, #1440]
 bl _p_2
 .word 0xf9004ba0
 bl _p_212
@@ -11140,7 +11146,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1440]
+ldr x0, [x16, #1448]
 bl _p_2
 .word 0xf900101a
 .word 0xf9003fa0
@@ -11159,7 +11165,7 @@ bl _p_214
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1448]
+ldr x0, [x16, #1456]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -11177,7 +11183,7 @@ ldr x0, [x16, #1448]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1456]
+ldr x15, [x16, #1464]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -11223,7 +11229,7 @@ bl _p_217
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1440]
+ldr x0, [x16, #1448]
 bl _p_2
 .word 0xf94047a1
 .word 0xf90043a1
@@ -11245,7 +11251,7 @@ bl _p_219
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1448]
+ldr x0, [x16, #1456]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -11278,7 +11284,7 @@ bl _p_194
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1416]
+ldr x0, [x16, #1424]
 .word 0x39400000
 .word 0x34000100
 .loc 4 874 0
@@ -11361,7 +11367,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -12529,7 +12535,7 @@ System_Threading_Tasks_Task_1_TResult_INT__TaskWhenAnyCastm__0_System_Threading_
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1400]
+ldr x0, [x16, #1408]
 .word 0x3980ac10
 .word 0xd2800051
 .word 0x8a110210
@@ -12784,7 +12790,7 @@ bl _p_252
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1408]
+ldr x1, [x16, #1416]
 .word 0xeb01001f
 .word 0x54000060
 .word 0xf90043bf
@@ -12818,7 +12824,7 @@ bl _p_194
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1416]
+ldr x0, [x16, #1424]
 .word 0x39400000
 .word 0x340000e0
 .loc 4 580 0
@@ -13013,7 +13019,7 @@ bl _p_193
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1424]
+ldr x0, [x16, #1432]
 .word 0xf9003fa0
 .word 0xaa1603e0
 .word 0xf94002de
@@ -13035,7 +13041,7 @@ bl _p_207
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1416]
+ldr x0, [x16, #1424]
 .word 0x39400000
 .word 0x34000080
 .loc 4 833 0
@@ -13070,7 +13076,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1432]
+ldr x0, [x16, #1440]
 bl _p_2
 .word 0xf9004ba0
 bl _p_212
@@ -13088,7 +13094,7 @@ bl _p_9
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1440]
+ldr x0, [x16, #1448]
 bl _p_2
 .word 0xf900101a
 .word 0xf9003fa0
@@ -13107,7 +13113,7 @@ bl _p_264
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1448]
+ldr x0, [x16, #1456]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -13125,7 +13131,7 @@ ldr x0, [x16, #1448]
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1456]
+ldr x15, [x16, #1464]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706830
@@ -13171,7 +13177,7 @@ bl _p_266
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1440]
+ldr x0, [x16, #1448]
 bl _p_2
 .word 0xf94047a1
 .word 0xf90043a1
@@ -13193,7 +13199,7 @@ bl _p_268
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1448]
+ldr x0, [x16, #1456]
 .word 0xf9401402
 .word 0xf9000c22
 .word 0xf9401000
@@ -13226,7 +13232,7 @@ bl _p_194
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1416]
+ldr x0, [x16, #1424]
 .word 0x39400000
 .word 0x34000100
 .loc 4 874 0
@@ -13309,7 +13315,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -13386,7 +13392,7 @@ wrapper_delegate_invoke_System_Func_2_object_string_invoke_TResult_T_object:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -13461,7 +13467,7 @@ wrapper_delegate_invoke_System_Func_1_string_invoke_TResult:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -13534,7 +13540,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_string_inv
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -13609,7 +13615,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_string_invoke_TResult_
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -13686,7 +13692,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -13764,7 +13770,7 @@ wrapper_delegate_invoke_System_Func_3_System_Runtime_CompilerServices_CallSite_o
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -13844,7 +13850,7 @@ wrapper_delegate_invoke_System_Predicate_1_System_Linq_Expressions_Expression_in
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -13923,7 +13929,7 @@ wrapper_delegate_invoke_System_Action_1_System_Linq_Expressions_Expression_invok
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -13999,7 +14005,7 @@ wrapper_delegate_invoke_System_Comparison_1_System_Linq_Expressions_Expression_i
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -14082,7 +14088,7 @@ wrapper_delegate_invoke_System_Predicate_1_System_Linq_Expressions_ParameterExpr
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -14161,7 +14167,7 @@ wrapper_delegate_invoke_System_Action_1_System_Linq_Expressions_ParameterExpress
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -14237,7 +14243,7 @@ wrapper_delegate_invoke_System_Comparison_1_System_Linq_Expressions_ParameterExp
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -14489,7 +14495,7 @@ Lme_a3:
 	.no_dead_strip System_Array_InternalArray__set_Item_T_REF_int_T_REF
 System_Array_InternalArray__set_Item_T_REF_int_T_REF:
 .loc 2 207 0 prologue_end
-.word 0xa9bb7bfd
+.word 0xa9ba7bfd
 .word 0x910003fd
 .word 0xa9015bb5
 .word 0xa90263b7
@@ -14500,7 +14506,7 @@ System_Array_InternalArray__set_Item_T_REF_int_T_REF:
 .word 0xb9801b01
 .word 0xb98033a0
 .word 0x6b01001f
-.word 0x540005e2
+.word 0x54000642
 .loc 2 210 0
 .word 0xaa1803f7
 .word 0xaa1803f6
@@ -14517,13 +14523,13 @@ System_Array_InternalArray__set_Item_T_REF_int_T_REF:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1464]
+ldr x1, [x16, #1472]
 .word 0xeb01001f
 .word 0x540000e1
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1472]
+ldr x0, [x16, #1480]
 .word 0xeb0002ff
 .word 0x54000040
 .word 0xd2800016
@@ -14538,7 +14544,7 @@ ldr x0, [x16, #1472]
 .word 0xf9407c70
 .word 0xd63f0200
 .loc 2 213 0
-.word 0x1400000a
+.word 0x1400000d
 .loc 2 215 0
 .word 0xf94023a0
 bl _p_272
@@ -14548,11 +14554,14 @@ bl _p_272
 .word 0x8b000300
 .word 0x91008000
 .word 0xf9401fa1
+.word 0xf9002ba1
 .word 0xf9000001
+bl _p_9
+.word 0xf9402ba0
 .word 0xa9415bb5
 .word 0xa94263b7
 .word 0x910003bf
-.word 0xa8c57bfd
+.word 0xa8c67bfd
 .word 0xd65f03c0
 .loc 2 208 0
 .word 0xd284e000
@@ -14579,7 +14588,7 @@ wrapper_delegate_invoke_System_Func_2_System_Reflection_ParameterInfo_System_Lin
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -14656,7 +14665,7 @@ wrapper_delegate_invoke_System_Func_2_System_Linq_Expressions_ParameterExpressio
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -14734,7 +14743,7 @@ wrapper_delegate_invoke_System_Func_3_System_Runtime_CompilerServices_CallSite_o
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -14815,7 +14824,7 @@ wrapper_delegate_invoke_System_Func_3_System_Runtime_CompilerServices_CallSite_o
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006c0
 .word 0x14000001
@@ -14898,7 +14907,7 @@ wrapper_delegate_invoke_System_Func_4_System_Runtime_CompilerServices_CallSite_o
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000740
 .word 0x14000001
@@ -15277,7 +15286,7 @@ Lme_b1:
 	.align 4
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT
 System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT:
-.file 5 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/tuple.cs"
+.file 5 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/tuple.cs"
 .loc 5 165 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -15340,7 +15349,7 @@ System_Tuple_2_T1_INT_T2_INT_Equals_object:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1480]
+ldr x15, [x16, #1488]
 bl _p_280
 .word 0xaa0003e2
 .word 0xf94013a3
@@ -15350,7 +15359,7 @@ bl _p_280
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1488]
+ldr x15, [x16, #1496]
 .word 0x92800af0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -15416,7 +15425,7 @@ bl _p_123
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1496]
+ldr x15, [x16, #1504]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -15448,7 +15457,7 @@ bl _p_123
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1496]
+ldr x15, [x16, #1504]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -15477,7 +15486,7 @@ System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1504]
+ldr x15, [x16, #1512]
 bl _p_284
 .word 0xaa0003e2
 .word 0xf94013a3
@@ -15487,7 +15496,7 @@ bl _p_284
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1512]
+ldr x15, [x16, #1520]
 .word 0x928003f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -15551,7 +15560,7 @@ bl _p_123
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1520]
+ldr x15, [x16, #1528]
 .word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -15589,7 +15598,7 @@ bl _p_123
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1520]
+ldr x15, [x16, #1528]
 .word 0x928010f0
 .word 0xf2bffff0
 .word 0xf8706870
@@ -15608,7 +15617,7 @@ bl _p_124
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1528]
+ldr x0, [x16, #1536]
 .word 0xd2800021
 bl _p_25
 .word 0xf90027a0
@@ -15655,7 +15664,7 @@ System_Tuple_2_T1_INT_T2_INT_GetHashCode:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1480]
+ldr x15, [x16, #1488]
 bl _p_280
 .word 0xaa0003e1
 .word 0xf94013a2
@@ -15664,7 +15673,7 @@ bl _p_280
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1536]
+ldr x15, [x16, #1544]
 .word 0x928002f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -15700,7 +15709,7 @@ bl _p_123
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1544]
+ldr x15, [x16, #1552]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -15722,7 +15731,7 @@ bl _p_123
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1544]
+ldr x15, [x16, #1552]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -15749,7 +15758,7 @@ System_Tuple_2_T1_INT_T2_INT_ToString:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1552]
+ldr x0, [x16, #1560]
 bl _p_2
 .word 0xf90017a0
 bl _p_292
@@ -15760,7 +15769,7 @@ bl _p_292
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1560]
+ldr x1, [x16, #1568]
 .word 0xaa0203e0
 .word 0xf940005e
 bl _p_293
@@ -15772,7 +15781,7 @@ bl _p_293
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #1568]
+ldr x15, [x16, #1576]
 .word 0x928006f0
 .word 0xf2bffff0
 .word 0xf8706850
@@ -15809,7 +15818,7 @@ bl _p_295
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1576]
+ldr x1, [x16, #1584]
 .word 0xaa1a03e0
 .word 0xf940035e
 bl _p_293
@@ -15831,7 +15840,7 @@ bl _p_295
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x1, [x16, #1584]
+ldr x1, [x16, #1592]
 .word 0xaa1a03e0
 .word 0xf940035e
 bl _p_293
@@ -15861,7 +15870,7 @@ wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xa
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -15940,7 +15949,7 @@ wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamar
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -16016,7 +16025,7 @@ wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_X
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -16099,7 +16108,7 @@ wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_Cell_invoke_bool_T_Xama
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -16178,7 +16187,7 @@ wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_Cell_invoke_void_T_Xamarin
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -16254,7 +16263,7 @@ wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xa
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -16681,7 +16690,7 @@ wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -16760,7 +16769,7 @@ wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -16836,7 +16845,7 @@ wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -16919,7 +16928,7 @@ wrapper_delegate_invoke_System_Predicate_1_string_invoke_bool_T_string:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350006a0
 .word 0x14000001
@@ -16998,7 +17007,7 @@ wrapper_delegate_invoke_System_Action_1_string_invoke_void_T_string:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -17074,7 +17083,7 @@ wrapper_delegate_invoke_System_Comparison_1_string_invoke_int_T_T_string_string:
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000720
 .word 0x14000001
@@ -17157,7 +17166,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Collections_Generic_List_1_s
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -17232,7 +17241,7 @@ wrapper_delegate_invoke_System_Func_1_System_Collections_Generic_List_1_string_i
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x350005e0
 .word 0x14000001
@@ -17305,7 +17314,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Col
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000620
 .word 0x14000001
@@ -17380,7 +17389,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Collections_Gen
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -17457,7 +17466,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1392]
+ldr x0, [x16, #1400]
 .word 0xb9400000
 .word 0x35000660
 .word 0x14000001
@@ -17527,7 +17536,7 @@ b System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSH
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
 System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_:
-.file 6 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
+.file 6 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
 .loc 6 72 0 prologue_end
 .word 0xa9b47bfd
 .word 0x910003fd
@@ -17630,7 +17639,7 @@ bl _p_305
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1592]
+ldr x0, [x16, #1600]
 .word 0xf90053a0
 .word 0xf9401fa0
 bl _p_303
@@ -17891,12 +17900,12 @@ bl _p_193
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1600]
+ldr x0, [x16, #1608]
 .word 0xf9004fa0
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1608]
+ldr x0, [x16, #1616]
 .word 0xf90053a0
 .word 0xf94027a0
 bl _p_314
@@ -17973,7 +17982,7 @@ bl _p_316
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1616]
+ldr x0, [x16, #1624]
 .word 0xf9004ba0
 .word 0xf94027a0
 bl _p_317
@@ -18082,7 +18091,7 @@ bl _p_16
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1624]
+ldr x0, [x16, #1632]
 bl _p_2
 .word 0x9100e3a1
 .word 0xf9005ba0
@@ -18184,7 +18193,7 @@ bl _p_309
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1632]
+ldr x0, [x16, #1640]
 bl _p_2
 .word 0x9100e3a1
 .word 0xf90063a0
@@ -18448,7 +18457,7 @@ bl _p_16
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1640]
+ldr x0, [x16, #1648]
 bl _p_2
 .word 0x9100e3a1
 .word 0xf9005ba0
@@ -18550,7 +18559,7 @@ bl _p_309
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1648]
+ldr x0, [x16, #1656]
 bl _p_2
 .word 0x9100e3a1
 .word 0xf90063a0
@@ -18769,7 +18778,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Gene
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #808]
+ldr x15, [x16, #816]
 .word 0xaa1803e0
 bl _p_80
 .word 0xaa1703f6
@@ -18789,7 +18798,7 @@ bl _p_313
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x15, [x16, #808]
+ldr x15, [x16, #816]
 .word 0xaa1803e0
 bl _p_80
 .word 0xaa0003f6
@@ -18814,7 +18823,7 @@ bl _p_80
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1656]
+ldr x0, [x16, #1664]
 bl _p_2
 .word 0x9100e3a1
 .word 0xf9005ba0
@@ -18916,7 +18925,7 @@ bl _p_309
 
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x0, [x16, #1664]
+ldr x0, [x16, #1672]
 bl _p_2
 .word 0x9100e3a1
 .word 0xf90063a0
@@ -18997,7 +19006,7 @@ b System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Thread
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL
 System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL:
-.file 7 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
+.file 7 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
 .loc 7 317 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -19070,7 +19079,7 @@ Lme_e9:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
 System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_:
-.file 8 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
+.file 8 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
 .loc 8 131 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
@@ -19751,8 +19760,8 @@ unwind_info:
 	.byte 157,14,158,13,68,13,29,17,12,31,0,68,14,128,1,157,16,158,15,68,13,29,68,154,14,16,12,31,0,68,14,32
 	.byte 157,4,158,3,68,13,29,68,154,2,16,12,31,0,68,14,64,157,8,158,7,68,13,29,68,154,6,13,12,31,0,68
 	.byte 14,80,157,10,158,9,68,13,29,17,12,31,0,68,14,128,2,157,32,158,31,68,13,29,68,153,30,22,12,31,0,68
-	.byte 14,176,1,157,22,158,21,68,13,29,68,150,20,68,153,19,154,18,23,12,31,0,68,14,80,157,10,158,9,68,13,29
-	.byte 68,149,8,150,7,68,151,6,152,5,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10,18,12,31,0,68
+	.byte 14,176,1,157,22,158,21,68,13,29,68,150,20,68,153,19,154,18,23,12,31,0,68,14,96,157,12,158,11,68,13,29
+	.byte 68,149,10,150,9,68,151,8,152,7,16,12,31,0,68,14,96,157,12,158,11,68,13,29,68,154,10,18,12,31,0,68
 	.byte 14,80,157,10,158,9,68,13,29,68,153,8,154,7,21,12,31,0,68,14,80,157,10,158,9,68,13,29,68,152,8,153
 	.byte 7,68,154,6,29,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,149,22,150,21,68,151,20,152,19,68,153,18
 	.byte 154,17,22,12,31,0,68,14,192,1,157,24,158,23,68,13,29,68,151,22,152,21,68,153,20,30,12,31,0,68,14,176
@@ -19769,2637 +19778,2637 @@ plt_Xamarin_Forms_Application__ctor:
 _p_1:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1680]
+ldr x16, [x16, #1688]
 br x16
-.word 7004
+.word 7013
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_fast
 plt__jit_icall_ves_icall_object_new_fast:
 _p_2:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1688]
+ldr x16, [x16, #1696]
 br x16
-.word 7009
+.word 7018
 	.no_dead_strip plt_AppAPITemplate_FirstMenu__ctor
 plt_AppAPITemplate_FirstMenu__ctor:
 _p_3:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1696]
+ldr x16, [x16, #1704]
 br x16
-.word 7037
+.word 7046
 	.no_dead_strip plt_Xamarin_Forms_NavigationPage__ctor_Xamarin_Forms_Page
 plt_Xamarin_Forms_NavigationPage__ctor_Xamarin_Forms_Page:
 _p_4:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1704]
+ldr x16, [x16, #1712]
 br x16
-.word 7039
+.word 7048
 	.no_dead_strip plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page
 plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page:
 _p_5:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1712]
+ldr x16, [x16, #1720]
 br x16
-.word 7044
+.word 7053
 	.no_dead_strip plt_AppAPITemplate_Menu__ctor
 plt_AppAPITemplate_Menu__ctor:
 _p_6:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1720]
+ldr x16, [x16, #1728]
 br x16
-.word 7049
+.word 7058
 	.no_dead_strip plt_Xamarin_Forms_Page_set_Title_string
 plt_Xamarin_Forms_Page_set_Title_string:
 _p_7:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1728]
+ldr x16, [x16, #1736]
 br x16
-.word 7051
+.word 7060
 	.no_dead_strip plt_Xamarin_Forms_ContentPage_set_Content_Xamarin_Forms_View
 plt_Xamarin_Forms_ContentPage_set_Content_Xamarin_Forms_View:
 _p_8:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1736]
+ldr x16, [x16, #1744]
 br x16
-.word 7056
+.word 7065
 	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_noconc_intptr
 plt_wrapper_write_barrier_object_wbarrier_noconc_intptr:
 _p_9:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1744]
+ldr x16, [x16, #1752]
 br x16
-.word 7061
+.word 7070
 	.no_dead_strip plt_Xamarin_Forms_ListView_add_ItemTapped_System_EventHandler_1_Xamarin_Forms_ItemTappedEventArgs
 plt_Xamarin_Forms_ListView_add_ItemTapped_System_EventHandler_1_Xamarin_Forms_ItemTappedEventArgs:
 _p_10:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1752]
+ldr x16, [x16, #1760]
 br x16
-.word 7068
+.word 7077
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_11:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1760]
+ldr x16, [x16, #1768]
 br x16
-.word 7073
+.word 7082
 	.no_dead_strip plt_string_memset_byte__int_int
 plt_string_memset_byte__int_int:
 _p_12:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1768]
+ldr x16, [x16, #1776]
 br x16
-.word 7108
+.word 7117
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create:
 _p_13:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1776]
+ldr x16, [x16, #1784]
 br x16
-.word 7113
+.word 7122
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_FirstMenu__OnAppearingc__async0_AppAPITemplate_FirstMenu__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_FirstMenu__OnAppearingc__async0_AppAPITemplate_FirstMenu__OnAppearingc__async0_:
 _p_14:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1784]
+ldr x16, [x16, #1792]
 br x16
-.word 7118
+.word 7127
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Start_AppAPITemplate_FirstMenu__CallAPIc__async1_AppAPITemplate_FirstMenu__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Start_AppAPITemplate_FirstMenu__CallAPIc__async1_AppAPITemplate_FirstMenu__CallAPIc__async1_:
 _p_15:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1792]
+ldr x16, [x16, #1800]
 br x16
-.word 7130
+.word 7139
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_get_Task:
 _p_16:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1800]
+ldr x16, [x16, #1808]
 br x16
-.word 7142
+.word 7151
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Navigation
 plt_Xamarin_Forms_VisualElement_get_Navigation:
 _p_17:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1808]
+ldr x16, [x16, #1816]
 br x16
-.word 7153
+.word 7162
 	.no_dead_strip plt_AppAPITemplate_SecondMenu__ctor_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu__ctor_AppAPITemplate_MenuItem:
 _p_18:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1816]
+ldr x16, [x16, #1824]
 br x16
-.word 7158
+.word 7167
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_:
 _p_19:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1824]
+ldr x16, [x16, #1832]
 br x16
-.word 7160
+.word 7169
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_get_Task:
 _p_20:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1832]
+ldr x16, [x16, #1840]
 br x16
-.word 7172
+.word 7181
 	.no_dead_strip plt_Newtonsoft_Json_JsonConvert_DeserializeObject_string
 plt_Newtonsoft_Json_JsonConvert_DeserializeObject_string:
 _p_21:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1840]
+ldr x16, [x16, #1848]
 br x16
-.word 7183
+.word 7192
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_Convert_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Type
 plt_Microsoft_CSharp_RuntimeBinder_Binder_Convert_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Type:
 _p_22:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1848]
+ldr x16, [x16, #1856]
 br x16
-.word 7188
+.word 7197
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_System_Collections_IEnumerable_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_System_Collections_IEnumerable_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_23:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1856]
+ldr x16, [x16, #1864]
 br x16
-.word 7193
+.word 7202
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_string_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_string_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_24:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1864]
+ldr x16, [x16, #1872]
 br x16
-.word 7204
+.word 7213
 	.no_dead_strip plt__jit_icall_ves_icall_array_new_specific
 plt__jit_icall_ves_icall_array_new_specific:
 _p_25:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1872]
+ldr x16, [x16, #1880]
 br x16
-.word 7215
+.word 7224
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo_Create_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfoFlags_string
 plt_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo_Create_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfoFlags_string:
 _p_26:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1880]
+ldr x16, [x16, #1888]
 br x16
-.word 7246
+.word 7255
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_GetMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 plt_Microsoft_CSharp_RuntimeBinder_Binder_GetMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
 _p_27:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1888]
+ldr x16, [x16, #1896]
 br x16
-.word 7251
+.word 7260
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_object_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_object_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_28:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1896]
+ldr x16, [x16, #1904]
 br x16
-.word 7256
+.word 7265
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_GetIndex_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 plt_Microsoft_CSharp_RuntimeBinder_Binder_GetIndex_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
 _p_29:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1904]
+ldr x16, [x16, #1912]
 br x16
-.word 7267
+.word 7276
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_4_System_Runtime_CompilerServices_CallSite_object_string_object_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_4_System_Runtime_CompilerServices_CallSite_object_string_object_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_30:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1912]
+ldr x16, [x16, #1920]
 br x16
-.word 7272
+.word 7281
 	.no_dead_strip plt_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Add_AppAPITemplate_MenuItem
 plt_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Add_AppAPITemplate_MenuItem:
 _p_31:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1920]
+ldr x16, [x16, #1928]
 br x16
-.word 7283
+.word 7292
 	.no_dead_strip plt_Xamarin_Forms_ListView_set_SelectedItem_object
 plt_Xamarin_Forms_ListView_set_SelectedItem_object:
 _p_32:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1928]
+ldr x16, [x16, #1936]
 br x16
-.word 7294
+.word 7303
 	.no_dead_strip plt_AppAPITemplate_FirstMenu_ClickMenuItem_AppAPITemplate_MenuItem
 plt_AppAPITemplate_FirstMenu_ClickMenuItem_AppAPITemplate_MenuItem:
 _p_33:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1936]
+ldr x16, [x16, #1944]
 br x16
-.word 7299
+.word 7308
 	.no_dead_strip plt_AppAPITemplate_FirstMenu_CallAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_FirstMenu_CallAPI_AppAPITemplate_MenuItem:
 _p_34:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1944]
+ldr x16, [x16, #1952]
 br x16
-.word 7301
+.word 7310
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_GetAwaiter
 plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_GetAwaiter:
 _p_35:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1952]
+ldr x16, [x16, #1960]
 br x16
-.word 7303
+.word 7312
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AppAPITemplate_FirstMenu__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem__AppAPITemplate_FirstMenu__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AppAPITemplate_FirstMenu__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem__AppAPITemplate_FirstMenu__OnAppearingc__async0_:
 _p_36:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1960]
+ldr x16, [x16, #1968]
 br x16
-.word 7314
+.word 7323
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_GetResult:
 _p_37:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1968]
+ldr x16, [x16, #1976]
 br x16
-.word 7326
+.word 7335
 	.no_dead_strip plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable
 plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable:
 _p_38:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1976]
+ldr x16, [x16, #1984]
 br x16
-.word 7337
+.word 7346
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception:
 _p_39:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1984]
+ldr x16, [x16, #1992]
 br x16
-.word 7348
+.word 7357
 	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
 plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_40:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #1992]
+ldr x16, [x16, #2000]
 br x16
-.word 7353
+.word 7362
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_41:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2000]
+ldr x16, [x16, #2008]
 br x16
-.word 7392
+.word 7401
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult:
 _p_42:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2008]
+ldr x16, [x16, #2016]
 br x16
-.word 7420
+.word 7429
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_43:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2016]
+ldr x16, [x16, #2024]
 br x16
-.word 7425
+.word 7434
 	.no_dead_strip plt_AppAPITemplate_FirstMenu_GetResponseFromAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_FirstMenu_GetResponseFromAPI_AppAPITemplate_MenuItem:
 _p_44:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2024]
+ldr x16, [x16, #2032]
 br x16
-.word 7430
+.word 7439
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_string_GetAwaiter
 plt_System_Threading_Tasks_Task_1_string_GetAwaiter:
 _p_45:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2032]
+ldr x16, [x16, #2040]
 br x16
-.word 7432
+.word 7441
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_FirstMenu__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_FirstMenu__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_FirstMenu__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_FirstMenu__CallAPIc__async1_:
 _p_46:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2040]
+ldr x16, [x16, #2048]
 br x16
-.word 7443
+.word 7452
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_GetResult:
 _p_47:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2048]
+ldr x16, [x16, #2056]
 br x16
-.word 7455
+.word 7464
 	.no_dead_strip plt_AppAPITemplate_FirstMenu_ConstructMenuItemList_string
 plt_AppAPITemplate_FirstMenu_ConstructMenuItemList_string:
 _p_48:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2056]
+ldr x16, [x16, #2064]
 br x16
-.word 7466
+.word 7475
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetException_System_Exception:
 _p_49:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2064]
+ldr x16, [x16, #2072]
 br x16
-.word 7468
+.word 7477
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetResult_System_Collections_Generic_List_1_AppAPITemplate_MenuItem
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetResult_System_Collections_Generic_List_1_AppAPITemplate_MenuItem:
 _p_50:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2072]
+ldr x16, [x16, #2080]
 br x16
-.word 7479
+.word 7488
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_51:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2080]
+ldr x16, [x16, #2088]
 br x16
-.word 7490
+.word 7499
 	.no_dead_strip plt_System_Net_Http_HttpClient__ctor
 plt_System_Net_Http_HttpClient__ctor:
 _p_52:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2088]
+ldr x16, [x16, #2096]
 br x16
-.word 7501
+.word 7510
 	.no_dead_strip plt_System_Net_Http_HttpClient_GetStringAsync_string
 plt_System_Net_Http_HttpClient_GetStringAsync_string:
 _p_53:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2096]
+ldr x16, [x16, #2104]
 br x16
-.word 7506
+.word 7515
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_:
 _p_54:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2104]
+ldr x16, [x16, #2112]
 br x16
-.word 7511
+.word 7520
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetException_System_Exception:
 _p_55:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2112]
+ldr x16, [x16, #2120]
 br x16
-.word 7523
+.word 7532
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetResult_string
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetResult_string:
 _p_56:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2120]
+ldr x16, [x16, #2128]
 br x16
-.word 7534
+.word 7543
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_57:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2128]
+ldr x16, [x16, #2136]
 br x16
-.word 7545
+.word 7554
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_SecondMenu__OnAppearingc__async0_AppAPITemplate_SecondMenu__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_SecondMenu__OnAppearingc__async0_AppAPITemplate_SecondMenu__OnAppearingc__async0_:
 _p_58:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2136]
+ldr x16, [x16, #2144]
 br x16
-.word 7556
+.word 7565
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Start_AppAPITemplate_SecondMenu__CallAPIc__async1_AppAPITemplate_SecondMenu__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Start_AppAPITemplate_SecondMenu__CallAPIc__async1_AppAPITemplate_SecondMenu__CallAPIc__async1_:
 _p_59:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2144]
+ldr x16, [x16, #2152]
 br x16
-.word 7568
+.word 7577
 	.no_dead_strip plt_AppAPITemplate_InfoPage__ctor_AppAPITemplate_MenuItem
 plt_AppAPITemplate_InfoPage__ctor_AppAPITemplate_MenuItem:
 _p_60:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2152]
+ldr x16, [x16, #2160]
 br x16
-.word 7580
+.word 7589
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_:
 _p_61:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2160]
+ldr x16, [x16, #2168]
 br x16
-.word 7582
+.word 7591
 	.no_dead_strip plt_string_Replace_string_string
 plt_string_Replace_string_string:
 _p_62:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2168]
+ldr x16, [x16, #2176]
 br x16
-.word 7594
+.word 7603
 	.no_dead_strip plt_string_Concat_string_string_string
 plt_string_Concat_string_string_string:
 _p_63:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2176]
+ldr x16, [x16, #2184]
 br x16
-.word 7599
+.word 7608
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_ClickMenuItem_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu_ClickMenuItem_AppAPITemplate_MenuItem:
 _p_64:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2184]
+ldr x16, [x16, #2192]
 br x16
-.word 7604
+.word 7613
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_CallAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu_CallAPI_AppAPITemplate_MenuItem:
 _p_65:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2192]
+ldr x16, [x16, #2200]
 br x16
-.word 7606
+.word 7615
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AppAPITemplate_SecondMenu__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem__AppAPITemplate_SecondMenu__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AppAPITemplate_SecondMenu__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem__AppAPITemplate_SecondMenu__OnAppearingc__async0_:
 _p_66:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2200]
+ldr x16, [x16, #2208]
 br x16
-.word 7608
+.word 7617
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_GetResponseFromAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu_GetResponseFromAPI_AppAPITemplate_MenuItem:
 _p_67:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2208]
+ldr x16, [x16, #2216]
 br x16
-.word 7620
+.word 7629
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_SecondMenu__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_SecondMenu__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_SecondMenu__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_SecondMenu__CallAPIc__async1_:
 _p_68:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2216]
+ldr x16, [x16, #2224]
 br x16
-.word 7622
+.word 7631
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_ConstructMenuItemList_string
 plt_AppAPITemplate_SecondMenu_ConstructMenuItemList_string:
 _p_69:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2224]
+ldr x16, [x16, #2232]
 br x16
-.word 7634
+.word 7643
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_ConstructQuery_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu_ConstructQuery_AppAPITemplate_MenuItem:
 _p_70:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2232]
+ldr x16, [x16, #2240]
 br x16
-.word 7636
+.word 7645
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_:
 _p_71:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2240]
+ldr x16, [x16, #2248]
 br x16
-.word 7638
+.word 7647
 	.no_dead_strip plt_Xamarin_Forms_ListView__ctor
 plt_Xamarin_Forms_ListView__ctor:
 _p_72:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2248]
+ldr x16, [x16, #2256]
 br x16
-.word 7650
+.word 7659
 	.no_dead_strip plt_Xamarin_Forms_DataTemplate__ctor_System_Type
 plt_Xamarin_Forms_DataTemplate__ctor_System_Type:
 _p_73:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2256]
+ldr x16, [x16, #2264]
 br x16
-.word 7655
+.word 7664
 	.no_dead_strip plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemTemplate_Xamarin_Forms_DataTemplate
 plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemTemplate_Xamarin_Forms_DataTemplate:
 _p_74:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2264]
+ldr x16, [x16, #2272]
 br x16
-.word 7660
+.word 7669
 	.no_dead_strip plt_Xamarin_Forms_ListView_set_RowHeight_int
 plt_Xamarin_Forms_ListView_set_RowHeight_int:
 _p_75:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2272]
+ldr x16, [x16, #2280]
 br x16
-.word 7671
+.word 7680
 	.no_dead_strip plt_Xamarin_Forms_ContentPage__ctor
 plt_Xamarin_Forms_ContentPage__ctor:
 _p_76:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2280]
+ldr x16, [x16, #2288]
 br x16
-.word 7676
+.word 7685
 	.no_dead_strip plt_AppAPITemplate_InfoPage_InfoPageLayout__ctor
 plt_AppAPITemplate_InfoPage_InfoPageLayout__ctor:
 _p_77:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2288]
+ldr x16, [x16, #2296]
 br x16
-.word 7681
+.word 7690
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_InfoPage__OnAppearingc__async0_AppAPITemplate_InfoPage__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_InfoPage__OnAppearingc__async0_AppAPITemplate_InfoPage__OnAppearingc__async0_:
 _p_78:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2296]
+ldr x16, [x16, #2304]
 br x16
-.word 7683
+.word 7692
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_Start_AppAPITemplate_InfoPage__CallAPIc__async1_AppAPITemplate_InfoPage__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_Start_AppAPITemplate_InfoPage__CallAPIc__async1_AppAPITemplate_InfoPage__CallAPIc__async1_:
 _p_79:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2304]
+ldr x16, [x16, #2312]
 br x16
-.word 7695
+.word 7704
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_get_Task:
 _p_80:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2312]
+ldr x16, [x16, #2320]
 br x16
-.word 7707
+.word 7716
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_:
 _p_81:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2320]
+ldr x16, [x16, #2328]
 br x16
-.word 7718
+.word 7727
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_InvokeMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Collections_Generic_IEnumerable_1_System_Type_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 plt_Microsoft_CSharp_RuntimeBinder_Binder_InvokeMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Collections_Generic_IEnumerable_1_System_Type_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
 _p_82:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2328]
+ldr x16, [x16, #2336]
 br x16
-.word 7730
+.word 7739
 	.no_dead_strip plt_System_Collections_Generic_List_1_string_Add_string
 plt_System_Collections_Generic_List_1_string_Add_string:
 _p_83:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2336]
+ldr x16, [x16, #2344]
 br x16
-.word 7735
+.word 7744
 	.no_dead_strip plt_Xamarin_Forms_Label__ctor
 plt_Xamarin_Forms_Label__ctor:
 _p_84:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2344]
+ldr x16, [x16, #2352]
 br x16
-.word 7746
+.word 7755
 	.no_dead_strip plt_Xamarin_Forms_Label_set_Text_string
 plt_Xamarin_Forms_Label_set_Text_string:
 _p_85:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2352]
+ldr x16, [x16, #2360]
 br x16
-.word 7751
+.word 7760
 	.no_dead_strip plt_Xamarin_Forms_Label_set_TextColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_Label_set_TextColor_Xamarin_Forms_Color:
 _p_86:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2360]
+ldr x16, [x16, #2368]
 br x16
-.word 7756
+.word 7765
 	.no_dead_strip plt_Xamarin_Forms_Label_set_FontSize_double
 plt_Xamarin_Forms_Label_set_FontSize_double:
 _p_87:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2368]
+ldr x16, [x16, #2376]
 br x16
-.word 7761
+.word 7770
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color:
 _p_88:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2376]
+ldr x16, [x16, #2384]
 br x16
-.word 7766
+.word 7775
 	.no_dead_strip plt_Xamarin_Forms_Label_set_HorizontalTextAlignment_Xamarin_Forms_TextAlignment
 plt_Xamarin_Forms_Label_set_HorizontalTextAlignment_Xamarin_Forms_TextAlignment:
 _p_89:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2384]
+ldr x16, [x16, #2392]
 br x16
-.word 7771
+.word 7780
 	.no_dead_strip plt_Xamarin_Forms_Label_set_VerticalTextAlignment_Xamarin_Forms_TextAlignment
 plt_Xamarin_Forms_Label_set_VerticalTextAlignment_Xamarin_Forms_TextAlignment:
 _p_90:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2392]
+ldr x16, [x16, #2400]
 br x16
-.word 7776
+.word 7785
 	.no_dead_strip plt_Xamarin_Forms_View_set_HorizontalOptions_Xamarin_Forms_LayoutOptions
 plt_Xamarin_Forms_View_set_HorizontalOptions_Xamarin_Forms_LayoutOptions:
 _p_91:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2400]
+ldr x16, [x16, #2408]
 br x16
-.word 7781
+.word 7790
 	.no_dead_strip plt_Xamarin_Forms_Device_OnPlatform_string_string_string_string
 plt_Xamarin_Forms_Device_OnPlatform_string_string_string_string:
 _p_92:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2408]
+ldr x16, [x16, #2416]
 br x16
-.word 7786
+.word 7795
 	.no_dead_strip plt_Xamarin_Forms_Label_set_FontFamily_string
 plt_Xamarin_Forms_Label_set_FontFamily_string:
 _p_93:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2416]
+ldr x16, [x16, #2424]
 br x16
-.word 7798
+.word 7807
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_WidthRequest_double
 plt_Xamarin_Forms_VisualElement_set_WidthRequest_double:
 _p_94:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2424]
+ldr x16, [x16, #2432]
 br x16
-.word 7803
+.word 7812
 	.no_dead_strip plt_Xamarin_Forms_View_set_VerticalOptions_Xamarin_Forms_LayoutOptions
 plt_Xamarin_Forms_View_set_VerticalOptions_Xamarin_Forms_LayoutOptions:
 _p_95:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2432]
+ldr x16, [x16, #2440]
 br x16
-.word 7808
+.word 7817
 	.no_dead_strip plt_Xamarin_Forms_StackLayout__ctor
 plt_Xamarin_Forms_StackLayout__ctor:
 _p_96:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2440]
+ldr x16, [x16, #2448]
 br x16
-.word 7813
+.word 7822
 	.no_dead_strip plt_Xamarin_Forms_StackLayout_set_Spacing_double
 plt_Xamarin_Forms_StackLayout_set_Spacing_double:
 _p_97:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2448]
+ldr x16, [x16, #2456]
 br x16
-.word 7818
+.word 7827
 	.no_dead_strip plt_Xamarin_Forms_StackLayout_set_Orientation_Xamarin_Forms_StackOrientation
 plt_Xamarin_Forms_StackLayout_set_Orientation_Xamarin_Forms_StackOrientation:
 _p_98:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2456]
+ldr x16, [x16, #2464]
 br x16
-.word 7823
+.word 7832
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_HeightRequest_double
 plt_Xamarin_Forms_VisualElement_set_HeightRequest_double:
 _p_99:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2464]
+ldr x16, [x16, #2472]
 br x16
-.word 7828
+.word 7837
 	.no_dead_strip plt_AppAPITemplate_InfoPage_InfoPageLayoutChildren__ctor
 plt_AppAPITemplate_InfoPage_InfoPageLayoutChildren__ctor:
 _p_100:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2472]
+ldr x16, [x16, #2480]
 br x16
-.word 7833
+.word 7842
 	.no_dead_strip plt_AppAPITemplate_InfoPage_CallAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_InfoPage_CallAPI_AppAPITemplate_MenuItem:
 _p_101:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2480]
+ldr x16, [x16, #2488]
 br x16
-.word 7835
+.word 7844
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_string_GetAwaiter
 plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_string_GetAwaiter:
 _p_102:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2488]
+ldr x16, [x16, #2496]
 br x16
-.word 7837
+.word 7846
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string_AppAPITemplate_InfoPage__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string__AppAPITemplate_InfoPage__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string_AppAPITemplate_InfoPage__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string__AppAPITemplate_InfoPage__OnAppearingc__async0_:
 _p_103:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2496]
+ldr x16, [x16, #2504]
 br x16
-.word 7848
+.word 7857
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string_GetResult:
 _p_104:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2504]
+ldr x16, [x16, #2512]
 br x16
-.word 7860
+.word 7869
 	.no_dead_strip plt_System_Collections_Generic_List_1_string_get_Item_int
 plt_System_Collections_Generic_List_1_string_get_Item_int:
 _p_105:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2512]
+ldr x16, [x16, #2520]
 br x16
-.word 7871
+.word 7880
 	.no_dead_strip plt_AppAPITemplate_InfoPage_GetResponseFromAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_InfoPage_GetResponseFromAPI_AppAPITemplate_MenuItem:
 _p_106:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2520]
+ldr x16, [x16, #2528]
 br x16
-.word 7882
+.word 7891
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_InfoPage__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_InfoPage__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_InfoPage__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_InfoPage__CallAPIc__async1_:
 _p_107:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2528]
+ldr x16, [x16, #2536]
 br x16
-.word 7884
+.word 7893
 	.no_dead_strip plt_AppAPITemplate_InfoPage_ConstructList_string
 plt_AppAPITemplate_InfoPage_ConstructList_string:
 _p_108:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2536]
+ldr x16, [x16, #2544]
 br x16
-.word 7896
+.word 7905
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetException_System_Exception:
 _p_109:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2544]
+ldr x16, [x16, #2552]
 br x16
-.word 7898
+.word 7907
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetResult_System_Collections_Generic_List_1_string
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetResult_System_Collections_Generic_List_1_string:
 _p_110:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2552]
+ldr x16, [x16, #2560]
 br x16
-.word 7909
+.word 7918
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_111:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2560]
+ldr x16, [x16, #2568]
 br x16
-.word 7920
+.word 7929
 	.no_dead_strip plt_AppAPITemplate_InfoPage_ConstructQuery_AppAPITemplate_MenuItem
 plt_AppAPITemplate_InfoPage_ConstructQuery_AppAPITemplate_MenuItem:
 _p_112:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2568]
+ldr x16, [x16, #2576]
 br x16
-.word 7931
+.word 7940
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_:
 _p_113:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2576]
+ldr x16, [x16, #2584]
 br x16
-.word 7933
+.word 7942
 	.no_dead_strip plt_Xamarin_Forms_ViewCell__ctor
 plt_Xamarin_Forms_ViewCell__ctor:
 _p_114:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2584]
+ldr x16, [x16, #2592]
 br x16
-.word 7945
+.word 7954
 	.no_dead_strip plt_Xamarin_Forms_Label_set_FontAttributes_Xamarin_Forms_FontAttributes
 plt_Xamarin_Forms_Label_set_FontAttributes_Xamarin_Forms_FontAttributes:
 _p_115:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2592]
+ldr x16, [x16, #2600]
 br x16
-.word 7950
+.word 7959
 	.no_dead_strip plt_Xamarin_Forms_BindableObjectExtensions_SetBinding_Xamarin_Forms_BindableObject_Xamarin_Forms_BindableProperty_string_Xamarin_Forms_BindingMode_Xamarin_Forms_IValueConverter_string
 plt_Xamarin_Forms_BindableObjectExtensions_SetBinding_Xamarin_Forms_BindableObject_Xamarin_Forms_BindableProperty_string_Xamarin_Forms_BindingMode_Xamarin_Forms_IValueConverter_string:
 _p_116:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2600]
+ldr x16, [x16, #2608]
 br x16
-.word 7955
+.word 7964
 	.no_dead_strip plt_Xamarin_Forms_Thickness_op_Implicit_double
 plt_Xamarin_Forms_Thickness_op_Implicit_double:
 _p_117:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2608]
+ldr x16, [x16, #2616]
 br x16
-.word 7960
+.word 7969
 	.no_dead_strip plt_Xamarin_Forms_Layout_set_Padding_Xamarin_Forms_Thickness
 plt_Xamarin_Forms_Layout_set_Padding_Xamarin_Forms_Thickness:
 _p_118:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2616]
+ldr x16, [x16, #2624]
 br x16
-.word 7965
+.word 7974
 	.no_dead_strip plt_Xamarin_Forms_ViewCell_set_View_Xamarin_Forms_View
 plt_Xamarin_Forms_ViewCell_set_View_Xamarin_Forms_View:
 _p_119:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2624]
+ldr x16, [x16, #2632]
 br x16
-.word 7970
+.word 7979
 	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
 plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_120:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2632]
+ldr x16, [x16, #2640]
 br x16
-.word 7975
+.word 7984
 	.no_dead_strip plt__rgctx_fetch_0
 plt__rgctx_fetch_0:
 _p_121:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2640]
+ldr x16, [x16, #2648]
 br x16
-.word 8041
+.word 8050
 	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
 _p_122:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2648]
+ldr x16, [x16, #2656]
 br x16
-.word 8049
+.word 8058
 	.no_dead_strip plt__jit_icall_ves_icall_object_new_specific
 plt__jit_icall_ves_icall_object_new_specific:
 _p_123:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2656]
+ldr x16, [x16, #2664]
 br x16
-.word 8068
+.word 8077
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
 plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_124:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2664]
+ldr x16, [x16, #2672]
 br x16
-.word 8100
+.word 8109
 	.no_dead_strip plt__rgctx_fetch_1
 plt__rgctx_fetch_1:
 _p_125:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2672]
+ldr x16, [x16, #2680]
 br x16
-.word 8148
+.word 8157
 	.no_dead_strip plt_Locale_GetText_string
 plt_Locale_GetText_string:
 _p_126:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2680]
+ldr x16, [x16, #2688]
 br x16
-.word 8172
+.word 8181
 	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
 plt_System_Array_Copy_System_Array_int_System_Array_int_int:
 _p_127:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2688]
+ldr x16, [x16, #2696]
 br x16
-.word 8177
+.word 8186
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
 plt_System_Threading_Tasks_Task__ctor:
 _p_128:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2696]
+ldr x16, [x16, #2704]
 br x16
-.word 8182
+.word 8191
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
 plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_129:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2704]
+ldr x16, [x16, #2712]
 br x16
-.word 8187
+.word 8196
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_130:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2712]
+ldr x16, [x16, #2720]
 br x16
-.word 8192
+.word 8201
 	.no_dead_strip plt_System_Threading_Tasks_Task_InternalCurrentIfAttached_System_Threading_Tasks_TaskCreationOptions
 plt_System_Threading_Tasks_Task_InternalCurrentIfAttached_System_Threading_Tasks_TaskCreationOptions:
 _p_131:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2720]
+ldr x16, [x16, #2728]
 br x16
-.word 8197
+.word 8206
 	.no_dead_strip plt__rgctx_fetch_2
 plt__rgctx_fetch_2:
 _p_132:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2728]
+ldr x16, [x16, #2736]
 br x16
-.word 8220
+.word 8229
 	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_
 plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_:
 _p_133:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2736]
+ldr x16, [x16, #2744]
 br x16
-.word 8243
+.word 8252
 	.no_dead_strip plt__rgctx_fetch_3
 plt__rgctx_fetch_3:
 _p_134:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2744]
+ldr x16, [x16, #2752]
 br x16
-.word 8266
+.word 8275
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_135:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2752]
+ldr x16, [x16, #2760]
 br x16
-.word 8289
+.word 8298
 	.no_dead_strip plt_System_Environment_GetResourceString_string
 plt_System_Environment_GetResourceString_string:
 _p_136:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2760]
+ldr x16, [x16, #2768]
 br x16
-.word 8294
+.word 8303
 	.no_dead_strip plt__rgctx_fetch_4
 plt__rgctx_fetch_4:
 _p_137:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2768]
+ldr x16, [x16, #2776]
 br x16
-.word 8317
+.word 8326
 	.no_dead_strip plt__rgctx_fetch_5
 plt__rgctx_fetch_5:
 _p_138:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2776]
+ldr x16, [x16, #2784]
 br x16
-.word 8325
+.word 8334
 	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
 plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
 _p_139:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2784]
+ldr x16, [x16, #2792]
 br x16
-.word 8348
+.word 8357
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsCompleted
 plt_System_Threading_Tasks_Task_get_IsCompleted:
 _p_140:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2792]
+ldr x16, [x16, #2800]
 br x16
-.word 8353
+.word 8362
 	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
 plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
 _p_141:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2800]
+ldr x16, [x16, #2808]
 br x16
-.word 8358
+.word 8367
 	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
 plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
 _p_142:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2808]
+ldr x16, [x16, #2816]
 br x16
-.word 8363
+.word 8372
 	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
 plt_System_Threading_Tasks_Task_FinishStageThree:
 _p_143:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2816]
+ldr x16, [x16, #2824]
 br x16
-.word 8368
+.word 8377
 	.no_dead_strip plt__rgctx_fetch_6
 plt__rgctx_fetch_6:
 _p_144:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2824]
+ldr x16, [x16, #2832]
 br x16
-.word 8391
+.word 8400
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsWaitNotificationEnabledOrNotRanToCompletion
 plt_System_Threading_Tasks_Task_get_IsWaitNotificationEnabledOrNotRanToCompletion:
 _p_145:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2832]
+ldr x16, [x16, #2840]
 br x16
-.word 8414
+.word 8423
 	.no_dead_strip plt__rgctx_fetch_7
 plt__rgctx_fetch_7:
 _p_146:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2840]
+ldr x16, [x16, #2848]
 br x16
-.word 8437
+.word 8446
 	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
 _p_147:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2848]
+ldr x16, [x16, #2856]
 br x16
-.word 8460
+.word 8469
 	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
 plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
 _p_148:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2856]
+ldr x16, [x16, #2864]
 br x16
-.word 8465
+.word 8474
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsRanToCompletion
 plt_System_Threading_Tasks_Task_get_IsRanToCompletion:
 _p_149:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2864]
+ldr x16, [x16, #2872]
 br x16
-.word 8470
+.word 8479
 	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
 plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
 _p_150:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2872]
+ldr x16, [x16, #2880]
 br x16
-.word 8475
+.word 8484
 	.no_dead_strip plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool
 plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool:
 _p_151:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2880]
+ldr x16, [x16, #2888]
 br x16
-.word 8480
+.word 8489
 	.no_dead_strip plt_System_Threading_Tasks_Task_AddException_object
 plt_System_Threading_Tasks_Task_AddException_object:
 _p_152:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2888]
+ldr x16, [x16, #2896]
 br x16
-.word 8485
+.word 8494
 	.no_dead_strip plt_System_Threading_Tasks_Task_Finish_bool
 plt_System_Threading_Tasks_Task_Finish_bool:
 _p_153:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2896]
+ldr x16, [x16, #2904]
 br x16
-.word 8490
+.word 8499
 	.no_dead_strip plt__rgctx_fetch_8
 plt__rgctx_fetch_8:
 _p_154:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2904]
+ldr x16, [x16, #2912]
 br x16
-.word 8513
+.word 8522
 	.no_dead_strip plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object
 plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object:
 _p_155:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2912]
+ldr x16, [x16, #2920]
 br x16
-.word 8536
+.word 8545
 	.no_dead_strip plt_System_Threading_Tasks_Task_CancellationCleanupLogic
 plt_System_Threading_Tasks_Task_CancellationCleanupLogic:
 _p_156:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2920]
+ldr x16, [x16, #2928]
 br x16
-.word 8541
+.word 8550
 	.no_dead_strip plt__rgctx_fetch_9
 plt__rgctx_fetch_9:
 _p_157:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2928]
+ldr x16, [x16, #2936]
 br x16
-.word 8564
+.word 8573
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_158:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2936]
+ldr x16, [x16, #2944]
 br x16
-.word 8572
+.word 8581
 	.no_dead_strip plt__rgctx_fetch_10
 plt__rgctx_fetch_10:
 _p_159:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2944]
+ldr x16, [x16, #2952]
 br x16
-.word 8598
+.word 8607
 	.no_dead_strip plt__rgctx_fetch_11
 plt__rgctx_fetch_11:
 _p_160:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2952]
+ldr x16, [x16, #2960]
 br x16
-.word 8632
+.word 8641
 	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
 plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
 _p_161:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2960]
+ldr x16, [x16, #2968]
 br x16
-.word 8640
+.word 8649
 	.no_dead_strip plt__rgctx_fetch_12
 plt__rgctx_fetch_12:
 _p_162:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2968]
+ldr x16, [x16, #2976]
 br x16
-.word 8660
+.word 8669
 	.no_dead_strip plt__rgctx_fetch_13
 plt__rgctx_fetch_13:
 _p_163:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2976]
+ldr x16, [x16, #2984]
 br x16
-.word 8695
+.word 8704
 	.no_dead_strip plt__rgctx_fetch_14
 plt__rgctx_fetch_14:
 _p_164:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2984]
+ldr x16, [x16, #2992]
 br x16
-.word 8703
+.word 8712
 	.no_dead_strip plt__rgctx_fetch_15
 plt__rgctx_fetch_15:
 _p_165:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #2992]
+ldr x16, [x16, #3000]
 br x16
-.word 8753
+.word 8762
 	.no_dead_strip plt__rgctx_fetch_16
 plt__rgctx_fetch_16:
 _p_166:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3000]
+ldr x16, [x16, #3008]
 br x16
-.word 8761
+.word 8770
 	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
 plt_System_Threading_Tasks_TaskScheduler_get_Current:
 _p_167:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3008]
+ldr x16, [x16, #3016]
 br x16
-.word 8784
+.word 8793
 	.no_dead_strip plt__rgctx_fetch_17
 plt__rgctx_fetch_17:
 _p_168:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3016]
+ldr x16, [x16, #3024]
 br x16
-.word 8807
+.word 8816
 	.no_dead_strip plt__rgctx_fetch_18
 plt__rgctx_fetch_18:
 _p_169:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3024]
+ldr x16, [x16, #3032]
 br x16
-.word 8848
+.word 8857
 	.no_dead_strip plt__rgctx_fetch_19
 plt__rgctx_fetch_19:
 _p_170:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3032]
+ldr x16, [x16, #3040]
 br x16
-.word 8889
+.word 8898
 	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
 plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
 _p_171:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3040]
+ldr x16, [x16, #3048]
 br x16
-.word 8912
+.word 8921
 	.no_dead_strip plt__rgctx_fetch_20
 plt__rgctx_fetch_20:
 _p_172:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3048]
+ldr x16, [x16, #3056]
 br x16
-.word 8944
+.word 8953
 	.no_dead_strip plt__rgctx_fetch_21
 plt__rgctx_fetch_21:
 _p_173:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3056]
+ldr x16, [x16, #3064]
 br x16
-.word 8952
+.word 8961
 	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
 plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_174:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3064]
+ldr x16, [x16, #3072]
 br x16
-.word 8975
+.word 8984
 	.no_dead_strip plt__rgctx_fetch_22
 plt__rgctx_fetch_22:
 _p_175:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3072]
+ldr x16, [x16, #3080]
 br x16
-.word 9007
+.word 9016
 	.no_dead_strip plt__rgctx_fetch_23
 plt__rgctx_fetch_23:
 _p_176:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3080]
+ldr x16, [x16, #3088]
 br x16
-.word 9015
+.word 9024
 	.no_dead_strip plt__rgctx_fetch_24
 plt__rgctx_fetch_24:
 _p_177:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3088]
+ldr x16, [x16, #3096]
 br x16
-.word 9038
+.word 9047
 	.no_dead_strip plt__rgctx_fetch_25
 plt__rgctx_fetch_25:
 _p_178:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3096]
+ldr x16, [x16, #3104]
 br x16
-.word 9046
+.word 9055
 	.no_dead_strip plt__jit_icall_mono_ldftn
 plt__jit_icall_mono_ldftn:
 _p_179:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3104]
+ldr x16, [x16, #3112]
 br x16
-.word 9069
+.word 9078
 	.no_dead_strip plt__rgctx_fetch_26
 plt__rgctx_fetch_26:
 _p_180:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3112]
+ldr x16, [x16, #3120]
 br x16
-.word 9093
+.word 9102
 	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr
 plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr:
 _p_181:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3120]
+ldr x16, [x16, #3128]
 br x16
-.word 9101
+.word 9110
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result:
 _p_182:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3128]
+ldr x16, [x16, #3136]
 br x16
-.word 9123
+.word 9132
 	.no_dead_strip plt__rgctx_fetch_27
 plt__rgctx_fetch_27:
 _p_183:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3136]
+ldr x16, [x16, #3144]
 br x16
-.word 9161
+.word 9170
 	.no_dead_strip plt__rgctx_fetch_28
 plt__rgctx_fetch_28:
 _p_184:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3144]
+ldr x16, [x16, #3152]
 br x16
-.word 9187
+.word 9196
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
 plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
 _p_185:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3152]
+ldr x16, [x16, #3160]
 br x16
-.word 9210
+.word 9219
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions
 plt_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions:
 _p_186:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3160]
+ldr x16, [x16, #3168]
 br x16
-.word 9215
+.word 9224
 	.no_dead_strip plt_System_OperationCanceledException_get_CancellationToken
 plt_System_OperationCanceledException_get_CancellationToken:
 _p_187:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3168]
+ldr x16, [x16, #3176]
 br x16
-.word 9220
+.word 9229
 	.no_dead_strip plt__rgctx_fetch_29
 plt__rgctx_fetch_29:
 _p_188:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3176]
+ldr x16, [x16, #3184]
 br x16
-.word 9252
+.word 9261
 	.no_dead_strip plt__rgctx_fetch_30
 plt__rgctx_fetch_30:
 _p_189:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3184]
+ldr x16, [x16, #3192]
 br x16
-.word 9260
+.word 9269
 	.no_dead_strip plt__rgctx_fetch_31
 plt__rgctx_fetch_31:
 _p_190:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3192]
+ldr x16, [x16, #3200]
 br x16
-.word 9283
+.word 9292
 	.no_dead_strip plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool
 plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool:
 _p_191:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3200]
+ldr x16, [x16, #3208]
 br x16
-.word 9306
+.word 9315
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
 plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
 _p_192:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3208]
+ldr x16, [x16, #3216]
 br x16
-.word 9311
+.word 9320
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
 plt_System_Threading_Tasks_Task_get_Id:
 _p_193:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3216]
+ldr x16, [x16, #3224]
 br x16
-.word 9316
+.word 9325
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
 plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
 _p_194:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3224]
+ldr x16, [x16, #3232]
 br x16
-.word 9321
+.word 9330
 	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
 plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
 _p_195:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3232]
+ldr x16, [x16, #3240]
 br x16
-.word 9326
+.word 9335
 	.no_dead_strip plt__rgctx_fetch_32
 plt__rgctx_fetch_32:
 _p_196:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3240]
+ldr x16, [x16, #3248]
 br x16
-.word 9331
+.word 9340
 	.no_dead_strip plt__rgctx_fetch_33
 plt__rgctx_fetch_33:
 _p_197:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3248]
+ldr x16, [x16, #3256]
 br x16
-.word 9354
+.word 9363
 	.no_dead_strip plt__rgctx_fetch_34
 plt__rgctx_fetch_34:
 _p_198:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3256]
+ldr x16, [x16, #3264]
 br x16
-.word 9395
+.word 9404
 	.no_dead_strip plt__rgctx_fetch_35
 plt__rgctx_fetch_35:
 _p_199:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3264]
+ldr x16, [x16, #3272]
 br x16
-.word 9403
+.word 9412
 	.no_dead_strip plt__rgctx_fetch_36
 plt__rgctx_fetch_36:
 _p_200:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3272]
+ldr x16, [x16, #3280]
 br x16
-.word 9453
+.word 9462
 	.no_dead_strip plt__rgctx_fetch_37
 plt__rgctx_fetch_37:
 _p_201:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3280]
+ldr x16, [x16, #3288]
 br x16
-.word 9461
+.word 9470
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
 plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_202:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3288]
+ldr x16, [x16, #3296]
 br x16
-.word 9484
+.word 9493
 	.no_dead_strip plt__rgctx_fetch_38
 plt__rgctx_fetch_38:
 _p_203:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3296]
+ldr x16, [x16, #3304]
 br x16
-.word 9489
+.word 9498
 	.no_dead_strip plt__rgctx_fetch_39
 plt__rgctx_fetch_39:
 _p_204:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3304]
+ldr x16, [x16, #3312]
 br x16
-.word 9497
+.word 9506
 	.no_dead_strip plt_System_Delegate_get_Method
 plt_System_Delegate_get_Method:
 _p_205:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3312]
+ldr x16, [x16, #3320]
 br x16
-.word 9520
+.word 9529
 	.no_dead_strip plt_string_Concat_string_string
 plt_string_Concat_string_string:
 _p_206:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3320]
+ldr x16, [x16, #3328]
 br x16
-.word 9525
+.word 9534
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
 plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
 _p_207:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3328]
+ldr x16, [x16, #3336]
 br x16
-.word 9530
+.word 9539
 	.no_dead_strip plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task
 plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task:
 _p_208:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3336]
+ldr x16, [x16, #3344]
 br x16
-.word 9535
+.word 9544
 	.no_dead_strip plt_System_Runtime_Versioning_BinaryCompatibility_get_TargetsAtLeast_Desktop_V4_5
 plt_System_Runtime_Versioning_BinaryCompatibility_get_TargetsAtLeast_Desktop_V4_5:
 _p_209:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3344]
+ldr x16, [x16, #3352]
 br x16
-.word 9540
+.word 9549
 	.no_dead_strip plt__rgctx_fetch_40
 plt__rgctx_fetch_40:
 _p_210:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3352]
+ldr x16, [x16, #3360]
 br x16
-.word 9554
+.word 9563
 	.no_dead_strip plt__rgctx_fetch_41
 plt__rgctx_fetch_41:
 _p_211:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3360]
+ldr x16, [x16, #3368]
 br x16
-.word 9562
+.word 9571
 	.no_dead_strip plt_System_Threading_AtomicBoolean__ctor
 plt_System_Threading_AtomicBoolean__ctor:
 _p_212:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3368]
+ldr x16, [x16, #3376]
 br x16
-.word 9585
+.word 9594
 	.no_dead_strip plt__rgctx_fetch_42
 plt__rgctx_fetch_42:
 _p_213:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3376]
+ldr x16, [x16, #3384]
 br x16
-.word 9590
+.word 9599
 	.no_dead_strip plt__rgctx_fetch_43
 plt__rgctx_fetch_43:
 _p_214:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3384]
+ldr x16, [x16, #3392]
 br x16
-.word 9613
+.word 9622
 	.no_dead_strip plt_System_Threading_AtomicBoolean_TryRelaxedSet
 plt_System_Threading_AtomicBoolean_TryRelaxedSet:
 _p_215:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3392]
+ldr x16, [x16, #3400]
 br x16
-.word 9636
+.word 9645
 	.no_dead_strip plt__rgctx_fetch_44
 plt__rgctx_fetch_44:
 _p_216:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3400]
+ldr x16, [x16, #3408]
 br x16
-.word 9641
+.word 9650
 	.no_dead_strip plt__rgctx_fetch_45
 plt__rgctx_fetch_45:
 _p_217:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3408]
+ldr x16, [x16, #3416]
 br x16
-.word 9649
+.word 9658
 	.no_dead_strip plt__rgctx_fetch_46
 plt__rgctx_fetch_46:
 _p_218:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3416]
+ldr x16, [x16, #3424]
 br x16
-.word 9672
+.word 9681
 	.no_dead_strip plt__rgctx_fetch_47
 plt__rgctx_fetch_47:
 _p_219:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3424]
+ldr x16, [x16, #3432]
 br x16
-.word 9695
+.word 9704
 	.no_dead_strip plt__rgctx_fetch_48
 plt__rgctx_fetch_48:
 _p_220:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3432]
+ldr x16, [x16, #3440]
 br x16
-.word 9718
+.word 9727
 	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
 plt__jit_icall_mono_arch_rethrow_exception:
 _p_221:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3440]
+ldr x16, [x16, #3448]
 br x16
-.word 9741
+.word 9750
 	.no_dead_strip plt__rgctx_fetch_49
 plt__rgctx_fetch_49:
 _p_222:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3448]
+ldr x16, [x16, #3456]
 br x16
-.word 9789
+.word 9798
 	.no_dead_strip plt__rgctx_fetch_50
 plt__rgctx_fetch_50:
 _p_223:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3456]
+ldr x16, [x16, #3464]
 br x16
-.word 9830
+.word 9839
 	.no_dead_strip plt__rgctx_fetch_51
 plt__rgctx_fetch_51:
 _p_224:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3464]
+ldr x16, [x16, #3472]
 br x16
-.word 9871
+.word 9880
 	.no_dead_strip plt__rgctx_fetch_52
 plt__rgctx_fetch_52:
 _p_225:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3472]
+ldr x16, [x16, #3480]
 br x16
-.word 9879
+.word 9888
 	.no_dead_strip plt__rgctx_fetch_53
 plt__rgctx_fetch_53:
 _p_226:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3480]
+ldr x16, [x16, #3488]
 br x16
-.word 9920
+.word 9929
 	.no_dead_strip plt__rgctx_fetch_54
 plt__rgctx_fetch_54:
 _p_227:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3488]
+ldr x16, [x16, #3496]
 br x16
-.word 9961
+.word 9970
 	.no_dead_strip plt__rgctx_fetch_55
 plt__rgctx_fetch_55:
 _p_228:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3496]
+ldr x16, [x16, #3504]
 br x16
-.word 10002
+.word 10011
 	.no_dead_strip plt__rgctx_fetch_56
 plt__rgctx_fetch_56:
 _p_229:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3504]
+ldr x16, [x16, #3512]
 br x16
-.word 10043
+.word 10052
 	.no_dead_strip plt__rgctx_fetch_57
 plt__rgctx_fetch_57:
 _p_230:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3512]
+ldr x16, [x16, #3520]
 br x16
-.word 10051
+.word 10060
 	.no_dead_strip plt__rgctx_fetch_58
 plt__rgctx_fetch_58:
 _p_231:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3520]
+ldr x16, [x16, #3528]
 br x16
-.word 10085
+.word 10094
 	.no_dead_strip plt__rgctx_fetch_59
 plt__rgctx_fetch_59:
 _p_232:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3528]
+ldr x16, [x16, #3536]
 br x16
-.word 10105
+.word 10114
 	.no_dead_strip plt__rgctx_fetch_60
 plt__rgctx_fetch_60:
 _p_233:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3536]
+ldr x16, [x16, #3544]
 br x16
-.word 10140
+.word 10149
 	.no_dead_strip plt__rgctx_fetch_61
 plt__rgctx_fetch_61:
 _p_234:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3544]
+ldr x16, [x16, #3552]
 br x16
-.word 10148
+.word 10157
 	.no_dead_strip plt__rgctx_fetch_62
 plt__rgctx_fetch_62:
 _p_235:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3552]
+ldr x16, [x16, #3560]
 br x16
-.word 10198
+.word 10207
 	.no_dead_strip plt__rgctx_fetch_63
 plt__rgctx_fetch_63:
 _p_236:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3560]
+ldr x16, [x16, #3568]
 br x16
-.word 10206
+.word 10215
 	.no_dead_strip plt__rgctx_fetch_64
 plt__rgctx_fetch_64:
 _p_237:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3568]
+ldr x16, [x16, #3576]
 br x16
-.word 10247
+.word 10256
 	.no_dead_strip plt__rgctx_fetch_65
 plt__rgctx_fetch_65:
 _p_238:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3576]
+ldr x16, [x16, #3584]
 br x16
-.word 10288
+.word 10297
 	.no_dead_strip plt__rgctx_fetch_66
 plt__rgctx_fetch_66:
 _p_239:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3584]
+ldr x16, [x16, #3592]
 br x16
-.word 10329
+.word 10338
 	.no_dead_strip plt__rgctx_fetch_67
 plt__rgctx_fetch_67:
 _p_240:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3592]
+ldr x16, [x16, #3600]
 br x16
-.word 10379
+.word 10388
 	.no_dead_strip plt__rgctx_fetch_68
 plt__rgctx_fetch_68:
 _p_241:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3600]
+ldr x16, [x16, #3608]
 br x16
-.word 10387
+.word 10396
 	.no_dead_strip plt__rgctx_fetch_69
 plt__rgctx_fetch_69:
 _p_242:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3608]
+ldr x16, [x16, #3616]
 br x16
-.word 10437
+.word 10446
 	.no_dead_strip plt__rgctx_fetch_70
 plt__rgctx_fetch_70:
 _p_243:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3616]
+ldr x16, [x16, #3624]
 br x16
-.word 10445
+.word 10454
 	.no_dead_strip plt__rgctx_fetch_71
 plt__rgctx_fetch_71:
 _p_244:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3624]
+ldr x16, [x16, #3632]
 br x16
-.word 10468
+.word 10477
 	.no_dead_strip plt__rgctx_fetch_72
 plt__rgctx_fetch_72:
 _p_245:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3632]
+ldr x16, [x16, #3640]
 br x16
-.word 10476
+.word 10485
 	.no_dead_strip plt__rgctx_fetch_73
 plt__rgctx_fetch_73:
 _p_246:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3640]
+ldr x16, [x16, #3648]
 br x16
-.word 10510
+.word 10519
 	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr
 plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr:
 _p_247:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3648]
+ldr x16, [x16, #3656]
 br x16
-.word 10518
+.word 10527
 	.no_dead_strip plt__rgctx_fetch_74
 plt__rgctx_fetch_74:
 _p_248:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3656]
+ldr x16, [x16, #3664]
 br x16
-.word 10558
+.word 10567
 	.no_dead_strip plt__rgctx_fetch_75
 plt__rgctx_fetch_75:
 _p_249:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3664]
+ldr x16, [x16, #3672]
 br x16
-.word 10584
+.word 10593
 	.no_dead_strip plt__rgctx_fetch_76
 plt__rgctx_fetch_76:
 _p_250:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3672]
+ldr x16, [x16, #3680]
 br x16
-.word 10634
+.word 10643
 	.no_dead_strip plt__rgctx_fetch_77
 plt__rgctx_fetch_77:
 _p_251:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3680]
+ldr x16, [x16, #3688]
 br x16
-.word 10642
+.word 10651
 	.no_dead_strip plt__rgctx_fetch_78
 plt__rgctx_fetch_78:
 _p_252:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3688]
+ldr x16, [x16, #3696]
 br x16
-.word 10665
+.word 10674
 	.no_dead_strip plt__rgctx_fetch_79
 plt__rgctx_fetch_79:
 _p_253:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3696]
+ldr x16, [x16, #3704]
 br x16
-.word 10688
+.word 10697
 	.no_dead_strip plt__rgctx_fetch_80
 plt__rgctx_fetch_80:
 _p_254:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3704]
+ldr x16, [x16, #3712]
 br x16
-.word 10711
+.word 10720
 	.no_dead_strip plt__rgctx_fetch_81
 plt__rgctx_fetch_81:
 _p_255:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3712]
+ldr x16, [x16, #3720]
 br x16
-.word 10752
+.word 10761
 	.no_dead_strip plt__rgctx_fetch_82
 plt__rgctx_fetch_82:
 _p_256:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3720]
+ldr x16, [x16, #3728]
 br x16
-.word 10760
+.word 10769
 	.no_dead_strip plt__rgctx_fetch_83
 plt__rgctx_fetch_83:
 _p_257:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3728]
+ldr x16, [x16, #3736]
 br x16
-.word 10810
+.word 10819
 	.no_dead_strip plt__rgctx_fetch_84
 plt__rgctx_fetch_84:
 _p_258:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3736]
+ldr x16, [x16, #3744]
 br x16
-.word 10818
+.word 10827
 	.no_dead_strip plt__rgctx_fetch_85
 plt__rgctx_fetch_85:
 _p_259:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3744]
+ldr x16, [x16, #3752]
 br x16
-.word 10841
+.word 10850
 	.no_dead_strip plt__rgctx_fetch_86
 plt__rgctx_fetch_86:
 _p_260:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3752]
+ldr x16, [x16, #3760]
 br x16
-.word 10849
+.word 10858
 	.no_dead_strip plt__rgctx_fetch_87
 plt__rgctx_fetch_87:
 _p_261:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3760]
+ldr x16, [x16, #3768]
 br x16
-.word 10881
+.word 10890
 	.no_dead_strip plt__rgctx_fetch_88
 plt__rgctx_fetch_88:
 _p_262:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3768]
+ldr x16, [x16, #3776]
 br x16
-.word 10889
+.word 10898
 	.no_dead_strip plt__rgctx_fetch_89
 plt__rgctx_fetch_89:
 _p_263:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3776]
+ldr x16, [x16, #3784]
 br x16
-.word 10912
+.word 10921
 	.no_dead_strip plt__rgctx_fetch_90
 plt__rgctx_fetch_90:
 _p_264:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3784]
+ldr x16, [x16, #3792]
 br x16
-.word 10935
+.word 10944
 	.no_dead_strip plt__rgctx_fetch_91
 plt__rgctx_fetch_91:
 _p_265:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3792]
+ldr x16, [x16, #3800]
 br x16
-.word 10958
+.word 10967
 	.no_dead_strip plt__rgctx_fetch_92
 plt__rgctx_fetch_92:
 _p_266:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3800]
+ldr x16, [x16, #3808]
 br x16
-.word 10966
+.word 10975
 	.no_dead_strip plt__rgctx_fetch_93
 plt__rgctx_fetch_93:
 _p_267:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3808]
+ldr x16, [x16, #3816]
 br x16
-.word 10989
+.word 10998
 	.no_dead_strip plt__rgctx_fetch_94
 plt__rgctx_fetch_94:
 _p_268:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3816]
+ldr x16, [x16, #3824]
 br x16
-.word 11012
+.word 11021
 	.no_dead_strip plt__rgctx_fetch_95
 plt__rgctx_fetch_95:
 _p_269:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3824]
+ldr x16, [x16, #3832]
 br x16
-.word 11035
+.word 11044
 	.no_dead_strip plt__rgctx_fetch_96
 plt__rgctx_fetch_96:
 _p_270:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3832]
+ldr x16, [x16, #3840]
 br x16
-.word 11077
+.word 11086
 	.no_dead_strip plt__rgctx_fetch_97
 plt__rgctx_fetch_97:
 _p_271:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3840]
+ldr x16, [x16, #3848]
 br x16
-.word 11120
+.word 11129
 	.no_dead_strip plt__rgctx_fetch_98
 plt__rgctx_fetch_98:
 _p_272:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3848]
+ldr x16, [x16, #3856]
 br x16
-.word 11163
+.word 11172
 	.no_dead_strip plt__rgctx_fetch_99
 plt__rgctx_fetch_99:
 _p_273:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3856]
+ldr x16, [x16, #3864]
 br x16
-.word 11205
+.word 11214
 	.no_dead_strip plt__rgctx_fetch_100
 plt__rgctx_fetch_100:
 _p_274:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3864]
+ldr x16, [x16, #3872]
 br x16
-.word 11229
+.word 11238
 	.no_dead_strip plt__rgctx_fetch_101
 plt__rgctx_fetch_101:
 _p_275:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3872]
+ldr x16, [x16, #3880]
 br x16
-.word 11271
+.word 11280
 	.no_dead_strip plt__rgctx_fetch_102
 plt__rgctx_fetch_102:
 _p_276:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3880]
+ldr x16, [x16, #3888]
 br x16
-.word 11279
+.word 11288
 	.no_dead_strip plt__rgctx_fetch_103
 plt__rgctx_fetch_103:
 _p_277:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3888]
+ldr x16, [x16, #3896]
 br x16
-.word 11302
+.word 11311
 	.no_dead_strip plt__rgctx_fetch_104
 plt__rgctx_fetch_104:
 _p_278:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3896]
+ldr x16, [x16, #3904]
 br x16
-.word 11338
+.word 11347
 	.no_dead_strip plt__rgctx_fetch_105
 plt__rgctx_fetch_105:
 _p_279:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3904]
+ldr x16, [x16, #3912]
 br x16
-.word 11346
+.word 11355
 	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_object_get_Default
 plt_System_Collections_Generic_EqualityComparer_1_object_get_Default:
 _p_280:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3912]
+ldr x16, [x16, #3920]
 br x16
-.word 11369
+.word 11378
 	.no_dead_strip plt__rgctx_fetch_106
 plt__rgctx_fetch_106:
 _p_281:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3920]
+ldr x16, [x16, #3928]
 br x16
-.word 11410
+.word 11419
 	.no_dead_strip plt__rgctx_fetch_107
 plt__rgctx_fetch_107:
 _p_282:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3928]
+ldr x16, [x16, #3936]
 br x16
-.word 11418
+.word 11427
 	.no_dead_strip plt__rgctx_fetch_108
 plt__rgctx_fetch_108:
 _p_283:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3936]
+ldr x16, [x16, #3944]
 br x16
-.word 11426
+.word 11435
 	.no_dead_strip plt_System_Collections_Generic_Comparer_1_object_get_Default
 plt_System_Collections_Generic_Comparer_1_object_get_Default:
 _p_284:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3944]
+ldr x16, [x16, #3952]
 br x16
-.word 11434
+.word 11443
 	.no_dead_strip plt__rgctx_fetch_109
 plt__rgctx_fetch_109:
 _p_285:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3952]
+ldr x16, [x16, #3960]
 br x16
-.word 11475
+.word 11484
 	.no_dead_strip plt__rgctx_fetch_110
 plt__rgctx_fetch_110:
 _p_286:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3960]
+ldr x16, [x16, #3968]
 br x16
-.word 11483
+.word 11492
 	.no_dead_strip plt__rgctx_fetch_111
 plt__rgctx_fetch_111:
 _p_287:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3968]
+ldr x16, [x16, #3976]
 br x16
-.word 11491
+.word 11500
 	.no_dead_strip plt_System_Environment_GetResourceString_string_object__
 plt_System_Environment_GetResourceString_string_object__:
 _p_288:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3976]
+ldr x16, [x16, #3984]
 br x16
-.word 11499
+.word 11508
 	.no_dead_strip plt__rgctx_fetch_112
 plt__rgctx_fetch_112:
 _p_289:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3984]
+ldr x16, [x16, #3992]
 br x16
-.word 11525
+.word 11534
 	.no_dead_strip plt__rgctx_fetch_113
 plt__rgctx_fetch_113:
 _p_290:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #3992]
+ldr x16, [x16, #4000]
 br x16
-.word 11533
+.word 11542
 	.no_dead_strip plt_System_Tuple_CombineHashCodes_int_int
 plt_System_Tuple_CombineHashCodes_int_int:
 _p_291:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4000]
+ldr x16, [x16, #4008]
 br x16
-.word 11541
+.word 11550
 	.no_dead_strip plt_System_Text_StringBuilder__ctor
 plt_System_Text_StringBuilder__ctor:
 _p_292:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4008]
+ldr x16, [x16, #4016]
 br x16
-.word 11546
+.word 11555
 	.no_dead_strip plt_System_Text_StringBuilder_Append_string
 plt_System_Text_StringBuilder_Append_string:
 _p_293:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4016]
+ldr x16, [x16, #4024]
 br x16
-.word 11551
+.word 11560
 	.no_dead_strip plt__rgctx_fetch_114
 plt__rgctx_fetch_114:
 _p_294:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4024]
+ldr x16, [x16, #4032]
 br x16
-.word 11577
+.word 11586
 	.no_dead_strip plt_System_Text_StringBuilder_Append_object
 plt_System_Text_StringBuilder_Append_object:
 _p_295:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4032]
+ldr x16, [x16, #4040]
 br x16
-.word 11585
+.word 11594
 	.no_dead_strip plt__rgctx_fetch_115
 plt__rgctx_fetch_115:
 _p_296:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4040]
+ldr x16, [x16, #4048]
 br x16
-.word 11590
+.word 11599
 	.no_dead_strip plt__rgctx_fetch_116
 plt__rgctx_fetch_116:
 _p_297:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4048]
+ldr x16, [x16, #4056]
 br x16
-.word 11617
+.word 11626
 	.no_dead_strip plt__rgctx_fetch_117
 plt__rgctx_fetch_117:
 _p_298:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4056]
+ldr x16, [x16, #4064]
 br x16
-.word 11641
+.word 11650
 	.no_dead_strip plt__rgctx_fetch_118
 plt__rgctx_fetch_118:
 _p_299:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4064]
+ldr x16, [x16, #4072]
 br x16
-.word 11649
+.word 11658
 	.no_dead_strip plt__rgctx_fetch_119
 plt__rgctx_fetch_119:
 _p_300:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4072]
+ldr x16, [x16, #4080]
 br x16
-.word 11663
+.word 11672
 	.no_dead_strip plt__rgctx_fetch_120
 plt__rgctx_fetch_120:
 _p_301:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4080]
+ldr x16, [x16, #4088]
 br x16
-.word 11696
+.word 11705
 	.no_dead_strip plt__rgctx_fetch_121
 plt__rgctx_fetch_121:
 _p_302:
-adrp x16, mono_aot_AppAPITemplate_got@PAGE+0
+adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #4088]
+ldr x16, [x16, #0]
 br x16
-.word 11743
+.word 11752
 	.no_dead_strip plt__rgctx_fetch_122
 plt__rgctx_fetch_122:
 _p_303:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #0]
+ldr x16, [x16, #8]
 br x16
-.word 11751
+.word 11760
 	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
 plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
 _p_304:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #8]
+ldr x16, [x16, #16]
 br x16
-.word 11759
+.word 11768
 	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
 plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
 _p_305:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #16]
+ldr x16, [x16, #24]
 br x16
-.word 11764
+.word 11773
 	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
 plt__jit_icall_mono_gsharedvt_constrained_call:
 _p_306:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #24]
+ldr x16, [x16, #32]
 br x16
-.word 11769
+.word 11778
 	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
 plt_System_Threading_ExecutionContextSwitcher_Undo:
 _p_307:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #32]
+ldr x16, [x16, #40]
 br x16
-.word 11803
+.word 11812
 	.no_dead_strip plt_AppAPITemplate_FirstMenu__CallAPIc__async1_MoveNext
 plt_AppAPITemplate_FirstMenu__CallAPIc__async1_MoveNext:
 _p_308:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #40]
+ldr x16, [x16, #48]
 br x16
-.word 11808
+.word 11817
 	.no_dead_strip plt_string_memcpy_byte__byte__int
 plt_string_memcpy_byte__byte__int:
 _p_309:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #48]
+ldr x16, [x16, #56]
 br x16
-.word 11810
+.word 11819
 	.no_dead_strip plt_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_MoveNext
 plt_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_MoveNext:
 _p_310:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #56]
+ldr x16, [x16, #64]
 br x16
-.word 11815
+.word 11824
 	.no_dead_strip plt__rgctx_fetch_123
 plt__rgctx_fetch_123:
 _p_311:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #64]
+ldr x16, [x16, #72]
 br x16
-.word 11839
+.word 11848
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
 _p_312:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #72]
+ldr x16, [x16, #80]
 br x16
-.word 11889
+.word 11898
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
 _p_313:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #80]
+ldr x16, [x16, #88]
 br x16
-.word 11894
+.word 11903
 	.no_dead_strip plt__rgctx_fetch_124
 plt__rgctx_fetch_124:
 _p_314:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #88]
+ldr x16, [x16, #96]
 br x16
-.word 11899
+.word 11908
 	.no_dead_strip plt__rgctx_fetch_125
 plt__rgctx_fetch_125:
 _p_315:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #96]
+ldr x16, [x16, #104]
 br x16
-.word 11907
+.word 11916
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
 _p_316:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #104]
+ldr x16, [x16, #112]
 br x16
-.word 11915
+.word 11924
 	.no_dead_strip plt__rgctx_fetch_126
 plt__rgctx_fetch_126:
 _p_317:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #112]
+ldr x16, [x16, #120]
 br x16
-.word 11920
+.word 11929
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
 _p_318:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #120]
+ldr x16, [x16, #128]
 br x16
-.word 11928
+.word 11937
 	.no_dead_strip plt__jit_icall_mono_gc_wbarrier_value_copy_bitmap
 plt__jit_icall_mono_gc_wbarrier_value_copy_bitmap:
 _p_319:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #128]
+ldr x16, [x16, #136]
 br x16
-.word 11933
+.word 11942
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_UnsafeOnCompleted_System_Action
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_UnsafeOnCompleted_System_Action:
 _p_320:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #136]
+ldr x16, [x16, #144]
 br x16
-.word 11970
+.word 11979
 	.no_dead_strip plt_AppAPITemplate_SecondMenu__CallAPIc__async1_MoveNext
 plt_AppAPITemplate_SecondMenu__CallAPIc__async1_MoveNext:
 _p_321:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #144]
+ldr x16, [x16, #152]
 br x16
-.word 11992
+.word 12001
 	.no_dead_strip plt_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_MoveNext
 plt_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_MoveNext:
 _p_322:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #152]
+ldr x16, [x16, #160]
 br x16
-.word 11994
+.word 12003
 	.no_dead_strip plt_AppAPITemplate_InfoPage__CallAPIc__async1_MoveNext
 plt_AppAPITemplate_InfoPage__CallAPIc__async1_MoveNext:
 _p_323:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #160]
+ldr x16, [x16, #168]
 br x16
-.word 11996
+.word 12005
 	.no_dead_strip plt_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_MoveNext
 plt_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_MoveNext:
 _p_324:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #168]
+ldr x16, [x16, #176]
 br x16
-.word 11998
+.word 12007
 	.no_dead_strip plt__rgctx_fetch_127
 plt__rgctx_fetch_127:
 _p_325:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #176]
+ldr x16, [x16, #184]
 br x16
-.word 12027
+.word 12036
 	.no_dead_strip plt__rgctx_fetch_128
 plt__rgctx_fetch_128:
 _p_326:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #184]
+ldr x16, [x16, #192]
 br x16
-.word 12035
+.word 12044
 	.no_dead_strip plt__rgctx_fetch_129
 plt__rgctx_fetch_129:
 _p_327:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #192]
+ldr x16, [x16, #200]
 br x16
-.word 12085
+.word 12094
 	.no_dead_strip plt__rgctx_fetch_130
 plt__rgctx_fetch_130:
 _p_328:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #200]
+ldr x16, [x16, #208]
 br x16
-.word 12093
+.word 12102
 	.no_dead_strip plt__rgctx_fetch_131
 plt__rgctx_fetch_131:
 _p_329:
 adrp x16, mono_aot_AppAPITemplate_got@PAGE+4096
 add x16, x16, mono_aot_AppAPITemplate_got@PAGEOFF
-ldr x16, [x16, #208]
+ldr x16, [x16, #216]
 br x16
-.word 12135
+.word 12144
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_AppAPITemplate_got, 4312
+.lcomm mono_aot_AppAPITemplate_got, 4320
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -22430,7 +22439,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "4375D87E-C12F-4CAD-AF1E-43D6EF717A3F"
+	.asciz "655393D8-9038-40F9-947C-09A545417736"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -22507,13 +22516,13 @@ _mono_aot_file_info:
 	.align 3
 	.quad unbox_trampoline_addresses
 
-	.long 209,4312,330,245,66,923871743,0,17542
-	.long 128,8,8,10,0,14,26216,8664
+	.long 210,4320,330,245,66,923871743,0,17551
+	.long 128,8,8,10,0,14,26224,8664
 	.long 8032,7160,0,7624,7976,7328,0,5656
 	.long 352,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 11,60,71,250,82,116,24,72,80,80,203,204,158,58,79,21
+	.byte 22,22,27,148,138,190,251,124,67,134,146,245,28,119,7,53
 	.globl _mono_aot_module_AppAPITemplate_info
 	.align 3
 _mono_aot_module_AppAPITemplate_info:
@@ -28577,7 +28586,7 @@ LTDIE_157:
 LDIFF_SYM1050=LTDIE_14 - Ldebug_info_start
 	.long LDIFF_SYM1050
 	.byte 2,35,0,6
-	.asciz "<fake>__0"
+	.asciz "<fake>__1"
 
 LDIFF_SYM1051=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1051
@@ -28769,7 +28778,7 @@ LDIFF_SYM1078=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1079=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1079
 	.byte 2,35,0,6
-	.asciz "<response>__0"
+	.asciz "<response>__1"
 
 LDIFF_SYM1080=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1080
@@ -29996,17 +30005,17 @@ LDIFF_SYM1250=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1251=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1251
 	.byte 2,35,0,6
-	.asciz "<query>__0"
+	.asciz "<query>__1"
 
 LDIFF_SYM1252=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1252
 	.byte 2,35,8,6
-	.asciz "<client>__1"
+	.asciz "<client>__2"
 
 LDIFF_SYM1253=LTDIE_162_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1253
 	.byte 2,35,16,6
-	.asciz "<response>__2"
+	.asciz "<response>__3"
 
 LDIFF_SYM1254=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1254
@@ -30685,7 +30694,7 @@ LDIFF_SYM1337=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1338=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1338
 	.byte 2,35,0,6
-	.asciz "<response>__0"
+	.asciz "<response>__1"
 
 LDIFF_SYM1339=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1339
@@ -30825,17 +30834,17 @@ LDIFF_SYM1357=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1358=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1358
 	.byte 2,35,0,6
-	.asciz "<query>__0"
+	.asciz "<query>__1"
 
 LDIFF_SYM1359=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1359
 	.byte 2,35,8,6
-	.asciz "<client>__1"
+	.asciz "<client>__2"
 
 LDIFF_SYM1360=LTDIE_162_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1360
 	.byte 2,35,16,6
-	.asciz "<response>__2"
+	.asciz "<response>__3"
 
 LDIFF_SYM1361=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1361
@@ -31952,7 +31961,7 @@ LTDIE_202:
 LDIFF_SYM1525=LTDIE_14 - Ldebug_info_start
 	.long LDIFF_SYM1525
 	.byte 2,35,0,6
-	.asciz "<list>__0"
+	.asciz "<list>__1"
 
 LDIFF_SYM1526=LTDIE_188_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1526
@@ -32087,7 +32096,7 @@ LDIFF_SYM1543=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1544=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1544
 	.byte 2,35,0,6
-	.asciz "<response>__0"
+	.asciz "<response>__1"
 
 LDIFF_SYM1545=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1545
@@ -32227,17 +32236,17 @@ LDIFF_SYM1563=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1564=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1564
 	.byte 2,35,0,6
-	.asciz "<query>__0"
+	.asciz "<query>__1"
 
 LDIFF_SYM1565=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1565
 	.byte 2,35,8,6
-	.asciz "<client>__1"
+	.asciz "<client>__2"
 
 LDIFF_SYM1566=LTDIE_162_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1566
 	.byte 2,35,16,6
-	.asciz "<response>__2"
+	.asciz "<response>__3"
 
 LDIFF_SYM1567=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1567
@@ -40530,7 +40539,7 @@ Lfde163_start:
 LDIFF_SYM2726=Lme_a4 - System_Array_InternalArray__set_Item_T_REF_int_T_REF
 	.long LDIFF_SYM2726
 	.long 0
-	.byte 12,31,0,68,14,80,157,10,158,9,68,13,29,68,149,8,150,7,68,151,6,152,5
+	.byte 12,31,0,68,14,96,157,12,158,11,68,13,29,68,149,10,150,9,68,151,8,152,7
 	.align 3
 Lfde163_end:
 

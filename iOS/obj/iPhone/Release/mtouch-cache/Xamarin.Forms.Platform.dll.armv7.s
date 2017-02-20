@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 4,1
-	.asciz "Mono AOT Compiler 4.6.0 (tarball Fri Sep  9 12:44:38 EDT 2016)"
+	.asciz "Mono AOT Compiler 4.6.2 (tarball Tue Dec 20 02:39:29 EST 2016)"
 	.asciz "Xamarin.Forms.Platform.dll"
 	.asciz ""
 
@@ -551,7 +551,7 @@ _mono_aot_file_info:
 	.long 64,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 45,238,206,223,39,52,55,15,85,92,189,45,178,61,223,96
+	.byte 138,227,236,73,174,44,23,1,113,92,187,190,125,62,181,188
 	.globl _mono_aot_module_Xamarin_Forms_Platform_info
 	.align 2
 _mono_aot_module_Xamarin_Forms_Platform_info:

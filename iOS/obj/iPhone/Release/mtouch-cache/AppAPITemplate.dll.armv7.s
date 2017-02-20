@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 4,1
-	.asciz "Mono AOT Compiler 4.6.0 (tarball Fri Sep  9 12:44:38 EDT 2016)"
+	.asciz "Mono AOT Compiler 4.6.2 (tarball Tue Dec 20 02:39:29 EST 2016)"
 	.asciz "AppAPITemplate.dll"
 	.asciz ""
 
@@ -1766,8 +1766,13 @@ bl _p_76
 	.byte 0,0,157,229,248,0,134,229,62,15,134,226
 bl _p_9
 
-	.byte 0,0,157,229,0,0,159,229,0,0,0,234
+	.byte 0,0,157,229,0,16,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 384
+	.byte 1,16,159,231,6,0,160,225
+bl _p_7
+
+	.byte 0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 388
 	.byte 0,0,159,231,57,31,160,227
 bl _p_2
 
@@ -1807,7 +1812,7 @@ bl _p_9
 bl _p_9
 
 	.byte 56,0,157,229,2,15,141,226,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 388
+	.long mono_aot_AppAPITemplate_got - . + 392
 	.byte 8,128,159,231,13,16,160,225
 bl _p_78
 
@@ -1826,7 +1831,7 @@ AppAPITemplate_InfoPage_CallAPI_AppAPITemplate_MenuItem:
 bl _p_9
 
 	.byte 44,0,157,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 392
+	.long mono_aot_AppAPITemplate_got - . + 396
 	.byte 0,0,159,231,0,15,160,227,32,0,141,229,0,15,160,227,36,0,141,229,0,15,160,227,40,0,141,229,3,15,141,226
 	.byte 32,16,157,229,68,16,141,229,12,16,141,229,64,0,141,229
 bl _p_9
@@ -1838,12 +1843,12 @@ bl _p_9
 bl _p_9
 
 	.byte 52,0,157,229,3,15,141,226,0,16,160,225,48,16,141,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 396
+	.long mono_aot_AppAPITemplate_got - . + 400
 	.byte 8,128,159,231,13,16,160,225
 bl _p_79
 
 	.byte 48,0,157,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 392
+	.long mono_aot_AppAPITemplate_got - . + 396
 	.byte 8,128,159,231
 bl _p_80
 
@@ -1875,7 +1880,7 @@ bl _p_9
 bl _p_9
 
 	.byte 60,0,157,229,4,15,141,226,0,16,160,225,56,16,141,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 400
+	.long mono_aot_AppAPITemplate_got - . + 404
 	.byte 8,128,159,231,13,16,160,225
 bl _p_81
 
@@ -1894,9 +1899,9 @@ AppAPITemplate_InfoPage_ConstructQuery_AppAPITemplate_MenuItem:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 404
-	.byte 0,0,159,231,0,224,218,229,8,16,154,229,0,32,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 408
+	.byte 0,0,159,231,0,224,218,229,8,16,154,229,0,32,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 412
 	.byte 2,32,159,231
 bl _p_63
 
@@ -1910,12 +1915,12 @@ AppAPITemplate_InfoPage_ConstructList_string:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,22,223,77,226,13,176,160,225,60,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 412
+	.long mono_aot_AppAPITemplate_got - . + 416
 	.byte 0,0,159,231,6,31,160,227
 bl _p_2
 
 	.byte 0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 416
+	.long mono_aot_AppAPITemplate_got - . + 420
 	.byte 1,16,159,231,0,16,145,229,68,16,139,229,8,16,128,229,64,0,139,229,2,15,128,226
 bl _p_9
 
@@ -1923,11 +1928,11 @@ bl _p_9
 bl _p_21
 
 	.byte 12,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 420
+	.long mono_aot_AppAPITemplate_got - . + 424
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,20,0,0,26,0,16,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 140
 	.byte 1,16,159,231,0,32,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 2,32,159,231,0,15,160,227
 bl _p_22
 
@@ -1937,17 +1942,17 @@ bl _p_22
 bl _p_24
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 420
+	.long mono_aot_AppAPITemplate_got - . + 424
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 420
+	.long mono_aot_AppAPITemplate_got - . + 424
 	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 420
+	.long mono_aot_AppAPITemplate_got - . + 424
 	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 428
+	.long mono_aot_AppAPITemplate_got - . + 432
 	.byte 0,0,159,231,0,0,144,229,2,64,160,225,36,16,139,229,0,15,80,227,43,0,0,26,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 152
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,68,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,64,19,160,227
@@ -1966,15 +1971,15 @@ bl _p_27
 bl _p_28
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 428
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 428
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 428
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 432
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 432
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 432
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 436
 	.byte 0,0,159,231,0,0,144,229,2,80,160,225,40,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -1997,15 +2002,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 432
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 432
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 432
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 436
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 436
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 436
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 440
 	.byte 0,0,159,231,0,0,144,229,2,160,160,225,44,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2028,15 +2033,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 436
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 436
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 436
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 440
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 440
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 440
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 444
 	.byte 0,0,159,231,0,0,144,229,2,96,160,225,48,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2059,15 +2064,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 440
+	.long mono_aot_AppAPITemplate_got - . + 444
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 440
+	.long mono_aot_AppAPITemplate_got - . + 444
 	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 440
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 444
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 448
 	.byte 0,0,159,231,0,0,144,229,52,32,139,229,56,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2090,29 +2095,29 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 444
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 444
-	.byte 0,0,159,231,0,0,144,229,16,192,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 444
-	.byte 0,0,159,231,0,16,144,229,0,48,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 448
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 448
+	.byte 0,0,159,231,0,0,144,229,16,192,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 448
+	.byte 0,0,159,231,0,16,144,229,0,48,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 452
 	.byte 3,48,159,231,12,0,160,225,12,32,155,229,64,192,139,229,15,224,160,225,12,240,156,229,0,32,160,225,64,0,155,229
 	.byte 0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 452
+	.long mono_aot_AppAPITemplate_got - . + 456
 	.byte 3,48,159,231,52,0,155,229,56,16,155,229,52,192,155,229,15,224,160,225,12,240,156,229,0,32,160,225,52,0,155,229
 	.byte 0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 456
-	.byte 3,48,159,231,6,0,160,225,48,16,155,229,15,224,160,225,12,240,150,229,0,32,160,225,0,48,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 460
+	.byte 3,48,159,231,6,0,160,225,48,16,155,229,15,224,160,225,12,240,150,229,0,32,160,225,0,48,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 464
 	.byte 3,48,159,231,10,0,160,225,44,16,155,229,15,224,160,225,12,240,154,229,0,32,160,225,5,0,160,225,40,16,155,229
 	.byte 15,224,160,225,12,240,149,229,0,32,160,225,4,0,160,225,36,16,155,229,15,224,160,225,12,240,148,229,16,0,139,229
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 464
+	.long mono_aot_AppAPITemplate_got - . + 468
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,20,0,0,26,0,16,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 140
 	.byte 1,16,159,231,0,32,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 2,32,159,231,0,15,160,227
 bl _p_22
 
@@ -2122,17 +2127,17 @@ bl _p_22
 bl _p_24
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 464
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 464
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 464
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 468
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 468
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 468
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 472
 	.byte 0,0,159,231,0,0,144,229,2,64,160,225,36,16,139,229,0,15,80,227,43,0,0,26,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 152
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,68,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,64,19,160,227
@@ -2151,15 +2156,15 @@ bl _p_27
 bl _p_28
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 468
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 468
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 468
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 472
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 472
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 472
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 476
 	.byte 0,0,159,231,0,0,144,229,2,80,160,225,40,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2182,15 +2187,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 472
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 472
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 472
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 476
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 476
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 476
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 480
 	.byte 0,0,159,231,0,0,144,229,2,160,160,225,44,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2213,15 +2218,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 476
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 476
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 476
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 480
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 480
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 480
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 484
 	.byte 0,0,159,231,0,0,144,229,2,96,160,225,48,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2244,15 +2249,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 480
+	.long mono_aot_AppAPITemplate_got - . + 484
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 480
+	.long mono_aot_AppAPITemplate_got - . + 484
 	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 480
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 484
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 488
 	.byte 0,0,159,231,0,0,144,229,52,32,139,229,56,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2275,29 +2280,29 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 484
+	.long mono_aot_AppAPITemplate_got - . + 488
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 484
+	.long mono_aot_AppAPITemplate_got - . + 488
 	.byte 0,0,159,231,0,0,144,229,16,192,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 484
+	.long mono_aot_AppAPITemplate_got - . + 488
 	.byte 0,0,159,231,0,16,144,229,0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 448
+	.long mono_aot_AppAPITemplate_got - . + 452
 	.byte 3,48,159,231,12,0,160,225,12,32,155,229,64,192,139,229,15,224,160,225,12,240,156,229,0,32,160,225,64,0,155,229
 	.byte 0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 452
+	.long mono_aot_AppAPITemplate_got - . + 456
 	.byte 3,48,159,231,52,0,155,229,56,16,155,229,52,192,155,229,15,224,160,225,12,240,156,229,0,32,160,225,52,0,155,229
 	.byte 0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 456
+	.long mono_aot_AppAPITemplate_got - . + 460
 	.byte 3,48,159,231,6,0,160,225,48,16,155,229,15,224,160,225,12,240,150,229,0,32,160,225,0,48,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 172
 	.byte 3,48,159,231,10,0,160,225,44,16,155,229,15,224,160,225,12,240,154,229,0,32,160,225,5,0,160,225,40,16,155,229
 	.byte 15,224,160,225,12,240,149,229,0,32,160,225,4,0,160,225,36,16,155,229,15,224,160,225,12,240,148,229,20,0,139,229
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 488
+	.long mono_aot_AppAPITemplate_got - . + 492
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,20,0,0,26,0,16,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 140
 	.byte 1,16,159,231,0,32,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 2,32,159,231,0,15,160,227
 bl _p_22
 
@@ -2307,17 +2312,17 @@ bl _p_22
 bl _p_24
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 488
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 488
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 488
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 492
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 492
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 492
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 496
 	.byte 0,0,159,231,0,0,144,229,2,64,160,225,36,16,139,229,0,15,80,227,43,0,0,26,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 152
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,68,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,64,19,160,227
@@ -2336,15 +2341,15 @@ bl _p_27
 bl _p_28
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 492
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 492
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 492
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 496
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 496
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 496
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 500
 	.byte 0,0,159,231,0,0,144,229,2,80,160,225,40,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2367,15 +2372,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 496
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 496
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 496
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 500
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 500
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 500
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 504
 	.byte 0,0,159,231,0,0,144,229,2,160,160,225,44,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2398,15 +2403,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 500
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 500
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 500
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 504
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 504
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 504
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 508
 	.byte 0,0,159,231,0,0,144,229,2,96,160,225,48,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2429,15 +2434,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 504
+	.long mono_aot_AppAPITemplate_got - . + 508
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 504
+	.long mono_aot_AppAPITemplate_got - . + 508
 	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 504
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 508
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 512
 	.byte 0,0,159,231,0,0,144,229,52,32,139,229,56,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2460,29 +2465,29 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 508
+	.long mono_aot_AppAPITemplate_got - . + 512
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 508
+	.long mono_aot_AppAPITemplate_got - . + 512
 	.byte 0,0,159,231,0,0,144,229,16,192,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 508
+	.long mono_aot_AppAPITemplate_got - . + 512
 	.byte 0,0,159,231,0,16,144,229,0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 448
+	.long mono_aot_AppAPITemplate_got - . + 452
 	.byte 3,48,159,231,12,0,160,225,12,32,155,229,64,192,139,229,15,224,160,225,12,240,156,229,0,32,160,225,64,0,155,229
 	.byte 0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 452
+	.long mono_aot_AppAPITemplate_got - . + 456
 	.byte 3,48,159,231,52,0,155,229,56,16,155,229,52,192,155,229,15,224,160,225,12,240,156,229,0,32,160,225,52,0,155,229
 	.byte 0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 456
+	.long mono_aot_AppAPITemplate_got - . + 460
 	.byte 3,48,159,231,6,0,160,225,48,16,155,229,15,224,160,225,12,240,150,229,0,32,160,225,0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 512
+	.long mono_aot_AppAPITemplate_got - . + 516
 	.byte 3,48,159,231,10,0,160,225,44,16,155,229,15,224,160,225,12,240,154,229,0,32,160,225,5,0,160,225,40,16,155,229
 	.byte 15,224,160,225,12,240,149,229,0,32,160,225,4,0,160,225,36,16,155,229,15,224,160,225,12,240,148,229,24,0,139,229
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 516
+	.long mono_aot_AppAPITemplate_got - . + 520
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,20,0,0,26,0,16,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 140
 	.byte 1,16,159,231,0,32,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 2,32,159,231,0,15,160,227
 bl _p_22
 
@@ -2492,17 +2497,17 @@ bl _p_22
 bl _p_24
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 516
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 516
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 516
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 520
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 520
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 520
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 524
 	.byte 0,0,159,231,0,0,144,229,2,64,160,225,36,16,139,229,0,15,80,227,43,0,0,26,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 152
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,68,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,64,19,160,227
@@ -2521,15 +2526,15 @@ bl _p_27
 bl _p_28
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 520
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 520
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 520
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 524
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 524
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 524
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 528
 	.byte 0,0,159,231,0,0,144,229,2,80,160,225,40,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2552,15 +2557,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 524
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 524
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 524
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 528
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 528
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 528
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 532
 	.byte 0,0,159,231,0,0,144,229,2,160,160,225,44,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2583,15 +2588,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 528
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 528
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 528
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 532
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 532
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 532
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 536
 	.byte 0,0,159,231,0,0,144,229,2,96,160,225,48,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2614,15 +2619,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 532
+	.long mono_aot_AppAPITemplate_got - . + 536
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 532
+	.long mono_aot_AppAPITemplate_got - . + 536
 	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 532
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 536
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 540
 	.byte 0,0,159,231,0,0,144,229,52,32,139,229,56,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2645,29 +2650,29 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 536
+	.long mono_aot_AppAPITemplate_got - . + 540
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 536
+	.long mono_aot_AppAPITemplate_got - . + 540
 	.byte 0,0,159,231,0,0,144,229,16,192,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 536
+	.long mono_aot_AppAPITemplate_got - . + 540
 	.byte 0,0,159,231,0,16,144,229,0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 448
+	.long mono_aot_AppAPITemplate_got - . + 452
 	.byte 3,48,159,231,12,0,160,225,12,32,155,229,64,192,139,229,15,224,160,225,12,240,156,229,0,32,160,225,64,0,155,229
 	.byte 0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 452
+	.long mono_aot_AppAPITemplate_got - . + 456
 	.byte 3,48,159,231,52,0,155,229,56,16,155,229,52,192,155,229,15,224,160,225,12,240,156,229,0,32,160,225,52,0,155,229
 	.byte 0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 456
+	.long mono_aot_AppAPITemplate_got - . + 460
 	.byte 3,48,159,231,6,0,160,225,48,16,155,229,15,224,160,225,12,240,150,229,0,32,160,225,0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 540
+	.long mono_aot_AppAPITemplate_got - . + 544
 	.byte 3,48,159,231,10,0,160,225,44,16,155,229,15,224,160,225,12,240,154,229,0,32,160,225,5,0,160,225,40,16,155,229
 	.byte 15,224,160,225,12,240,149,229,0,32,160,225,4,0,160,225,36,16,155,229,15,224,160,225,12,240,148,229,28,0,139,229
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 544
+	.long mono_aot_AppAPITemplate_got - . + 548
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,20,0,0,26,0,16,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 140
 	.byte 1,16,159,231,0,32,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 2,32,159,231,0,15,160,227
 bl _p_22
 
@@ -2677,17 +2682,17 @@ bl _p_22
 bl _p_24
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 544
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 544
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 544
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 548
-	.byte 0,0,159,231,0,0,144,229,2,64,160,225,36,16,139,229,0,15,80,227,45,0,0,26,0,0,159,229,0,0,0,234
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 548
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 548
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 552
+	.byte 0,0,159,231,0,0,144,229,2,64,160,225,36,16,139,229,0,15,80,227,45,0,0,26,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 556
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,68,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,64,19,160,227
@@ -2706,17 +2711,17 @@ bl _p_82
 bl _p_28
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 548
+	.long mono_aot_AppAPITemplate_got - . + 552
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 548
+	.long mono_aot_AppAPITemplate_got - . + 552
 	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 548
+	.long mono_aot_AppAPITemplate_got - . + 552
 	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 556
+	.long mono_aot_AppAPITemplate_got - . + 560
 	.byte 0,0,159,231,0,0,144,229,2,80,160,225,40,16,139,229,0,15,80,227,43,0,0,26,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 152
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,68,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,64,19,160,227
@@ -2735,15 +2740,15 @@ bl _p_27
 bl _p_28
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 556
-	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 556
-	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 556
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 560
+	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 560
+	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 560
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 564
 	.byte 0,0,159,231,0,0,144,229,2,160,160,225,44,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2766,15 +2771,15 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 560
+	.long mono_aot_AppAPITemplate_got - . + 564
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 560
+	.long mono_aot_AppAPITemplate_got - . + 564
 	.byte 0,0,159,231,0,0,144,229,16,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 560
-	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 564
+	.byte 0,0,159,231,0,16,144,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 568
 	.byte 0,0,159,231,0,0,144,229,2,96,160,225,48,16,139,229,0,15,80,227,50,0,0,26,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 424
+	.long mono_aot_AppAPITemplate_got - . + 428
 	.byte 0,0,159,231,64,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 156
 	.byte 0,0,159,231,128,19,160,227
@@ -2797,16 +2802,16 @@ bl _p_29
 bl _p_30
 
 	.byte 0,16,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 564
+	.long mono_aot_AppAPITemplate_got - . + 568
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 564
+	.long mono_aot_AppAPITemplate_got - . + 568
 	.byte 0,0,159,231,0,0,144,229,16,192,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 564
+	.long mono_aot_AppAPITemplate_got - . + 568
 	.byte 0,0,159,231,0,16,144,229,0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 448
+	.long mono_aot_AppAPITemplate_got - . + 452
 	.byte 3,48,159,231,12,0,160,225,12,32,155,229,64,192,139,229,15,224,160,225,12,240,156,229,0,32,160,225,64,0,155,229
 	.byte 0,48,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 568
+	.long mono_aot_AppAPITemplate_got - . + 572
 	.byte 3,48,159,231,6,0,160,225,48,16,155,229,15,224,160,225,12,240,150,229,0,32,160,225,10,0,160,225,44,16,155,229
 	.byte 15,224,160,225,12,240,154,229,0,32,160,225,5,0,160,225,40,16,155,229,15,224,160,225,12,240,149,229,0,32,160,225
 	.byte 4,0,160,225,36,16,155,229,15,224,160,225,12,240,148,229,32,0,139,229,8,0,155,229,16,16,155,229,8,32,155,229
@@ -2835,7 +2840,7 @@ AppAPITemplate_InfoPage__cctor:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,0,9,45,233,104,223,77,226,13,176,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 572
+	.long mono_aot_AppAPITemplate_got - . + 576
 	.byte 0,0,159,231,47,31,160,227
 bl _p_2
 
@@ -2848,7 +2853,7 @@ bl _p_84
 bl _p_85
 
 	.byte 148,193,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 576
+	.long mono_aot_AppAPITemplate_got - . + 580
 	.byte 0,0,159,231,0,16,144,229,32,16,139,229,4,16,144,229,36,16,139,229,8,16,144,229,40,16,139,229,12,16,144,229
 	.byte 44,16,139,229,16,16,144,229,48,16,139,229,20,16,144,229,52,16,139,229,24,16,144,229,56,16,139,229,28,0,144,229
 	.byte 60,0,139,229,12,0,160,225,144,1,139,229,32,16,155,229,36,32,155,229,40,48,155,229,44,0,155,229,0,0,141,229
@@ -2861,7 +2866,7 @@ bl _p_86
 bl _p_87
 
 	.byte 136,193,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 580
+	.long mono_aot_AppAPITemplate_got - . + 584
 	.byte 0,0,159,231,0,16,144,229,64,16,139,229,4,16,144,229,68,16,139,229,8,16,144,229,72,16,139,229,12,16,144,229
 	.byte 76,16,139,229,16,16,144,229,80,16,139,229,20,16,144,229,84,16,139,229,24,16,144,229,88,16,139,229,28,0,144,229
 	.byte 92,0,139,229,12,0,160,225,132,1,139,229,64,16,155,229,68,32,155,229,72,48,155,229,76,0,155,229,0,0,141,229
@@ -2876,14 +2881,14 @@ bl _p_89
 bl _p_90
 
 	.byte 120,33,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 584
+	.long mono_aot_AppAPITemplate_got - . + 588
 	.byte 0,0,159,231,0,0,144,229,96,0,139,229,2,0,160,225,96,16,155,229,0,224,210,229,116,33,139,229
 bl _p_91
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 588
-	.byte 0,0,159,231,0,128,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 592
+	.byte 0,0,159,231,0,128,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 596
 	.byte 8,128,159,231,0,31,160,227,0,47,160,227
 bl _p_92
 
@@ -2891,9 +2896,9 @@ bl _p_92
 bl _p_93
 
 	.byte 112,17,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 596
+	.long mono_aot_AppAPITemplate_got - . + 600
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 572
+	.long mono_aot_AppAPITemplate_got - . + 576
 	.byte 0,0,159,231,47,31,160,227
 bl _p_2
 
@@ -2912,12 +2917,12 @@ bl _p_89
 bl _p_90
 
 	.byte 96,33,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 600
+	.long mono_aot_AppAPITemplate_got - . + 604
 	.byte 0,0,159,231,0,0,144,229,100,0,139,229,2,0,160,225,100,16,155,229,0,224,210,229,92,33,139,229
 bl _p_91
 
 	.byte 92,193,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 604
+	.long mono_aot_AppAPITemplate_got - . + 608
 	.byte 0,0,159,231,0,16,144,229,104,16,139,229,4,16,144,229,108,16,139,229,8,16,144,229,112,16,139,229,12,16,144,229
 	.byte 116,16,139,229,16,16,144,229,120,16,139,229,20,16,144,229,124,16,139,229,24,16,144,229,128,16,139,229,28,0,144,229
 	.byte 132,0,139,229,12,0,160,225,88,1,139,229,104,16,155,229,108,32,155,229,112,48,155,229,116,0,155,229,0,0,141,229
@@ -2926,9 +2931,9 @@ bl _p_91
 bl _p_86
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 588
-	.byte 0,0,159,231,0,128,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 592
+	.byte 0,0,159,231,0,128,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 596
 	.byte 8,128,159,231,0,31,160,227,0,47,160,227
 bl _p_92
 
@@ -2936,9 +2941,9 @@ bl _p_92
 bl _p_93
 
 	.byte 80,17,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 608
+	.long mono_aot_AppAPITemplate_got - . + 612
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 572
+	.long mono_aot_AppAPITemplate_got - . + 576
 	.byte 0,0,159,231,47,31,160,227
 bl _p_2
 
@@ -2955,12 +2960,12 @@ bl _p_85
 bl _p_94
 
 	.byte 68,33,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 600
+	.long mono_aot_AppAPITemplate_got - . + 604
 	.byte 0,0,159,231,0,0,144,229,136,0,139,229,2,0,160,225,136,16,155,229,0,224,210,229,64,33,139,229
 bl _p_91
 
 	.byte 64,33,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 600
+	.long mono_aot_AppAPITemplate_got - . + 604
 	.byte 0,0,159,231,0,0,144,229,140,0,139,229,2,0,160,225,140,16,155,229,0,224,210,229,60,33,139,229
 bl _p_95
 
@@ -2971,7 +2976,7 @@ bl _p_90
 bl _p_89
 
 	.byte 52,193,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 604
+	.long mono_aot_AppAPITemplate_got - . + 608
 	.byte 0,0,159,231,0,16,144,229,144,16,139,229,4,16,144,229,148,16,139,229,8,16,144,229,152,16,139,229,12,16,144,229
 	.byte 156,16,139,229,16,16,144,229,160,16,139,229,20,16,144,229,164,16,139,229,24,16,144,229,168,16,139,229,28,0,144,229
 	.byte 172,0,139,229,12,0,160,225,48,1,139,229,144,16,155,229,148,32,155,229,152,48,155,229,156,0,155,229,0,0,141,229
@@ -2980,9 +2985,9 @@ bl _p_89
 bl _p_86
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 588
-	.byte 0,0,159,231,0,128,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 592
+	.byte 0,0,159,231,0,128,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 596
 	.byte 8,128,159,231,0,31,160,227,0,47,160,227
 bl _p_92
 
@@ -2990,9 +2995,9 @@ bl _p_92
 bl _p_93
 
 	.byte 40,17,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 612
+	.long mono_aot_AppAPITemplate_got - . + 616
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 572
+	.long mono_aot_AppAPITemplate_got - . + 576
 	.byte 0,0,159,231,47,31,160,227
 bl _p_2
 
@@ -3005,12 +3010,12 @@ bl _p_84
 bl _p_85
 
 	.byte 32,33,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 616
+	.long mono_aot_AppAPITemplate_got - . + 620
 	.byte 0,0,159,231,0,0,144,229,176,0,139,229,2,0,160,225,176,16,155,229,0,224,210,229,28,33,139,229
 bl _p_91
 
 	.byte 28,193,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 604
+	.long mono_aot_AppAPITemplate_got - . + 608
 	.byte 0,0,159,231,0,16,144,229,180,16,139,229,4,16,144,229,184,16,139,229,8,16,144,229,188,16,139,229,12,16,144,229
 	.byte 192,16,139,229,16,16,144,229,196,16,139,229,20,16,144,229,200,16,139,229,24,16,144,229,204,16,139,229,28,0,144,229
 	.byte 208,0,139,229,12,0,160,225,24,1,139,229,180,16,155,229,184,32,155,229,188,48,155,229,192,0,155,229,0,0,141,229
@@ -3019,9 +3024,9 @@ bl _p_91
 bl _p_86
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 588
-	.byte 0,0,159,231,0,128,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 592
+	.byte 0,0,159,231,0,128,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 596
 	.byte 8,128,159,231,0,31,160,227,0,47,160,227
 bl _p_92
 
@@ -3029,9 +3034,9 @@ bl _p_92
 bl _p_93
 
 	.byte 16,17,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 620
+	.long mono_aot_AppAPITemplate_got - . + 624
 	.byte 0,0,159,231,0,16,128,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 572
+	.long mono_aot_AppAPITemplate_got - . + 576
 	.byte 0,0,159,231,47,31,160,227
 bl _p_2
 
@@ -3044,12 +3049,12 @@ bl _p_84
 bl _p_85
 
 	.byte 8,33,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 616
+	.long mono_aot_AppAPITemplate_got - . + 620
 	.byte 0,0,159,231,0,0,144,229,212,0,139,229,2,0,160,225,212,16,155,229,0,224,210,229,4,33,139,229
 bl _p_91
 
 	.byte 4,193,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 604
+	.long mono_aot_AppAPITemplate_got - . + 608
 	.byte 0,0,159,231,0,16,144,229,216,16,139,229,4,16,144,229,220,16,139,229,8,16,144,229,224,16,139,229,12,16,144,229
 	.byte 228,16,139,229,16,16,144,229,232,16,139,229,20,16,144,229,236,16,139,229,24,16,144,229,240,16,139,229,28,0,144,229
 	.byte 244,0,139,229,12,0,160,225,0,1,139,229,216,16,155,229,220,32,155,229,224,48,155,229,228,0,155,229,0,0,141,229
@@ -3058,9 +3063,9 @@ bl _p_91
 bl _p_86
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 588
-	.byte 0,0,159,231,0,128,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 592
+	.byte 0,0,159,231,0,128,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 596
 	.byte 8,128,159,231,0,31,160,227,0,47,160,227
 bl _p_92
 
@@ -3068,7 +3073,7 @@ bl _p_92
 bl _p_93
 
 	.byte 248,16,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 624
+	.long mono_aot_AppAPITemplate_got - . + 628
 	.byte 0,0,159,231,0,16,128,229,104,223,139,226,0,9,189,232,128,128,189,232
 
 Lme_29:
@@ -3100,7 +3105,7 @@ bl _p_94
 bl _p_98
 
 	.byte 216,0,154,229,144,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 628
+	.long mono_aot_AppAPITemplate_got - . + 632
 	.byte 0,0,159,231,57,31,160,227
 bl _p_2
 
@@ -3116,12 +3121,12 @@ bl _p_97
 bl _p_94
 
 	.byte 212,32,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 600
+	.long mono_aot_AppAPITemplate_got - . + 604
 	.byte 0,0,159,231,0,0,144,229,32,0,139,229,2,0,160,225,32,16,155,229,0,224,210,229,208,32,139,229
 bl _p_91
 
 	.byte 208,0,155,229,0,224,208,229,176,0,139,229,216,0,144,229,184,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 572
+	.long mono_aot_AppAPITemplate_got - . + 576
 	.byte 0,0,159,231,47,31,160,227
 bl _p_2
 
@@ -3129,17 +3134,17 @@ bl _p_2
 bl _p_84
 
 	.byte 204,0,155,229,200,0,139,229,0,32,160,225,0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 632
+	.long mono_aot_AppAPITemplate_got - . + 636
 	.byte 1,16,159,231,2,0,160,225,0,224,210,229
 bl _p_85
 
 	.byte 200,32,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 616
+	.long mono_aot_AppAPITemplate_got - . + 620
 	.byte 0,0,159,231,0,0,144,229,36,0,139,229,2,0,160,225,36,16,155,229,0,224,210,229,196,32,139,229
 bl _p_91
 
 	.byte 196,192,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 604
+	.long mono_aot_AppAPITemplate_got - . + 608
 	.byte 0,0,159,231,0,16,144,229,40,16,139,229,4,16,144,229,44,16,139,229,8,16,144,229,48,16,139,229,12,16,144,229
 	.byte 52,16,139,229,16,16,144,229,56,16,139,229,20,16,144,229,60,16,139,229,24,16,144,229,64,16,139,229,28,0,144,229
 	.byte 68,0,139,229,12,0,160,225,192,0,139,229,40,16,155,229,44,32,155,229,48,48,155,229,52,0,155,229,0,0,141,229
@@ -3148,9 +3153,9 @@ bl _p_91
 bl _p_86
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 588
-	.byte 0,0,159,231,0,128,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 592
+	.byte 0,0,159,231,0,128,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 596
 	.byte 8,128,159,231,0,31,160,227,0,47,160,227
 bl _p_92
 
@@ -3158,10 +3163,10 @@ bl _p_92
 bl _p_93
 
 	.byte 180,16,155,229,184,32,155,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,176,0,155,229,0,224,208,229,140,0,139,229,216,0,144,229,152,0,139,229
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 572
+	.long mono_aot_AppAPITemplate_got - . + 576
 	.byte 0,0,159,231,47,31,160,227
 bl _p_2
 
@@ -3169,17 +3174,17 @@ bl _p_2
 bl _p_84
 
 	.byte 172,0,155,229,168,0,139,229,0,32,160,225,0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 640
+	.long mono_aot_AppAPITemplate_got - . + 644
 	.byte 1,16,159,231,2,0,160,225,0,224,210,229
 bl _p_85
 
 	.byte 168,32,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 616
+	.long mono_aot_AppAPITemplate_got - . + 620
 	.byte 0,0,159,231,0,0,144,229,72,0,139,229,2,0,160,225,72,16,155,229,0,224,210,229,164,32,139,229
 bl _p_91
 
 	.byte 164,192,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 604
+	.long mono_aot_AppAPITemplate_got - . + 608
 	.byte 0,0,159,231,0,16,144,229,76,16,139,229,4,16,144,229,80,16,139,229,8,16,144,229,84,16,139,229,12,16,144,229
 	.byte 88,16,139,229,16,16,144,229,92,16,139,229,20,16,144,229,96,16,139,229,24,16,144,229,100,16,139,229,28,0,144,229
 	.byte 104,0,139,229,12,0,160,225,160,0,139,229,76,16,155,229,80,32,155,229,84,48,155,229,88,0,155,229,0,0,141,229
@@ -3188,9 +3193,9 @@ bl _p_91
 bl _p_86
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 588
-	.byte 0,0,159,231,0,128,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 592
+	.byte 0,0,159,231,0,128,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 596
 	.byte 8,128,159,231,0,31,160,227,0,47,160,227
 bl _p_92
 
@@ -3198,12 +3203,12 @@ bl _p_92
 bl _p_93
 
 	.byte 148,16,155,229,152,32,155,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,140,16,155,229,144,32,155,229,2,0,160,225,0,32,146,229,0,128,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,216,0,154,229,116,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 628
+	.long mono_aot_AppAPITemplate_got - . + 632
 	.byte 0,0,159,231,57,31,160,227
 bl _p_2
 
@@ -3219,22 +3224,22 @@ bl _p_97
 bl _p_94
 
 	.byte 128,32,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 600
+	.long mono_aot_AppAPITemplate_got - . + 604
 	.byte 0,0,159,231,0,0,144,229,108,0,139,229,2,0,160,225,108,16,155,229,0,224,210,229,124,32,139,229
 bl _p_91
 
 	.byte 124,0,155,229,0,224,208,229,120,0,139,229,216,32,144,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 620
-	.byte 0,0,159,231,0,16,144,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
-	.byte 8,128,159,231,15,224,160,225,20,240,18,229,120,0,155,229,0,224,208,229,112,0,139,229,216,32,144,229,0,0,159,229
-	.byte 0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 624
 	.byte 0,0,159,231,0,16,144,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
+	.byte 8,128,159,231,15,224,160,225,20,240,18,229,120,0,155,229,0,224,208,229,112,0,139,229,216,32,144,229,0,0,159,229
+	.byte 0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 628
+	.byte 0,0,159,231,0,16,144,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,112,16,155,229,116,32,155,229,2,0,160,225,0,32,146,229,0,128,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,57,223,139,226,0,13,189,232,128,128,189,232
 
 Lme_2b:
@@ -3257,15 +3262,15 @@ bl _p_97
 bl _p_98
 
 	.byte 216,32,154,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 596
+	.long mono_aot_AppAPITemplate_got - . + 600
 	.byte 0,0,159,231,0,16,144,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,216,32,154,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 608
+	.long mono_aot_AppAPITemplate_got - . + 612
 	.byte 0,0,159,231,0,16,144,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,216,0,154,229,20,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 644
+	.long mono_aot_AppAPITemplate_got - . + 648
 	.byte 0,0,159,231,57,31,160,227
 bl _p_2
 
@@ -3273,11 +3278,11 @@ bl _p_2
 bl _p_100
 
 	.byte 16,16,155,229,20,32,155,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,216,32,154,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 612
+	.long mono_aot_AppAPITemplate_got - . + 616
 	.byte 0,0,159,231,0,16,144,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,7,223,139,226,0,13,189,232,128,128,189,232
 
 Lme_2c:
@@ -3296,7 +3301,7 @@ AppAPITemplate_InfoPage__OnAppearingc__async0_MoveNext:
 	.byte 128,64,45,233,13,112,160,225,0,13,45,233,19,223,77,226,13,176,160,225,36,0,139,229,0,15,160,227,0,0,139,229
 	.byte 36,0,155,229,24,160,144,229,36,0,155,229,0,31,224,227,24,16,128,229,24,160,139,229,128,3,90,227,8,0,0,42
 	.byte 24,0,155,229,0,17,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 648
+	.long mono_aot_AppAPITemplate_got - . + 652
 	.byte 0,0,159,231,1,0,128,224,0,0,144,229,0,240,160,225,176,0,0,234,36,0,155,229,4,0,144,229,36,0,155,229
 	.byte 44,0,139,229,36,0,155,229,4,0,144,229,248,0,144,229
 bl _p_101
@@ -3308,16 +3313,16 @@ bl _p_102
 bl _p_9
 
 	.byte 40,0,155,229,36,0,155,229,7,15,128,226,0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 652
+	.long mono_aot_AppAPITemplate_got - . + 656
 	.byte 1,16,159,231,0,0,144,229,0,16,160,225,0,224,209,229,36,0,144,229,88,7,0,226,0,15,80,227,0,0,160,19
 	.byte 1,0,160,3,0,15,80,227,0,0,160,19,1,0,160,3,0,15,80,227,13,0,0,26,36,0,155,229,64,19,160,227
 	.byte 24,16,128,229,36,0,155,229,2,15,128,226,36,16,155,229,7,31,129,226,36,32,155,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 656
+	.long mono_aot_AppAPITemplate_got - . + 660
 	.byte 8,128,159,231
 bl _p_103
 
 	.byte 122,0,0,234,36,0,155,229,64,0,139,229,36,0,155,229,7,15,128,226,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 652
+	.long mono_aot_AppAPITemplate_got - . + 656
 	.byte 8,128,159,231
 bl _p_104
 
@@ -3325,7 +3330,7 @@ bl _p_104
 bl _p_9
 
 	.byte 60,0,155,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 596
+	.long mono_aot_AppAPITemplate_got - . + 600
 	.byte 0,0,159,231,0,0,144,229,56,0,139,229,36,0,155,229,0,32,144,229,2,0,160,225,0,31,160,227,0,224,210,229
 bl _p_105
 
@@ -3333,7 +3338,7 @@ bl _p_105
 bl _p_85
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 608
+	.long mono_aot_AppAPITemplate_got - . + 612
 	.byte 0,0,159,231,0,0,144,229,52,0,139,229,36,0,155,229,0,32,144,229,2,0,160,225,64,19,160,227,0,224,210,229
 bl _p_105
 
@@ -3341,7 +3346,7 @@ bl _p_105
 bl _p_85
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 612
+	.long mono_aot_AppAPITemplate_got - . + 616
 	.byte 0,0,159,231,0,0,144,229,48,0,139,229,36,0,155,229,0,32,144,229,2,0,160,225,128,19,160,227,0,224,210,229
 bl _p_105
 
@@ -3349,7 +3354,7 @@ bl _p_105
 bl _p_85
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 620
+	.long mono_aot_AppAPITemplate_got - . + 624
 	.byte 0,0,159,231,0,0,144,229,44,0,139,229,36,0,155,229,0,32,144,229,2,0,160,225,192,19,160,227,0,224,210,229
 bl _p_105
 
@@ -3357,7 +3362,7 @@ bl _p_105
 bl _p_85
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 624
+	.long mono_aot_AppAPITemplate_got - . + 628
 	.byte 0,0,159,231,0,0,144,229,40,0,139,229,36,0,155,229,0,32,144,229,2,0,160,225,1,31,160,227,0,224,210,229
 bl _p_105
 
@@ -3412,7 +3417,7 @@ AppAPITemplate_InfoPage__CallAPIc__async1_MoveNext:
 	.byte 128,64,45,233,13,112,160,225,64,9,45,233,17,223,77,226,13,176,160,225,40,0,139,229,0,15,160,227,4,0,139,229
 	.byte 40,0,155,229,24,96,144,229,40,0,155,229,0,31,224,227,24,16,128,229,28,96,139,229,128,3,86,227,8,0,0,42
 	.byte 28,0,155,229,0,17,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 660
+	.long mono_aot_AppAPITemplate_got - . + 664
 	.byte 0,0,159,231,1,0,128,224,0,0,144,229,0,240,160,225,114,0,0,234,40,0,155,229,52,0,139,229,40,0,155,229
 	.byte 0,0,144,229
 bl _p_106
@@ -3428,7 +3433,7 @@ bl _p_9
 	.byte 1,16,159,231,0,0,144,229,0,16,160,225,0,224,209,229,36,0,144,229,88,7,0,226,0,15,80,227,0,0,160,19
 	.byte 1,0,160,3,0,15,80,227,0,0,160,19,1,0,160,3,0,15,80,227,13,0,0,26,40,0,155,229,64,19,160,227
 	.byte 24,16,128,229,40,0,155,229,3,15,128,226,40,16,155,229,7,31,129,226,40,32,155,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 664
+	.long mono_aot_AppAPITemplate_got - . + 668
 	.byte 8,128,159,231
 bl _p_107
 
@@ -3448,7 +3453,7 @@ bl _p_9
 
 	.byte 48,0,155,229,40,0,155,229,8,0,144,229,0,0,139,229,255,255,255,234,19,0,0,234,8,0,139,229,4,0,139,229
 	.byte 40,0,155,229,0,31,224,227,24,16,128,229,40,0,155,229,3,15,128,226,4,16,155,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 392
+	.long mono_aot_AppAPITemplate_got - . + 396
 	.byte 8,128,159,231
 bl _p_109
 bl _p_40
@@ -3457,7 +3462,7 @@ bl _p_40
 bl _p_41
 
 	.byte 10,0,0,234,40,0,155,229,0,31,224,227,24,16,128,229,40,0,155,229,3,15,128,226,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 392
+	.long mono_aot_AppAPITemplate_got - . + 396
 	.byte 8,128,159,231,0,16,155,229
 bl _p_110
 
@@ -3478,7 +3483,7 @@ AppAPITemplate_InfoPage__CallAPIc__async1_SetStateMachine_System_Runtime_Compile
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,4,16,141,229,0,0,157,229,3,15,128,226
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 392
+	.long mono_aot_AppAPITemplate_got - . + 396
 	.byte 8,128,159,231,4,16,157,229
 bl _p_111
 
@@ -3500,7 +3505,7 @@ AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_MoveNext:
 	.byte 128,64,45,233,13,112,160,225,64,9,45,233,21,223,77,226,13,176,160,225,52,0,139,229,0,15,160,227,0,0,203,229
 	.byte 0,15,160,227,8,0,139,229,52,0,155,229,28,96,144,229,52,0,155,229,0,31,224,227,28,16,128,229,0,15,160,227
 	.byte 0,0,203,229,40,96,139,229,128,3,86,227,8,0,0,42,40,0,155,229,0,17,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 668
+	.long mono_aot_AppAPITemplate_got - . + 672
 	.byte 0,0,159,231,1,0,128,224,0,0,144,229,0,240,160,225,177,0,0,234,52,0,155,229,72,0,139,229,52,0,155,229
 	.byte 0,0,144,229
 bl _p_112
@@ -3520,7 +3525,7 @@ bl _p_52
 bl _p_9
 
 	.byte 56,0,155,229,128,99,224,227,64,99,70,226,64,3,86,227,7,0,0,42,6,17,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 672
+	.long mono_aot_AppAPITemplate_got - . + 676
 	.byte 0,0,159,231,1,0,128,224,0,0,144,229,0,240,160,225,52,0,155,229,60,0,139,229,52,0,155,229,8,32,144,229
 	.byte 52,0,155,229,4,16,144,229,2,0,160,225,0,224,210,229
 bl _p_53
@@ -3537,7 +3542,7 @@ bl _p_9
 	.byte 1,0,160,3,0,15,80,227,0,0,160,19,1,0,160,3,0,15,80,227,16,0,0,26,52,0,155,229,64,19,160,227
 	.byte 28,16,128,229,64,3,160,227,0,0,203,229,52,0,155,229,4,15,128,226,52,16,155,229,8,31,129,226,52,32,155,229
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 676
+	.long mono_aot_AppAPITemplate_got - . + 680
 	.byte 8,128,159,231
 bl _p_113
 
@@ -3658,7 +3663,7 @@ AppAPITemplate_MenuCell__ctor:
 bl _p_114
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 572
+	.long mono_aot_AppAPITemplate_got - . + 576
 	.byte 0,0,159,231,47,31,160,227
 bl _p_2
 
@@ -3669,14 +3674,14 @@ bl _p_84
 bl _p_115
 
 	.byte 180,0,155,229,0,16,160,225,152,16,139,229,0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 680
+	.long mono_aot_AppAPITemplate_got - . + 684
 	.byte 1,16,159,231,0,16,145,229,0,32,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 172
 	.byte 2,32,159,231,0,63,160,227,0,207,160,227,0,192,141,229,0,207,160,227,4,192,141,229
 bl _p_116
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 572
+	.long mono_aot_AppAPITemplate_got - . + 576
 	.byte 0,0,159,231,47,31,160,227
 bl _p_2
 
@@ -3684,7 +3689,7 @@ bl _p_2
 bl _p_84
 
 	.byte 176,0,155,229,168,0,139,229,0,192,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 604
+	.long mono_aot_AppAPITemplate_got - . + 608
 	.byte 0,0,159,231,0,16,144,229,64,16,139,229,4,16,144,229,68,16,139,229,8,16,144,229,72,16,139,229,12,16,144,229
 	.byte 76,16,139,229,16,16,144,229,80,16,139,229,20,16,144,229,84,16,139,229,24,16,144,229,88,16,139,229,28,0,144,229
 	.byte 92,0,139,229,12,0,160,225,172,0,139,229,64,16,155,229,68,32,155,229,72,48,155,229,76,0,155,229,0,0,141,229
@@ -3693,14 +3698,14 @@ bl _p_84
 bl _p_86
 
 	.byte 168,0,155,229,0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 680
+	.long mono_aot_AppAPITemplate_got - . + 684
 	.byte 1,16,159,231,0,16,145,229,0,32,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 188
 	.byte 2,32,159,231,144,0,139,229,0,63,160,227,0,207,160,227,0,192,141,229,0,207,160,227,4,192,141,229
 bl _p_116
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 628
+	.long mono_aot_AppAPITemplate_got - . + 632
 	.byte 0,0,159,231,57,31,160,227
 bl _p_2
 
@@ -3721,10 +3726,10 @@ bl _p_118
 
 	.byte 148,0,155,229,152,16,155,229,0,224,208,229,140,0,139,229,216,32,144,229,2,0,160,225,0,32,146,229,0,128,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,140,0,155,229,144,16,155,229,0,224,208,229,136,0,139,229,216,32,144,229
 	.byte 2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 636
+	.long mono_aot_AppAPITemplate_got - . + 640
 	.byte 8,128,159,231,15,224,160,225,20,240,18,229,136,16,155,229,128,0,155,229
 bl _p_119
 
@@ -3739,7 +3744,7 @@ wrapper_delegate_invoke_System_EventHandler_1_Xamarin_Forms_ItemTappedEventArgs_
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,4,16,141,229,8,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,53,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,4,16,157,229,8,32,157,229,51,255,47,225,28,0,0,234
@@ -3761,7 +3766,7 @@ Lme_3a:
 	.align 2
 	.no_dead_strip System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF
 System_Array_InternalArray__IEnumerable_GetEnumerator_T_REF:
-.file 2 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
+.file 2 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
 .loc 2 78 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,11,223,77,226,0,128,141,229,20,0,141,229,0,15,160,227,4,0,141,229
@@ -3995,7 +4000,7 @@ wrapper_delegate_invoke_System_Predicate_1_AppAPITemplate_MenuItem_invoke_bool_T
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,54,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,255,0,0,226,29,0,0,234
@@ -4020,7 +4025,7 @@ wrapper_delegate_invoke_System_Action_1_AppAPITemplate_MenuItem_invoke_void_T_Ap
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -4045,7 +4050,7 @@ wrapper_delegate_invoke_System_Comparison_1_AppAPITemplate_MenuItem_invoke_int_T
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -4070,7 +4075,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Collections_Generic_List_1_A
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -4094,7 +4099,7 @@ wrapper_delegate_invoke_System_Func_1_System_Collections_Generic_List_1_AppAPITe
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,49,0,0,26,255,255,255,234,13,15,138,226,0,64,144,229,4,0,160,225
 	.byte 0,15,80,227,17,0,0,26,4,15,138,226,0,0,144,229,0,0,141,229,0,15,80,227,6,0,0,10,7,15,138,226
 	.byte 0,0,144,229,2,15,138,226,0,16,144,229,0,0,157,229,49,255,47,225,26,0,0,234,7,15,138,226,0,0,144,229
@@ -4118,7 +4123,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Col
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -4142,7 +4147,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Threading_Tasks_Task_invoke_
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -4166,7 +4171,7 @@ wrapper_delegate_invoke_System_Func_1_System_Threading_Tasks_Task_invoke_TResult
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,49,0,0,26,255,255,255,234,13,15,138,226,0,64,144,229,4,0,160,225
 	.byte 0,15,80,227,17,0,0,26,4,15,138,226,0,0,144,229,0,0,141,229,0,15,80,227,6,0,0,10,7,15,138,226
 	.byte 0,0,144,229,2,15,138,226,0,16,144,229,0,0,157,229,49,255,47,225,26,0,0,234,7,15,138,226,0,0,144,229
@@ -4190,7 +4195,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Thr
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -4214,7 +4219,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Threading_Tasks
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -4238,7 +4243,7 @@ wrapper_delegate_invoke_System_Action_1_System_IAsyncResult_invoke_void_T_System
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -4263,7 +4268,7 @@ wrapper_delegate_invoke_System_Func_3_System_AsyncCallback_object_System_IAsyncR
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -4288,7 +4293,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -4312,7 +4317,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Collections_Gen
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -4336,7 +4341,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -4357,7 +4362,7 @@ Lme_51:
 	.align 2
 	.no_dead_strip System_Threading_Tasks_Task_1_TResult_BOOL__ctor
 System_Threading_Tasks_Task_1_TResult_BOOL__ctor:
-.file 3 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
+.file 3 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
 .loc 3 91 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,3,223,77,226,0,0,141,229,0,0,157,229
@@ -5044,7 +5049,7 @@ System_Threading_Tasks_Task_1_TResult_BOOL__TaskWhenAnyCastm__0_System_Threading
 .loc 3 87 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,2,223,77,226,0,128,141,229,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 688
+	.long mono_aot_AppAPITemplate_got - . + 692
 	.byte 0,0,159,231,215,193,208,225,128,195,12,226,0,0,92,227,0,0,0,26
 bl _p_157
 
@@ -5065,7 +5070,7 @@ Lme_6c:
 	.align 2
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor
 System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor:
-.file 4 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
+.file 4 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
 .loc 4 93 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,9,45,233,6,223,77,226,13,176,160,225,12,0,139,229,12,0,155,229,0,31,160,227
@@ -5187,7 +5192,7 @@ bl _p_189
 
 	.byte 255,0,0,226,0,15,80,227,29,0,0,10,0,0,155,229,68,0,139,229,72,0,139,229,68,0,155,229,0,15,80,227
 	.byte 13,0,0,10,68,0,155,229,0,0,144,229,0,0,144,229,8,0,144,229,12,0,144,229,0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 692
+	.long mono_aot_AppAPITemplate_got - . + 696
 	.byte 1,16,159,231,1,0,80,225,2,0,0,10,0,15,160,227,72,0,139,229,255,255,255,234,72,0,155,229,0,15,80,227
 	.byte 6,0,0,10
 .loc 4 570 0
@@ -5210,7 +5215,7 @@ bl _p_193
 .loc 4 578 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 696
+	.long mono_aot_AppAPITemplate_got - . + 700
 	.byte 0,0,159,231,0,0,208,229,0,15,80,227,4,0,0,10
 .loc 4 580 0
 
@@ -5328,7 +5333,7 @@ bl _p_191
 bl _p_192
 
 	.byte 56,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 700
+	.long mono_aot_AppAPITemplate_got - . + 704
 	.byte 0,0,159,231,60,0,139,229,10,0,160,225,0,224,218,229
 bl _p_204
 
@@ -5340,7 +5345,7 @@ bl _p_206
 .loc 4 831 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 696
+	.long mono_aot_AppAPITemplate_got - . + 700
 	.byte 0,0,159,231,0,0,208,229,0,15,80,227,2,0,0,10
 .loc 4 833 0
 
@@ -5366,7 +5371,7 @@ bl _p_9
 .loc 4 844 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 704
+	.long mono_aot_AppAPITemplate_got - . + 708
 	.byte 0,0,159,231,3,31,160,227
 bl _p_2
 
@@ -5380,7 +5385,7 @@ bl _p_9
 .loc 4 847 0
 
 	.byte 0,15,86,227,197,0,0,11,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 708
+	.long mono_aot_AppAPITemplate_got - . + 712
 	.byte 0,0,159,231,14,31,160,227
 bl _p_2
 
@@ -5394,13 +5399,13 @@ bl _p_212
 bl _p_213
 
 	.byte 56,16,155,229,32,0,129,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 712
+	.long mono_aot_AppAPITemplate_got - . + 716
 	.byte 0,0,159,231,20,32,144,229,12,32,129,229,16,0,144,229,8,0,129,229,0,15,160,227,48,0,193,229,10,0,160,225
 	.byte 48,32,155,229,15,224,160,225,12,240,154,229,0,80,160,225
 .loc 4 852 0
 
 	.byte 0,15,80,227,43,0,0,10,5,0,160,225,0,16,149,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 716
+	.long mono_aot_AppAPITemplate_got - . + 720
 	.byte 8,128,159,231,15,224,160,225,16,240,17,229,255,0,0,226,0,15,80,227,32,0,0,10,8,16,150,229,1,0,160,225
 	.byte 0,224,209,229
 bl _p_214
@@ -5420,7 +5425,7 @@ bl _p_216
 .loc 4 861 0
 
 	.byte 8,0,155,229,68,0,139,229,0,15,80,227,111,0,0,11,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 708
+	.long mono_aot_AppAPITemplate_got - . + 712
 	.byte 0,0,159,231,14,31,160,227
 bl _p_2
 
@@ -5434,7 +5439,7 @@ bl _p_217
 bl _p_218
 
 	.byte 56,16,155,229,32,0,129,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 712
+	.long mono_aot_AppAPITemplate_got - . + 716
 	.byte 0,0,159,231,20,32,144,229,12,32,129,229,16,0,144,229,8,0,129,229,0,15,160,227,48,0,193,229,10,0,160,225
 	.byte 48,32,155,229,15,224,160,225,12,240,154,229,12,0,139,229
 .loc 4 867 0
@@ -5454,7 +5459,7 @@ bl _p_193
 .loc 4 872 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 696
+	.long mono_aot_AppAPITemplate_got - . + 700
 	.byte 0,0,159,231,0,0,208,229,0,15,80,227,5,0,0,10
 .loc 4 874 0
 
@@ -5510,7 +5515,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -6217,7 +6222,7 @@ System_Threading_Tasks_Task_1_TResult_INT__TaskWhenAnyCastm__0_System_Threading_
 .loc 3 87 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,5,45,233,2,223,77,226,0,128,141,229,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 688
+	.long mono_aot_AppAPITemplate_got - . + 692
 	.byte 0,0,159,231,215,193,208,225,128,195,12,226,0,0,92,227,0,0,0,26
 bl _p_157
 
@@ -6359,7 +6364,7 @@ bl _p_251
 
 	.byte 255,0,0,226,0,15,80,227,29,0,0,10,0,0,155,229,68,0,139,229,72,0,139,229,68,0,155,229,0,15,80,227
 	.byte 13,0,0,10,68,0,155,229,0,0,144,229,0,0,144,229,8,0,144,229,12,0,144,229,0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 692
+	.long mono_aot_AppAPITemplate_got - . + 696
 	.byte 1,16,159,231,1,0,80,225,2,0,0,10,0,15,160,227,72,0,139,229,255,255,255,234,72,0,155,229,0,15,80,227
 	.byte 6,0,0,10
 .loc 4 570 0
@@ -6382,7 +6387,7 @@ bl _p_193
 .loc 4 578 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 696
+	.long mono_aot_AppAPITemplate_got - . + 700
 	.byte 0,0,159,231,0,0,208,229,0,15,80,227,4,0,0,10
 .loc 4 580 0
 
@@ -6500,7 +6505,7 @@ bl _p_191
 bl _p_192
 
 	.byte 56,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 700
+	.long mono_aot_AppAPITemplate_got - . + 704
 	.byte 0,0,159,231,60,0,139,229,10,0,160,225,0,224,218,229
 bl _p_204
 
@@ -6512,7 +6517,7 @@ bl _p_206
 .loc 4 831 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 696
+	.long mono_aot_AppAPITemplate_got - . + 700
 	.byte 0,0,159,231,0,0,208,229,0,15,80,227,2,0,0,10
 .loc 4 833 0
 
@@ -6538,7 +6543,7 @@ bl _p_9
 .loc 4 844 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 704
+	.long mono_aot_AppAPITemplate_got - . + 708
 	.byte 0,0,159,231,3,31,160,227
 bl _p_2
 
@@ -6552,7 +6557,7 @@ bl _p_9
 .loc 4 847 0
 
 	.byte 0,15,86,227,196,0,0,11,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 708
+	.long mono_aot_AppAPITemplate_got - . + 712
 	.byte 0,0,159,231,14,31,160,227
 bl _p_2
 
@@ -6566,13 +6571,13 @@ bl _p_262
 bl _p_263
 
 	.byte 56,16,155,229,32,0,129,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 712
+	.long mono_aot_AppAPITemplate_got - . + 716
 	.byte 0,0,159,231,20,32,144,229,12,32,129,229,16,0,144,229,8,0,129,229,0,15,160,227,48,0,193,229,10,0,160,225
 	.byte 48,32,155,229,15,224,160,225,12,240,154,229,0,80,160,225
 .loc 4 852 0
 
 	.byte 0,15,80,227,43,0,0,10,5,0,160,225,0,16,149,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 716
+	.long mono_aot_AppAPITemplate_got - . + 720
 	.byte 8,128,159,231,15,224,160,225,16,240,17,229,255,0,0,226,0,15,80,227,32,0,0,10,8,16,150,229,1,0,160,225
 	.byte 0,224,209,229
 bl _p_214
@@ -6592,7 +6597,7 @@ bl _p_265
 .loc 4 861 0
 
 	.byte 8,0,155,229,68,0,139,229,0,15,80,227,110,0,0,11,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 708
+	.long mono_aot_AppAPITemplate_got - . + 712
 	.byte 0,0,159,231,14,31,160,227
 bl _p_2
 
@@ -6606,7 +6611,7 @@ bl _p_266
 bl _p_267
 
 	.byte 56,16,155,229,32,0,129,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 712
+	.long mono_aot_AppAPITemplate_got - . + 716
 	.byte 0,0,159,231,20,32,144,229,12,32,129,229,16,0,144,229,8,0,129,229,0,15,160,227,48,0,193,229,10,0,160,225
 	.byte 48,32,155,229,15,224,160,225,12,240,154,229,12,0,139,229
 .loc 4 867 0
@@ -6626,7 +6631,7 @@ bl _p_193
 .loc 4 872 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 696
+	.long mono_aot_AppAPITemplate_got - . + 700
 	.byte 0,0,159,231,0,0,208,229,0,15,80,227,5,0,0,10
 .loc 4 874 0
 
@@ -6682,7 +6687,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -6706,7 +6711,7 @@ wrapper_delegate_invoke_System_Func_2_object_string_invoke_TResult_T_object:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -6730,7 +6735,7 @@ wrapper_delegate_invoke_System_Func_1_string_invoke_TResult:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,49,0,0,26,255,255,255,234,13,15,138,226,0,64,144,229,4,0,160,225
 	.byte 0,15,80,227,17,0,0,26,4,15,138,226,0,0,144,229,0,0,141,229,0,15,80,227,6,0,0,10,7,15,138,226
 	.byte 0,0,144,229,2,15,138,226,0,16,144,229,0,0,157,229,49,255,47,225,26,0,0,234,7,15,138,226,0,0,144,229
@@ -6754,7 +6759,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_string_inv
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -6778,7 +6783,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_string_invoke_TResult_
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -6802,7 +6807,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -6827,7 +6832,7 @@ wrapper_delegate_invoke_System_Func_3_System_Runtime_CompilerServices_CallSite_o
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -6852,7 +6857,7 @@ wrapper_delegate_invoke_System_Predicate_1_System_Linq_Expressions_Expression_in
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,54,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,255,0,0,226,29,0,0,234
@@ -6877,7 +6882,7 @@ wrapper_delegate_invoke_System_Action_1_System_Linq_Expressions_Expression_invok
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -6902,7 +6907,7 @@ wrapper_delegate_invoke_System_Comparison_1_System_Linq_Expressions_Expression_i
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -6927,7 +6932,7 @@ wrapper_delegate_invoke_System_Predicate_1_System_Linq_Expressions_ParameterExpr
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,54,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,255,0,0,226,29,0,0,234
@@ -6952,7 +6957,7 @@ wrapper_delegate_invoke_System_Action_1_System_Linq_Expressions_ParameterExpress
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -6977,7 +6982,7 @@ wrapper_delegate_invoke_System_Comparison_1_System_Linq_Expressions_ParameterExp
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -7115,16 +7120,16 @@ Lme_a3:
 System_Array_InternalArray__set_Item_T_REF_int_T_REF:
 .loc 2 207 0 prologue_end
 
-	.byte 128,64,45,233,13,112,160,225,112,5,45,233,7,223,77,226,0,128,141,229,0,80,160,225,1,96,160,225,16,32,141,229
-	.byte 12,0,149,229,0,0,86,225,48,0,0,42
+	.byte 128,64,45,233,13,112,160,225,112,5,45,233,9,223,77,226,0,128,141,229,0,80,160,225,1,96,160,225,16,32,141,229
+	.byte 12,0,149,229,0,0,86,225,51,0,0,42
 .loc 2 210 0
 
 	.byte 4,80,141,229,5,160,160,225,0,15,85,227,24,0,0,10,4,0,157,229,0,0,144,229,8,0,141,229,22,0,208,229
 	.byte 64,3,80,227,17,0,0,26,8,0,157,229,0,0,144,229,4,0,144,229,12,0,141,229,28,0,144,229,0,16,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 720
-	.byte 1,16,159,231,1,0,80,225,7,0,0,26,0,16,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 724
+	.byte 1,16,159,231,1,0,80,225,7,0,0,26,0,16,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 728
 	.byte 1,16,159,231,12,0,157,229,1,0,80,225,0,0,0,10,0,175,160,227,10,64,160,225
 .loc 2 211 0
 
@@ -7134,13 +7139,16 @@ System_Array_InternalArray__set_Item_T_REF_int_T_REF:
 	.byte 16,32,157,229,4,0,160,225,6,16,160,225,0,48,148,229,15,224,160,225,128,240,147,229
 .loc 2 213 0
 
-	.byte 6,0,0,234
+	.byte 9,0,0,234
 .loc 2 215 0
 
 	.byte 0,0,157,229
 bl _p_271
 
-	.byte 6,1,160,225,0,0,133,224,4,15,128,226,16,16,157,229,0,16,128,229,7,223,141,226,112,5,189,232,128,128,189,232
+	.byte 6,1,160,225,0,0,133,224,4,15,128,226,16,16,157,229,24,16,141,229,0,16,128,229
+bl _p_9
+
+	.byte 24,0,157,229,9,223,141,226,112,5,189,232,128,128,189,232
 .loc 2 208 0
 
 	.byte 156,13,160,227
@@ -7158,7 +7166,7 @@ wrapper_delegate_invoke_System_Func_2_System_Reflection_ParameterInfo_System_Lin
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -7182,7 +7190,7 @@ wrapper_delegate_invoke_System_Func_2_System_Linq_Expressions_ParameterExpressio
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -7207,7 +7215,7 @@ wrapper_delegate_invoke_System_Func_3_System_Runtime_CompilerServices_CallSite_o
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -7233,7 +7241,7 @@ wrapper_delegate_invoke_System_Func_3_System_Runtime_CompilerServices_CallSite_o
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -7259,7 +7267,7 @@ wrapper_delegate_invoke_System_Func_4_System_Runtime_CompilerServices_CallSite_o
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,8,223,77,226,0,64,160,225,1,80,160,225,12,32,141,229,16,48,141,229
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,60,0,0,26,255,255,255,234,13,15,132,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,23,0,0,26,4,15,132,226,0,0,144,229,4,0,141,229,0,15,80,227,9,0,0,10,7,15,132,226
 	.byte 0,0,144,229,2,15,132,226,0,192,144,229,4,0,157,229,5,16,160,225,12,32,157,229,16,48,157,229,60,255,47,225
@@ -7471,7 +7479,7 @@ Lme_b1:
 	.align 2
 	.no_dead_strip System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT
 System_Tuple_2_T1_INT_T2_INT__ctor_T1_INT_T2_INT:
-.file 5 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/tuple.cs"
+.file 5 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/tuple.cs"
 .loc 5 165 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,0,0,141,229,4,16,141,229,8,32,141,229,0,0,157,229
@@ -7509,12 +7517,12 @@ System_Tuple_2_T1_INT_T2_INT_Equals_object:
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,0,0,141,229,4,16,141,229,0,0,157,229,8,0,141,229
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 728
+	.long mono_aot_AppAPITemplate_got - . + 732
 	.byte 8,128,159,231
 bl _p_279
 
 	.byte 0,32,160,225,8,48,157,229,3,0,160,225,4,16,157,229,0,48,147,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 732
+	.long mono_aot_AppAPITemplate_got - . + 736
 	.byte 8,128,159,231,15,224,160,225,44,240,19,229,255,0,0,226,5,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_b5:
@@ -7556,7 +7564,7 @@ bl _p_281
 bl _p_2
 
 	.byte 0,32,160,225,8,0,157,229,12,16,157,229,8,0,130,229,10,0,160,225,0,48,154,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 736
+	.long mono_aot_AppAPITemplate_got - . + 740
 	.byte 8,128,159,231,15,224,160,225,12,240,19,229,255,0,0,226,0,15,80,227,31,0,0,10,0,0,157,229,12,0,144,229
 	.byte 16,0,141,229,0,0,157,229,0,0,144,229
 bl _p_282
@@ -7571,7 +7579,7 @@ bl _p_282
 bl _p_2
 
 	.byte 0,32,160,225,8,0,157,229,12,16,157,229,8,0,130,229,10,0,160,225,0,48,154,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 736
+	.long mono_aot_AppAPITemplate_got - . + 740
 	.byte 8,128,159,231,15,224,160,225,12,240,19,229,255,96,0,226,0,0,0,234,0,111,160,227,6,0,160,225,6,223,141,226
 	.byte 96,5,189,232,128,128,189,232
 
@@ -7584,12 +7592,12 @@ System_Tuple_2_T1_INT_T2_INT_System_IComparable_CompareTo_object:
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,0,0,141,229,4,16,141,229,0,0,157,229,8,0,141,229
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 740
+	.long mono_aot_AppAPITemplate_got - . + 744
 	.byte 8,128,159,231
 bl _p_283
 
 	.byte 0,32,160,225,8,48,157,229,3,0,160,225,4,16,157,229,0,48,147,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 744
+	.long mono_aot_AppAPITemplate_got - . + 748
 	.byte 8,128,159,231,15,224,160,225,16,240,19,229,5,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_b7:
@@ -7628,7 +7636,7 @@ bl _p_285
 bl _p_2
 
 	.byte 0,32,160,225,8,0,157,229,12,16,157,229,8,0,130,229,10,0,160,225,0,48,154,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 748
+	.long mono_aot_AppAPITemplate_got - . + 752
 	.byte 8,128,159,231,15,224,160,225,68,240,19,229,0,64,160,225
 .loc 5 202 0
 
@@ -7648,7 +7656,7 @@ bl _p_286
 bl _p_2
 
 	.byte 0,32,160,225,8,0,157,229,12,16,157,229,8,0,130,229,10,0,160,225,0,48,154,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 748
+	.long mono_aot_AppAPITemplate_got - . + 752
 	.byte 8,128,159,231,15,224,160,225,68,240,19,229,6,223,141,226,48,5,189,232,128,128,189,232
 .loc 5 195 0
 
@@ -7656,7 +7664,7 @@ bl _p_2
 bl _p_123
 
 	.byte 12,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 752
+	.long mono_aot_AppAPITemplate_got - . + 756
 	.byte 0,0,159,231,64,19,160,227
 bl _p_25
 
@@ -7681,12 +7689,12 @@ System_Tuple_2_T1_INT_T2_INT_GetHashCode:
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,0,0,141,229,0,0,157,229,8,0,141,229,0,128,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 728
+	.long mono_aot_AppAPITemplate_got - . + 732
 	.byte 8,128,159,231
 bl _p_279
 
 	.byte 0,16,160,225,8,32,157,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 756
+	.long mono_aot_AppAPITemplate_got - . + 760
 	.byte 8,128,159,231,15,224,160,225,12,240,18,229,5,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_b9:
@@ -7704,7 +7712,7 @@ bl _p_288
 bl _p_2
 
 	.byte 0,16,160,225,16,0,157,229,8,0,129,229,10,0,160,225,0,32,154,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 760
+	.long mono_aot_AppAPITemplate_got - . + 764
 	.byte 8,128,159,231,15,224,160,225,28,240,18,229,8,0,141,229,0,0,157,229,12,0,144,229,12,0,141,229,0,0,157,229
 	.byte 0,0,144,229
 bl _p_289
@@ -7713,7 +7721,7 @@ bl _p_289
 bl _p_2
 
 	.byte 0,16,160,225,12,0,157,229,8,0,129,229,10,0,160,225,0,32,154,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 760
+	.long mono_aot_AppAPITemplate_got - . + 764
 	.byte 8,128,159,231,15,224,160,225,28,240,18,229,0,16,160,225,8,0,157,229
 bl _p_290
 
@@ -7727,7 +7735,7 @@ System_Tuple_2_T1_INT_T2_INT_ToString:
 .loc 5 219 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,0,0,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 764
+	.long mono_aot_AppAPITemplate_got - . + 768
 	.byte 0,0,159,231,7,31,160,227
 bl _p_2
 
@@ -7738,7 +7746,7 @@ bl _p_291
 .loc 5 220 0
 
 	.byte 8,0,141,229,0,32,160,225,0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 768
+	.long mono_aot_AppAPITemplate_got - . + 772
 	.byte 1,16,159,231,2,0,160,225,0,224,210,229
 bl _p_292
 
@@ -7746,7 +7754,7 @@ bl _p_292
 .loc 5 221 0
 
 	.byte 0,32,157,229,2,0,160,225,0,32,146,229,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 772
+	.long mono_aot_AppAPITemplate_got - . + 776
 	.byte 8,128,159,231,15,224,160,225,28,240,18,229,5,223,141,226,0,1,189,232,128,128,189,232
 
 Lme_bb:
@@ -7768,7 +7776,7 @@ bl _p_294
 .loc 5 226 0
 
 	.byte 0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 776
+	.long mono_aot_AppAPITemplate_got - . + 780
 	.byte 1,16,159,231,10,0,160,225,0,224,218,229
 bl _p_292
 .loc 5 227 0
@@ -7784,7 +7792,7 @@ bl _p_294
 .loc 5 228 0
 
 	.byte 0,16,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 780
+	.long mono_aot_AppAPITemplate_got - . + 784
 	.byte 1,16,159,231,10,0,160,225,0,224,218,229
 bl _p_292
 .loc 5 229 0
@@ -7799,7 +7807,7 @@ wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_TemplatedItemsList_2_Xa
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,54,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,255,0,0,226,29,0,0,234
@@ -7824,7 +7832,7 @@ wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_TemplatedItemsList_2_Xamar
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -7849,7 +7857,7 @@ wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_TemplatedItemsList_2_X
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -7874,7 +7882,7 @@ wrapper_delegate_invoke_System_Predicate_1_Xamarin_Forms_Cell_invoke_bool_T_Xama
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,54,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,255,0,0,226,29,0,0,234
@@ -7899,7 +7907,7 @@ wrapper_delegate_invoke_System_Action_1_Xamarin_Forms_Cell_invoke_void_T_Xamarin
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -7924,7 +7932,7 @@ wrapper_delegate_invoke_System_Comparison_1_Xamarin_Forms_Cell_invoke_int_T_T_Xa
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -8157,7 +8165,7 @@ wrapper_delegate_invoke_System_Predicate_1_object_invoke_bool_T_object:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,54,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,255,0,0,226,29,0,0,234
@@ -8182,7 +8190,7 @@ wrapper_delegate_invoke_System_Action_1_object_invoke_void_T_object:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -8207,7 +8215,7 @@ wrapper_delegate_invoke_System_Comparison_1_object_invoke_int_T_T_object_object:
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -8232,7 +8240,7 @@ wrapper_delegate_invoke_System_Predicate_1_string_invoke_bool_T_string:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,54,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,255,0,0,226,29,0,0,234
@@ -8257,7 +8265,7 @@ wrapper_delegate_invoke_System_Action_1_string_invoke_void_T_string:
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -8282,7 +8290,7 @@ wrapper_delegate_invoke_System_Comparison_1_string_invoke_int_T_T_string_string:
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,80,160,225,8,16,141,229,12,32,141,229,0,0,159,229
 	.byte 0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,55,0,0,26,255,255,255,234,13,15,133,226,0,160,144,229,10,0,160,225
 	.byte 0,15,80,227,21,0,0,26,4,15,133,226,0,0,144,229,0,0,141,229,0,15,80,227,8,0,0,10,7,15,133,226
 	.byte 0,0,144,229,2,15,133,226,0,48,144,229,0,0,157,229,8,16,157,229,12,32,157,229,51,255,47,225,30,0,0,234
@@ -8307,7 +8315,7 @@ wrapper_delegate_invoke_System_Func_2_object_System_Collections_Generic_List_1_s
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -8331,7 +8339,7 @@ wrapper_delegate_invoke_System_Func_1_System_Collections_Generic_List_1_string_i
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,160,160,225,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,49,0,0,26,255,255,255,234,13,15,138,226,0,64,144,229,4,0,160,225
 	.byte 0,15,80,227,17,0,0,26,4,15,138,226,0,0,144,229,0,0,141,229,0,15,80,227,6,0,0,10,7,15,138,226
 	.byte 0,0,144,229,2,15,138,226,0,16,144,229,0,0,157,229,49,255,47,225,26,0,0,234,7,15,138,226,0,0,144,229
@@ -8355,7 +8363,7 @@ wrapper_delegate_invoke_System_Action_1_System_Threading_Tasks_Task_1_System_Col
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,4,223,77,226,0,96,160,225,4,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,50,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,4,16,157,229,50,255,47,225,26,0,0,234,7,15,134,226
@@ -8379,7 +8387,7 @@ wrapper_delegate_invoke_System_Func_2_System_IAsyncResult_System_Collections_Gen
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -8403,7 +8411,7 @@ wrapper_delegate_invoke_System_Func_2_System_Threading_Tasks_Task_1_System_Threa
 .loc 1 1 0
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,6,223,77,226,0,96,160,225,8,16,141,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 684
+	.long mono_aot_AppAPITemplate_got - . + 688
 	.byte 0,0,159,231,0,0,144,229,0,15,80,227,52,0,0,26,255,255,255,234,13,15,134,226,0,176,144,229,11,0,160,225
 	.byte 0,15,80,227,19,0,0,26,4,15,134,226,0,0,144,229,0,0,141,229,0,15,80,227,7,0,0,10,7,15,134,226
 	.byte 0,0,144,229,2,15,134,226,0,32,144,229,0,0,157,229,8,16,157,229,50,255,47,225,28,0,0,234,7,15,134,226
@@ -8430,7 +8438,7 @@ ut_217:
 	.align 2
 	.no_dead_strip System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_
 System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_TStateMachine_GSHAREDVT_TStateMachine_GSHAREDVT_:
-.file 6 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
+.file 6 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
 .loc 6 72 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,112,13,45,233,20,223,77,226,13,176,160,225,40,128,139,229,56,0,139,229,60,16,139,229
@@ -8467,7 +8475,7 @@ bl _p_305
 .loc 6 84 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 784
+	.long mono_aot_AppAPITemplate_got - . + 788
 	.byte 0,0,159,231,64,0,139,229,40,0,155,229
 bl _p_303
 
@@ -8629,9 +8637,9 @@ bl _p_312
 bl _p_192
 
 	.byte 72,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 788
-	.byte 0,0,159,231,76,0,139,229,0,0,159,229,0,0,0,234
 	.long mono_aot_AppAPITemplate_got - . + 792
+	.byte 0,0,159,231,76,0,139,229,0,0,159,229,0,0,0,234
+	.long mono_aot_AppAPITemplate_got - . + 796
 	.byte 0,0,159,231,80,0,139,229,24,0,155,229
 bl _p_314
 
@@ -8664,7 +8672,7 @@ bl _p_316
 .loc 6 177 0
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 796
+	.long mono_aot_AppAPITemplate_got - . + 800
 	.byte 0,0,159,231,72,0,139,229,24,0,155,229
 bl _p_317
 
@@ -8728,7 +8736,7 @@ bl _p_16
 	.byte 80,0,155,229,0,16,144,229,44,16,139,229,4,16,144,229,48,16,139,229,8,16,144,229,52,16,139,229,12,16,144,229
 	.byte 56,16,139,229,16,16,144,229,60,16,139,229,20,16,144,229,64,16,139,229,24,16,144,229,68,16,139,229,28,0,144,229
 	.byte 72,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 800
+	.long mono_aot_AppAPITemplate_got - . + 804
 	.byte 0,0,159,231,10,31,160,227
 bl _p_2
 
@@ -8801,7 +8809,7 @@ bl _p_20
 bl _p_309
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 804
+	.long mono_aot_AppAPITemplate_got - . + 808
 	.byte 0,0,159,231,11,31,160,227
 bl _p_2
 
@@ -8964,7 +8972,7 @@ bl _p_16
 	.byte 80,0,155,229,0,16,144,229,44,16,139,229,4,16,144,229,48,16,139,229,8,16,144,229,52,16,139,229,12,16,144,229
 	.byte 56,16,139,229,16,16,144,229,60,16,139,229,20,16,144,229,64,16,139,229,24,16,144,229,68,16,139,229,28,0,144,229
 	.byte 72,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 808
+	.long mono_aot_AppAPITemplate_got - . + 812
 	.byte 0,0,159,231,10,31,160,227
 bl _p_2
 
@@ -9037,7 +9045,7 @@ bl _p_20
 bl _p_309
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 812
+	.long mono_aot_AppAPITemplate_got - . + 816
 	.byte 0,0,159,231,11,31,160,227
 bl _p_2
 
@@ -9175,7 +9183,7 @@ System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Gene
 .loc 6 543 0
 
 	.byte 0,15,160,227,5,96,160,225,0,15,80,227,8,0,0,10,0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 392
+	.long mono_aot_AppAPITemplate_got - . + 396
 	.byte 8,128,159,231,5,0,160,225
 bl _p_80
 
@@ -9190,7 +9198,7 @@ bl _p_313
 .loc 6 551 0
 
 	.byte 0,128,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 392
+	.long mono_aot_AppAPITemplate_got - . + 396
 	.byte 8,128,159,231,5,0,160,225
 bl _p_80
 
@@ -9200,7 +9208,7 @@ bl _p_80
 	.byte 80,0,155,229,0,16,144,229,44,16,139,229,4,16,144,229,48,16,139,229,8,16,144,229,52,16,139,229,12,16,144,229
 	.byte 56,16,139,229,16,16,144,229,60,16,139,229,20,16,144,229,64,16,139,229,24,16,144,229,68,16,139,229,28,0,144,229
 	.byte 72,0,139,229,0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 816
+	.long mono_aot_AppAPITemplate_got - . + 820
 	.byte 0,0,159,231,10,31,160,227
 bl _p_2
 
@@ -9273,7 +9281,7 @@ bl _p_20
 bl _p_309
 
 	.byte 0,0,159,229,0,0,0,234
-	.long mono_aot_AppAPITemplate_got - . + 820
+	.long mono_aot_AppAPITemplate_got - . + 824
 	.byte 0,0,159,231,11,31,160,227
 bl _p_2
 
@@ -9335,7 +9343,7 @@ ut_232:
 	.align 2
 	.no_dead_strip System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL
 System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL:
-.file 7 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
+.file 7 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
 .loc 7 317 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,1,45,233,5,223,77,226,0,128,141,229,4,0,141,229,8,16,141,229,8,16,157,229
@@ -9376,7 +9384,7 @@ Lme_e9:
 	.align 2
 	.no_dead_strip System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
 System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_:
-.file 8 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
+.file 8 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
 .loc 8 131 0 prologue_end
 
 	.byte 128,64,45,233,13,112,160,225,0,9,45,233,14,223,77,226,13,176,160,225,20,0,139,229,24,16,139,229,28,32,139,229
@@ -9945,7 +9953,7 @@ unwind_info:
 	.byte 13,13,14,20,68,8,8,8,10,8,11,14,8,68,11,45,12,13,0,68,14,8,135,2,72,14,20,134,5,136,4,139
 	.byte 3,142,1,68,14,104,68,13,11,3,44,3,10,68,13,13,14,20,68,8,6,8,8,8,11,14,8,68,11,36,12,13
 	.byte 0,68,14,8,135,2,72,14,16,136,4,138,3,142,1,68,14,88,3,184,1,10,68,14,16,68,8,8,8,10,14,8
-	.byte 68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,32,2,80,10,68,14,16,68,8,6
+	.byte 68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,32,2,104,10,68,14,16,68,8,6
 	.byte 8,8,14,8,68,11,32,12,13,0,68,14,8,135,2,72,14,16,136,4,138,3,142,1,2,48,10,68,14,16,68,8
 	.byte 8,8,10,14,8,68,11,57,12,13,0,68,14,8,135,2,72,14,32,132,8,133,7,134,6,136,5,138,4,139,3,142
 	.byte 1,68,14,120,68,13,11,3,124,33,10,68,13,13,14,32,68,8,4,8,5,8,6,8,8,8,10,8,11,14,8,68
@@ -10015,7 +10023,7 @@ unwind_info:
 	.byte 32,132,8,133,7,134,6,136,5,138,4,139,3,142,1,68,14,48,2,244,10,68,14,32,68,8,4,8,5,8,6,8
 	.byte 8,8,10,8,11,14,8,68,11,31,12,13,0,68,14,8,135,2,72,14,12,136,3,142,1,68,14,32,2,68,10,68
 	.byte 14,12,68,8,8,14,8,68,11,47,12,13,0,68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142
-	.byte 1,68,14,56,2,212,10,68,14,28,68,8,4,8,5,8,6,8,8,8,10,14,8,68,11,52,12,13,0,68,14,8
+	.byte 1,68,14,64,2,224,10,68,14,28,68,8,4,8,5,8,6,8,8,8,10,14,8,68,11,52,12,13,0,68,14,8
 	.byte 135,2,72,14,32,132,8,133,7,134,6,136,5,138,4,139,3,142,1,68,14,64,3,12,1,10,68,14,32,68,8,4
 	.byte 8,5,8,6,8,8,8,10,8,11,14,8,68,11,35,12,13,0,68,14,8,135,2,72,14,16,134,4,136,3,142,1
 	.byte 68,14,24,2,40,10,68,14,16,68,8,6,8,8,14,8,68,11,39,12,13,0,68,14,8,135,2,72,14,20,133,5
@@ -10059,1979 +10067,1979 @@ plt_Xamarin_Forms_Application__ctor:
 _p_1:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 836,7004
+	.long mono_aot_AppAPITemplate_got - . + 840,7013
 	.no_dead_strip plt_wrapper_alloc_object_AllocSmall_intptr_intptr
 plt_wrapper_alloc_object_AllocSmall_intptr_intptr:
 _p_2:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 840,7009
+	.long mono_aot_AppAPITemplate_got - . + 844,7018
 	.no_dead_strip plt_AppAPITemplate_FirstMenu__ctor
 plt_AppAPITemplate_FirstMenu__ctor:
 _p_3:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 844,7017
+	.long mono_aot_AppAPITemplate_got - . + 848,7026
 	.no_dead_strip plt_Xamarin_Forms_NavigationPage__ctor_Xamarin_Forms_Page
 plt_Xamarin_Forms_NavigationPage__ctor_Xamarin_Forms_Page:
 _p_4:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 848,7019
+	.long mono_aot_AppAPITemplate_got - . + 852,7028
 	.no_dead_strip plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page
 plt_Xamarin_Forms_Application_set_MainPage_Xamarin_Forms_Page:
 _p_5:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 852,7024
+	.long mono_aot_AppAPITemplate_got - . + 856,7033
 	.no_dead_strip plt_AppAPITemplate_Menu__ctor
 plt_AppAPITemplate_Menu__ctor:
 _p_6:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 856,7029
+	.long mono_aot_AppAPITemplate_got - . + 860,7038
 	.no_dead_strip plt_Xamarin_Forms_Page_set_Title_string
 plt_Xamarin_Forms_Page_set_Title_string:
 _p_7:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 860,7031
+	.long mono_aot_AppAPITemplate_got - . + 864,7040
 	.no_dead_strip plt_Xamarin_Forms_ContentPage_set_Content_Xamarin_Forms_View
 plt_Xamarin_Forms_ContentPage_set_Content_Xamarin_Forms_View:
 _p_8:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 864,7036
+	.long mono_aot_AppAPITemplate_got - . + 868,7045
 	.no_dead_strip plt_wrapper_write_barrier_object_wbarrier_noconc_intptr
 plt_wrapper_write_barrier_object_wbarrier_noconc_intptr:
 _p_9:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 868,7041
+	.long mono_aot_AppAPITemplate_got - . + 872,7050
 	.no_dead_strip plt_Xamarin_Forms_ListView_add_ItemTapped_System_EventHandler_1_Xamarin_Forms_ItemTappedEventArgs
 plt_Xamarin_Forms_ListView_add_ItemTapped_System_EventHandler_1_Xamarin_Forms_ItemTappedEventArgs:
 _p_10:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 872,7048
+	.long mono_aot_AppAPITemplate_got - . + 876,7057
 	.no_dead_strip plt__jit_icall_mono_arch_throw_corlib_exception
 plt__jit_icall_mono_arch_throw_corlib_exception:
 _p_11:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 876,7053
+	.long mono_aot_AppAPITemplate_got - . + 880,7062
 	.no_dead_strip plt_string_memset_byte__int_int
 plt_string_memset_byte__int_int:
 _p_12:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 880,7088
+	.long mono_aot_AppAPITemplate_got - . + 884,7097
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Create:
 _p_13:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 884,7093
+	.long mono_aot_AppAPITemplate_got - . + 888,7102
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_FirstMenu__OnAppearingc__async0_AppAPITemplate_FirstMenu__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_FirstMenu__OnAppearingc__async0_AppAPITemplate_FirstMenu__OnAppearingc__async0_:
 _p_14:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 888,7098
+	.long mono_aot_AppAPITemplate_got - . + 892,7107
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Start_AppAPITemplate_FirstMenu__CallAPIc__async1_AppAPITemplate_FirstMenu__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Start_AppAPITemplate_FirstMenu__CallAPIc__async1_AppAPITemplate_FirstMenu__CallAPIc__async1_:
 _p_15:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 892,7110
+	.long mono_aot_AppAPITemplate_got - . + 896,7119
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_get_Task:
 _p_16:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 896,7122
+	.long mono_aot_AppAPITemplate_got - . + 900,7131
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_get_Navigation
 plt_Xamarin_Forms_VisualElement_get_Navigation:
 _p_17:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 900,7133
+	.long mono_aot_AppAPITemplate_got - . + 904,7142
 	.no_dead_strip plt_AppAPITemplate_SecondMenu__ctor_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu__ctor_AppAPITemplate_MenuItem:
 _p_18:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 904,7138
+	.long mono_aot_AppAPITemplate_got - . + 908,7147
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_:
 _p_19:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 908,7140
+	.long mono_aot_AppAPITemplate_got - . + 912,7149
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_get_Task:
 _p_20:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 912,7152
+	.long mono_aot_AppAPITemplate_got - . + 916,7161
 	.no_dead_strip plt_Newtonsoft_Json_JsonConvert_DeserializeObject_string
 plt_Newtonsoft_Json_JsonConvert_DeserializeObject_string:
 _p_21:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 916,7163
+	.long mono_aot_AppAPITemplate_got - . + 920,7172
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_Convert_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Type
 plt_Microsoft_CSharp_RuntimeBinder_Binder_Convert_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Type:
 _p_22:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 920,7168
+	.long mono_aot_AppAPITemplate_got - . + 924,7177
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_System_Collections_IEnumerable_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_System_Collections_IEnumerable_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_23:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 924,7173
+	.long mono_aot_AppAPITemplate_got - . + 928,7182
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_string_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_string_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_24:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 928,7184
+	.long mono_aot_AppAPITemplate_got - . + 932,7193
 	.no_dead_strip plt_wrapper_alloc_object_AllocVector_intptr_intptr
 plt_wrapper_alloc_object_AllocVector_intptr_intptr:
 _p_25:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 932,7195
+	.long mono_aot_AppAPITemplate_got - . + 936,7204
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo_Create_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfoFlags_string
 plt_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo_Create_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfoFlags_string:
 _p_26:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 936,7203
+	.long mono_aot_AppAPITemplate_got - . + 940,7212
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_GetMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 plt_Microsoft_CSharp_RuntimeBinder_Binder_GetMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
 _p_27:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 940,7208
+	.long mono_aot_AppAPITemplate_got - . + 944,7217
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_object_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_3_System_Runtime_CompilerServices_CallSite_object_object_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_28:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 944,7213
+	.long mono_aot_AppAPITemplate_got - . + 948,7222
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_GetIndex_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 plt_Microsoft_CSharp_RuntimeBinder_Binder_GetIndex_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
 _p_29:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 948,7224
+	.long mono_aot_AppAPITemplate_got - . + 952,7233
 	.no_dead_strip plt_System_Runtime_CompilerServices_CallSite_1_System_Func_4_System_Runtime_CompilerServices_CallSite_object_string_object_Create_System_Runtime_CompilerServices_CallSiteBinder
 plt_System_Runtime_CompilerServices_CallSite_1_System_Func_4_System_Runtime_CompilerServices_CallSite_object_string_object_Create_System_Runtime_CompilerServices_CallSiteBinder:
 _p_30:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 952,7229
+	.long mono_aot_AppAPITemplate_got - . + 956,7238
 	.no_dead_strip plt_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Add_AppAPITemplate_MenuItem
 plt_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Add_AppAPITemplate_MenuItem:
 _p_31:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 956,7240
+	.long mono_aot_AppAPITemplate_got - . + 960,7249
 	.no_dead_strip plt_Xamarin_Forms_ListView_set_SelectedItem_object
 plt_Xamarin_Forms_ListView_set_SelectedItem_object:
 _p_32:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 960,7251
+	.long mono_aot_AppAPITemplate_got - . + 964,7260
 	.no_dead_strip plt_AppAPITemplate_FirstMenu_ClickMenuItem_AppAPITemplate_MenuItem
 plt_AppAPITemplate_FirstMenu_ClickMenuItem_AppAPITemplate_MenuItem:
 _p_33:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 964,7256
+	.long mono_aot_AppAPITemplate_got - . + 968,7265
 	.no_dead_strip plt_AppAPITemplate_FirstMenu_CallAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_FirstMenu_CallAPI_AppAPITemplate_MenuItem:
 _p_34:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 968,7258
+	.long mono_aot_AppAPITemplate_got - . + 972,7267
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_GetAwaiter
 plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_GetAwaiter:
 _p_35:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 972,7260
+	.long mono_aot_AppAPITemplate_got - . + 976,7269
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AppAPITemplate_FirstMenu__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem__AppAPITemplate_FirstMenu__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AppAPITemplate_FirstMenu__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem__AppAPITemplate_FirstMenu__OnAppearingc__async0_:
 _p_36:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 976,7271
+	.long mono_aot_AppAPITemplate_got - . + 980,7280
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_GetResult:
 _p_37:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 980,7283
+	.long mono_aot_AppAPITemplate_got - . + 984,7292
 	.no_dead_strip plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable
 plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemsSource_System_Collections_IEnumerable:
 _p_38:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 984,7294
+	.long mono_aot_AppAPITemplate_got - . + 988,7303
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetException_System_Exception:
 _p_39:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 988,7305
+	.long mono_aot_AppAPITemplate_got - . + 992,7314
 	.no_dead_strip plt__jit_icall_mono_thread_get_undeniable_exception
 plt__jit_icall_mono_thread_get_undeniable_exception:
 _p_40:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 992,7310
+	.long mono_aot_AppAPITemplate_got - . + 996,7319
 	.no_dead_strip plt__jit_icall_mono_arch_throw_exception
 plt__jit_icall_mono_arch_throw_exception:
 _p_41:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 996,7349
+	.long mono_aot_AppAPITemplate_got - . + 1000,7358
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetResult:
 _p_42:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1000,7377
+	.long mono_aot_AppAPITemplate_got - . + 1004,7386
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_43:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1004,7382
+	.long mono_aot_AppAPITemplate_got - . + 1008,7391
 	.no_dead_strip plt_AppAPITemplate_FirstMenu_GetResponseFromAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_FirstMenu_GetResponseFromAPI_AppAPITemplate_MenuItem:
 _p_44:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1008,7387
+	.long mono_aot_AppAPITemplate_got - . + 1012,7396
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_string_GetAwaiter
 plt_System_Threading_Tasks_Task_1_string_GetAwaiter:
 _p_45:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1012,7389
+	.long mono_aot_AppAPITemplate_got - . + 1016,7398
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_FirstMenu__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_FirstMenu__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_FirstMenu__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_FirstMenu__CallAPIc__async1_:
 _p_46:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1016,7400
+	.long mono_aot_AppAPITemplate_got - . + 1020,7409
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_GetResult:
 _p_47:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1020,7412
+	.long mono_aot_AppAPITemplate_got - . + 1024,7421
 	.no_dead_strip plt_AppAPITemplate_FirstMenu_ConstructMenuItemList_string
 plt_AppAPITemplate_FirstMenu_ConstructMenuItemList_string:
 _p_48:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1024,7423
+	.long mono_aot_AppAPITemplate_got - . + 1028,7432
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetException_System_Exception:
 _p_49:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1028,7425
+	.long mono_aot_AppAPITemplate_got - . + 1032,7434
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetResult_System_Collections_Generic_List_1_AppAPITemplate_MenuItem
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetResult_System_Collections_Generic_List_1_AppAPITemplate_MenuItem:
 _p_50:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1032,7436
+	.long mono_aot_AppAPITemplate_got - . + 1036,7445
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_51:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1036,7447
+	.long mono_aot_AppAPITemplate_got - . + 1040,7456
 	.no_dead_strip plt_System_Net_Http_HttpClient__ctor
 plt_System_Net_Http_HttpClient__ctor:
 _p_52:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1040,7458
+	.long mono_aot_AppAPITemplate_got - . + 1044,7467
 	.no_dead_strip plt_System_Net_Http_HttpClient_GetStringAsync_string
 plt_System_Net_Http_HttpClient_GetStringAsync_string:
 _p_53:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1044,7463
+	.long mono_aot_AppAPITemplate_got - . + 1048,7472
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_:
 _p_54:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1048,7468
+	.long mono_aot_AppAPITemplate_got - . + 1052,7477
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetException_System_Exception:
 _p_55:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1052,7480
+	.long mono_aot_AppAPITemplate_got - . + 1056,7489
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetResult_string
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetResult_string:
 _p_56:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1056,7491
+	.long mono_aot_AppAPITemplate_got - . + 1060,7500
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_57:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1060,7502
+	.long mono_aot_AppAPITemplate_got - . + 1064,7511
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_SecondMenu__OnAppearingc__async0_AppAPITemplate_SecondMenu__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_SecondMenu__OnAppearingc__async0_AppAPITemplate_SecondMenu__OnAppearingc__async0_:
 _p_58:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1064,7513
+	.long mono_aot_AppAPITemplate_got - . + 1068,7522
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Start_AppAPITemplate_SecondMenu__CallAPIc__async1_AppAPITemplate_SecondMenu__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_Start_AppAPITemplate_SecondMenu__CallAPIc__async1_AppAPITemplate_SecondMenu__CallAPIc__async1_:
 _p_59:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1068,7525
+	.long mono_aot_AppAPITemplate_got - . + 1072,7534
 	.no_dead_strip plt_AppAPITemplate_InfoPage__ctor_AppAPITemplate_MenuItem
 plt_AppAPITemplate_InfoPage__ctor_AppAPITemplate_MenuItem:
 _p_60:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1072,7537
+	.long mono_aot_AppAPITemplate_got - . + 1076,7546
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_:
 _p_61:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1076,7539
+	.long mono_aot_AppAPITemplate_got - . + 1080,7548
 	.no_dead_strip plt_string_Replace_string_string
 plt_string_Replace_string_string:
 _p_62:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1080,7551
+	.long mono_aot_AppAPITemplate_got - . + 1084,7560
 	.no_dead_strip plt_string_Concat_string_string_string
 plt_string_Concat_string_string_string:
 _p_63:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1084,7556
+	.long mono_aot_AppAPITemplate_got - . + 1088,7565
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_ClickMenuItem_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu_ClickMenuItem_AppAPITemplate_MenuItem:
 _p_64:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1088,7561
+	.long mono_aot_AppAPITemplate_got - . + 1092,7570
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_CallAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu_CallAPI_AppAPITemplate_MenuItem:
 _p_65:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1092,7563
+	.long mono_aot_AppAPITemplate_got - . + 1096,7572
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AppAPITemplate_SecondMenu__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem__AppAPITemplate_SecondMenu__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AppAPITemplate_SecondMenu__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem__AppAPITemplate_SecondMenu__OnAppearingc__async0_:
 _p_66:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1096,7565
+	.long mono_aot_AppAPITemplate_got - . + 1100,7574
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_GetResponseFromAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu_GetResponseFromAPI_AppAPITemplate_MenuItem:
 _p_67:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1100,7577
+	.long mono_aot_AppAPITemplate_got - . + 1104,7586
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_SecondMenu__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_SecondMenu__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_AppAPITemplate_MenuItem_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_SecondMenu__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_SecondMenu__CallAPIc__async1_:
 _p_68:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1104,7579
+	.long mono_aot_AppAPITemplate_got - . + 1108,7588
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_ConstructMenuItemList_string
 plt_AppAPITemplate_SecondMenu_ConstructMenuItemList_string:
 _p_69:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1108,7591
+	.long mono_aot_AppAPITemplate_got - . + 1112,7600
 	.no_dead_strip plt_AppAPITemplate_SecondMenu_ConstructQuery_AppAPITemplate_MenuItem
 plt_AppAPITemplate_SecondMenu_ConstructQuery_AppAPITemplate_MenuItem:
 _p_70:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1112,7593
+	.long mono_aot_AppAPITemplate_got - . + 1116,7602
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_:
 _p_71:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1116,7595
+	.long mono_aot_AppAPITemplate_got - . + 1120,7604
 	.no_dead_strip plt_Xamarin_Forms_ListView__ctor
 plt_Xamarin_Forms_ListView__ctor:
 _p_72:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1120,7607
+	.long mono_aot_AppAPITemplate_got - . + 1124,7616
 	.no_dead_strip plt_Xamarin_Forms_DataTemplate__ctor_System_Type
 plt_Xamarin_Forms_DataTemplate__ctor_System_Type:
 _p_73:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1124,7612
+	.long mono_aot_AppAPITemplate_got - . + 1128,7621
 	.no_dead_strip plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemTemplate_Xamarin_Forms_DataTemplate
 plt_Xamarin_Forms_ItemsView_1_Xamarin_Forms_Cell_set_ItemTemplate_Xamarin_Forms_DataTemplate:
 _p_74:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1128,7617
+	.long mono_aot_AppAPITemplate_got - . + 1132,7626
 	.no_dead_strip plt_Xamarin_Forms_ListView_set_RowHeight_int
 plt_Xamarin_Forms_ListView_set_RowHeight_int:
 _p_75:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1132,7628
+	.long mono_aot_AppAPITemplate_got - . + 1136,7637
 	.no_dead_strip plt_Xamarin_Forms_ContentPage__ctor
 plt_Xamarin_Forms_ContentPage__ctor:
 _p_76:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1136,7633
+	.long mono_aot_AppAPITemplate_got - . + 1140,7642
 	.no_dead_strip plt_AppAPITemplate_InfoPage_InfoPageLayout__ctor
 plt_AppAPITemplate_InfoPage_InfoPageLayout__ctor:
 _p_77:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1140,7638
+	.long mono_aot_AppAPITemplate_got - . + 1144,7647
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_InfoPage__OnAppearingc__async0_AppAPITemplate_InfoPage__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_Start_AppAPITemplate_InfoPage__OnAppearingc__async0_AppAPITemplate_InfoPage__OnAppearingc__async0_:
 _p_78:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1144,7640
+	.long mono_aot_AppAPITemplate_got - . + 1148,7649
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_Start_AppAPITemplate_InfoPage__CallAPIc__async1_AppAPITemplate_InfoPage__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_Start_AppAPITemplate_InfoPage__CallAPIc__async1_AppAPITemplate_InfoPage__CallAPIc__async1_:
 _p_79:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1148,7652
+	.long mono_aot_AppAPITemplate_got - . + 1152,7661
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_get_Task
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_get_Task:
 _p_80:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1152,7664
+	.long mono_aot_AppAPITemplate_got - . + 1156,7673
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_Start_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_:
 _p_81:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1156,7675
+	.long mono_aot_AppAPITemplate_got - . + 1160,7684
 	.no_dead_strip plt_Microsoft_CSharp_RuntimeBinder_Binder_InvokeMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Collections_Generic_IEnumerable_1_System_Type_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo
 plt_Microsoft_CSharp_RuntimeBinder_Binder_InvokeMember_Microsoft_CSharp_RuntimeBinder_CSharpBinderFlags_string_System_Collections_Generic_IEnumerable_1_System_Type_System_Type_System_Collections_Generic_IEnumerable_1_Microsoft_CSharp_RuntimeBinder_CSharpArgumentInfo:
 _p_82:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1160,7687
+	.long mono_aot_AppAPITemplate_got - . + 1164,7696
 	.no_dead_strip plt_System_Collections_Generic_List_1_string_Add_string
 plt_System_Collections_Generic_List_1_string_Add_string:
 _p_83:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1164,7692
+	.long mono_aot_AppAPITemplate_got - . + 1168,7701
 	.no_dead_strip plt_Xamarin_Forms_Label__ctor
 plt_Xamarin_Forms_Label__ctor:
 _p_84:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1168,7703
+	.long mono_aot_AppAPITemplate_got - . + 1172,7712
 	.no_dead_strip plt_Xamarin_Forms_Label_set_Text_string
 plt_Xamarin_Forms_Label_set_Text_string:
 _p_85:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1172,7708
+	.long mono_aot_AppAPITemplate_got - . + 1176,7717
 	.no_dead_strip plt_Xamarin_Forms_Label_set_TextColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_Label_set_TextColor_Xamarin_Forms_Color:
 _p_86:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1176,7713
+	.long mono_aot_AppAPITemplate_got - . + 1180,7722
 	.no_dead_strip plt_Xamarin_Forms_Label_set_FontSize_double
 plt_Xamarin_Forms_Label_set_FontSize_double:
 _p_87:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1180,7718
+	.long mono_aot_AppAPITemplate_got - . + 1184,7727
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color
 plt_Xamarin_Forms_VisualElement_set_BackgroundColor_Xamarin_Forms_Color:
 _p_88:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1184,7723
+	.long mono_aot_AppAPITemplate_got - . + 1188,7732
 	.no_dead_strip plt_Xamarin_Forms_Label_set_HorizontalTextAlignment_Xamarin_Forms_TextAlignment
 plt_Xamarin_Forms_Label_set_HorizontalTextAlignment_Xamarin_Forms_TextAlignment:
 _p_89:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1188,7728
+	.long mono_aot_AppAPITemplate_got - . + 1192,7737
 	.no_dead_strip plt_Xamarin_Forms_Label_set_VerticalTextAlignment_Xamarin_Forms_TextAlignment
 plt_Xamarin_Forms_Label_set_VerticalTextAlignment_Xamarin_Forms_TextAlignment:
 _p_90:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1192,7733
+	.long mono_aot_AppAPITemplate_got - . + 1196,7742
 	.no_dead_strip plt_Xamarin_Forms_View_set_HorizontalOptions_Xamarin_Forms_LayoutOptions
 plt_Xamarin_Forms_View_set_HorizontalOptions_Xamarin_Forms_LayoutOptions:
 _p_91:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1196,7738
+	.long mono_aot_AppAPITemplate_got - . + 1200,7747
 	.no_dead_strip plt_Xamarin_Forms_Device_OnPlatform_string_string_string_string
 plt_Xamarin_Forms_Device_OnPlatform_string_string_string_string:
 _p_92:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1200,7743
+	.long mono_aot_AppAPITemplate_got - . + 1204,7752
 	.no_dead_strip plt_Xamarin_Forms_Label_set_FontFamily_string
 plt_Xamarin_Forms_Label_set_FontFamily_string:
 _p_93:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1204,7755
+	.long mono_aot_AppAPITemplate_got - . + 1208,7764
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_WidthRequest_double
 plt_Xamarin_Forms_VisualElement_set_WidthRequest_double:
 _p_94:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1208,7760
+	.long mono_aot_AppAPITemplate_got - . + 1212,7769
 	.no_dead_strip plt_Xamarin_Forms_View_set_VerticalOptions_Xamarin_Forms_LayoutOptions
 plt_Xamarin_Forms_View_set_VerticalOptions_Xamarin_Forms_LayoutOptions:
 _p_95:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1212,7765
+	.long mono_aot_AppAPITemplate_got - . + 1216,7774
 	.no_dead_strip plt_Xamarin_Forms_StackLayout__ctor
 plt_Xamarin_Forms_StackLayout__ctor:
 _p_96:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1216,7770
+	.long mono_aot_AppAPITemplate_got - . + 1220,7779
 	.no_dead_strip plt_Xamarin_Forms_StackLayout_set_Spacing_double
 plt_Xamarin_Forms_StackLayout_set_Spacing_double:
 _p_97:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1220,7775
+	.long mono_aot_AppAPITemplate_got - . + 1224,7784
 	.no_dead_strip plt_Xamarin_Forms_StackLayout_set_Orientation_Xamarin_Forms_StackOrientation
 plt_Xamarin_Forms_StackLayout_set_Orientation_Xamarin_Forms_StackOrientation:
 _p_98:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1224,7780
+	.long mono_aot_AppAPITemplate_got - . + 1228,7789
 	.no_dead_strip plt_Xamarin_Forms_VisualElement_set_HeightRequest_double
 plt_Xamarin_Forms_VisualElement_set_HeightRequest_double:
 _p_99:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1228,7785
+	.long mono_aot_AppAPITemplate_got - . + 1232,7794
 	.no_dead_strip plt_AppAPITemplate_InfoPage_InfoPageLayoutChildren__ctor
 plt_AppAPITemplate_InfoPage_InfoPageLayoutChildren__ctor:
 _p_100:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1232,7790
+	.long mono_aot_AppAPITemplate_got - . + 1236,7799
 	.no_dead_strip plt_AppAPITemplate_InfoPage_CallAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_InfoPage_CallAPI_AppAPITemplate_MenuItem:
 _p_101:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1236,7792
+	.long mono_aot_AppAPITemplate_got - . + 1240,7801
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_string_GetAwaiter
 plt_System_Threading_Tasks_Task_1_System_Collections_Generic_List_1_string_GetAwaiter:
 _p_102:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1240,7794
+	.long mono_aot_AppAPITemplate_got - . + 1244,7803
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string_AppAPITemplate_InfoPage__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string__AppAPITemplate_InfoPage__OnAppearingc__async0_
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string_AppAPITemplate_InfoPage__OnAppearingc__async0_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string__AppAPITemplate_InfoPage__OnAppearingc__async0_:
 _p_103:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1244,7805
+	.long mono_aot_AppAPITemplate_got - . + 1248,7814
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string_GetResult
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_System_Collections_Generic_List_1_string_GetResult:
 _p_104:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1248,7817
+	.long mono_aot_AppAPITemplate_got - . + 1252,7826
 	.no_dead_strip plt_System_Collections_Generic_List_1_string_get_Item_int
 plt_System_Collections_Generic_List_1_string_get_Item_int:
 _p_105:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1252,7828
+	.long mono_aot_AppAPITemplate_got - . + 1256,7837
 	.no_dead_strip plt_AppAPITemplate_InfoPage_GetResponseFromAPI_AppAPITemplate_MenuItem
 plt_AppAPITemplate_InfoPage_GetResponseFromAPI_AppAPITemplate_MenuItem:
 _p_106:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1256,7839
+	.long mono_aot_AppAPITemplate_got - . + 1260,7848
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_InfoPage__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_InfoPage__CallAPIc__async1_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_InfoPage__CallAPIc__async1_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_InfoPage__CallAPIc__async1_:
 _p_107:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1260,7841
+	.long mono_aot_AppAPITemplate_got - . + 1264,7850
 	.no_dead_strip plt_AppAPITemplate_InfoPage_ConstructList_string
 plt_AppAPITemplate_InfoPage_ConstructList_string:
 _p_108:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1264,7853
+	.long mono_aot_AppAPITemplate_got - . + 1268,7862
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetException_System_Exception
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetException_System_Exception:
 _p_109:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1268,7855
+	.long mono_aot_AppAPITemplate_got - . + 1272,7864
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetResult_System_Collections_Generic_List_1_string
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetResult_System_Collections_Generic_List_1_string:
 _p_110:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1272,7866
+	.long mono_aot_AppAPITemplate_got - . + 1276,7875
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Collections_Generic_List_1_string_SetStateMachine_System_Runtime_CompilerServices_IAsyncStateMachine:
 _p_111:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1276,7877
+	.long mono_aot_AppAPITemplate_got - . + 1280,7886
 	.no_dead_strip plt_AppAPITemplate_InfoPage_ConstructQuery_AppAPITemplate_MenuItem
 plt_AppAPITemplate_InfoPage_ConstructQuery_AppAPITemplate_MenuItem:
 _p_112:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1280,7888
+	.long mono_aot_AppAPITemplate_got - . + 1284,7897
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_
 plt_System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_string_AwaitUnsafeOnCompleted_System_Runtime_CompilerServices_TaskAwaiter_1_string_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_System_Runtime_CompilerServices_TaskAwaiter_1_string__AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_:
 _p_113:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1284,7890
+	.long mono_aot_AppAPITemplate_got - . + 1288,7899
 	.no_dead_strip plt_Xamarin_Forms_ViewCell__ctor
 plt_Xamarin_Forms_ViewCell__ctor:
 _p_114:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1288,7902
+	.long mono_aot_AppAPITemplate_got - . + 1292,7911
 	.no_dead_strip plt_Xamarin_Forms_Label_set_FontAttributes_Xamarin_Forms_FontAttributes
 plt_Xamarin_Forms_Label_set_FontAttributes_Xamarin_Forms_FontAttributes:
 _p_115:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1292,7907
+	.long mono_aot_AppAPITemplate_got - . + 1296,7916
 	.no_dead_strip plt_Xamarin_Forms_BindableObjectExtensions_SetBinding_Xamarin_Forms_BindableObject_Xamarin_Forms_BindableProperty_string_Xamarin_Forms_BindingMode_Xamarin_Forms_IValueConverter_string
 plt_Xamarin_Forms_BindableObjectExtensions_SetBinding_Xamarin_Forms_BindableObject_Xamarin_Forms_BindableProperty_string_Xamarin_Forms_BindingMode_Xamarin_Forms_IValueConverter_string:
 _p_116:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1296,7912
+	.long mono_aot_AppAPITemplate_got - . + 1300,7921
 	.no_dead_strip plt_Xamarin_Forms_Thickness_op_Implicit_double
 plt_Xamarin_Forms_Thickness_op_Implicit_double:
 _p_117:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1300,7917
+	.long mono_aot_AppAPITemplate_got - . + 1304,7926
 	.no_dead_strip plt_Xamarin_Forms_Layout_set_Padding_Xamarin_Forms_Thickness
 plt_Xamarin_Forms_Layout_set_Padding_Xamarin_Forms_Thickness:
 _p_118:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1304,7922
+	.long mono_aot_AppAPITemplate_got - . + 1308,7931
 	.no_dead_strip plt_Xamarin_Forms_ViewCell_set_View_Xamarin_Forms_View
 plt_Xamarin_Forms_ViewCell_set_View_Xamarin_Forms_View:
 _p_119:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1308,7927
+	.long mono_aot_AppAPITemplate_got - . + 1312,7936
 	.no_dead_strip plt__jit_icall_mono_thread_interruption_checkpoint
 plt__jit_icall_mono_thread_interruption_checkpoint:
 _p_120:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1312,7932
+	.long mono_aot_AppAPITemplate_got - . + 1316,7941
 	.no_dead_strip plt__rgctx_fetch_0
 plt__rgctx_fetch_0:
 _p_121:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1316,7998
+	.long mono_aot_AppAPITemplate_got - . + 1320,8007
 	.no_dead_strip plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array
 plt_System_Array_InternalEnumerator_1_T_REF__ctor_System_Array:
 _p_122:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1320,8006
+	.long mono_aot_AppAPITemplate_got - . + 1324,8015
 	.no_dead_strip plt__jit_icall_mono_helper_ldstr_mscorlib
 plt__jit_icall_mono_helper_ldstr_mscorlib:
 _p_123:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1324,8025
+	.long mono_aot_AppAPITemplate_got - . + 1328,8034
 	.no_dead_strip plt__rgctx_fetch_1
 plt__rgctx_fetch_1:
 _p_124:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1328,8073
+	.long mono_aot_AppAPITemplate_got - . + 1332,8082
 	.no_dead_strip plt_Locale_GetText_string
 plt_Locale_GetText_string:
 _p_125:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1332,8097
+	.long mono_aot_AppAPITemplate_got - . + 1336,8106
 	.no_dead_strip plt_System_Array_Copy_System_Array_int_System_Array_int_int
 plt_System_Array_Copy_System_Array_int_System_Array_int_int:
 _p_126:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1336,8102
+	.long mono_aot_AppAPITemplate_got - . + 1340,8111
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor
 plt_System_Threading_Tasks_Task__ctor:
 _p_127:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1340,8107
+	.long mono_aot_AppAPITemplate_got - . + 1344,8116
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool
 plt_System_Threading_Tasks_Task__ctor_object_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_128:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1344,8112
+	.long mono_aot_AppAPITemplate_got - . + 1348,8121
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task__ctor_bool_System_Threading_Tasks_TaskCreationOptions_System_Threading_CancellationToken:
 _p_129:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1348,8117
+	.long mono_aot_AppAPITemplate_got - . + 1352,8126
 	.no_dead_strip plt_System_Threading_Tasks_Task_InternalCurrentIfAttached_System_Threading_Tasks_TaskCreationOptions
 plt_System_Threading_Tasks_Task_InternalCurrentIfAttached_System_Threading_Tasks_TaskCreationOptions:
 _p_130:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1352,8122
+	.long mono_aot_AppAPITemplate_got - . + 1356,8131
 	.no_dead_strip plt__rgctx_fetch_2
 plt__rgctx_fetch_2:
 _p_131:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1356,8145
+	.long mono_aot_AppAPITemplate_got - . + 1360,8154
 	.no_dead_strip plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_
 plt_System_Threading_Tasks_Task_PossiblyCaptureContext_System_Threading_StackCrawlMark_:
 _p_132:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1360,8168
+	.long mono_aot_AppAPITemplate_got - . + 1364,8177
 	.no_dead_strip plt__rgctx_fetch_3
 plt__rgctx_fetch_3:
 _p_133:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1364,8191
+	.long mono_aot_AppAPITemplate_got - . + 1368,8200
 	.no_dead_strip plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler
 plt_System_Threading_Tasks_Task__ctor_System_Delegate_object_System_Threading_Tasks_Task_System_Threading_CancellationToken_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_Tasks_TaskScheduler:
 _p_134:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1368,8214
+	.long mono_aot_AppAPITemplate_got - . + 1372,8223
 	.no_dead_strip plt_System_Environment_GetResourceString_string
 plt_System_Environment_GetResourceString_string:
 _p_135:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1372,8219
+	.long mono_aot_AppAPITemplate_got - . + 1376,8228
 	.no_dead_strip plt__rgctx_fetch_4
 plt__rgctx_fetch_4:
 _p_136:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1376,8242
+	.long mono_aot_AppAPITemplate_got - . + 1380,8251
 	.no_dead_strip plt__rgctx_fetch_5
 plt__rgctx_fetch_5:
 _p_137:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1380,8250
+	.long mono_aot_AppAPITemplate_got - . + 1384,8259
 	.no_dead_strip plt_System_Threading_Tasks_Task_ScheduleAndStart_bool
 plt_System_Threading_Tasks_Task_ScheduleAndStart_bool:
 _p_138:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1384,8273
+	.long mono_aot_AppAPITemplate_got - . + 1388,8282
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsCompleted
 plt_System_Threading_Tasks_Task_get_IsCompleted:
 _p_139:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1388,8278
+	.long mono_aot_AppAPITemplate_got - . + 1392,8287
 	.no_dead_strip plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int
 plt_System_Threading_Tasks_Task_AtomicStateUpdate_int_int:
 _p_140:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1392,8283
+	.long mono_aot_AppAPITemplate_got - . + 1396,8292
 	.no_dead_strip plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted
 plt_System_Threading_Tasks_Task_ContingentProperties_SetCompleted:
 _p_141:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1396,8288
+	.long mono_aot_AppAPITemplate_got - . + 1400,8297
 	.no_dead_strip plt_System_Threading_Tasks_Task_FinishStageThree
 plt_System_Threading_Tasks_Task_FinishStageThree:
 _p_142:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1400,8293
+	.long mono_aot_AppAPITemplate_got - . + 1404,8302
 	.no_dead_strip plt__rgctx_fetch_6
 plt__rgctx_fetch_6:
 _p_143:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1404,8316
+	.long mono_aot_AppAPITemplate_got - . + 1408,8325
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsWaitNotificationEnabledOrNotRanToCompletion
 plt_System_Threading_Tasks_Task_get_IsWaitNotificationEnabledOrNotRanToCompletion:
 _p_144:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1408,8339
+	.long mono_aot_AppAPITemplate_got - . + 1412,8348
 	.no_dead_strip plt__rgctx_fetch_7
 plt__rgctx_fetch_7:
 _p_145:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1412,8362
+	.long mono_aot_AppAPITemplate_got - . + 1416,8371
 	.no_dead_strip plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken
 plt_System_Threading_Tasks_Task_InternalWait_int_System_Threading_CancellationToken:
 _p_146:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1416,8385
+	.long mono_aot_AppAPITemplate_got - . + 1420,8394
 	.no_dead_strip plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary
 plt_System_Threading_Tasks_Task_NotifyDebuggerOfWaitCompletionIfNecessary:
 _p_147:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1420,8390
+	.long mono_aot_AppAPITemplate_got - . + 1424,8399
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_IsRanToCompletion
 plt_System_Threading_Tasks_Task_get_IsRanToCompletion:
 _p_148:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1424,8395
+	.long mono_aot_AppAPITemplate_got - . + 1428,8404
 	.no_dead_strip plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool
 plt_System_Threading_Tasks_Task_ThrowIfExceptional_bool:
 _p_149:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1428,8400
+	.long mono_aot_AppAPITemplate_got - . + 1432,8409
 	.no_dead_strip plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool
 plt_System_Threading_Tasks_Task_EnsureContingentPropertiesInitialized_bool:
 _p_150:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1432,8405
+	.long mono_aot_AppAPITemplate_got - . + 1436,8414
 	.no_dead_strip plt_System_Threading_Tasks_Task_AddException_object
 plt_System_Threading_Tasks_Task_AddException_object:
 _p_151:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1436,8410
+	.long mono_aot_AppAPITemplate_got - . + 1440,8419
 	.no_dead_strip plt_System_Threading_Tasks_Task_Finish_bool
 plt_System_Threading_Tasks_Task_Finish_bool:
 _p_152:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1440,8415
+	.long mono_aot_AppAPITemplate_got - . + 1444,8424
 	.no_dead_strip plt__rgctx_fetch_8
 plt__rgctx_fetch_8:
 _p_153:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1444,8438
+	.long mono_aot_AppAPITemplate_got - . + 1448,8447
 	.no_dead_strip plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object
 plt_System_Threading_Tasks_Task_RecordInternalCancellationRequest_System_Threading_CancellationToken_object:
 _p_154:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1448,8461
+	.long mono_aot_AppAPITemplate_got - . + 1452,8470
 	.no_dead_strip plt_System_Threading_Tasks_Task_CancellationCleanupLogic
 plt_System_Threading_Tasks_Task_CancellationCleanupLogic:
 _p_155:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1452,8466
+	.long mono_aot_AppAPITemplate_got - . + 1456,8475
 	.no_dead_strip plt__rgctx_fetch_9
 plt__rgctx_fetch_9:
 _p_156:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1456,8489
+	.long mono_aot_AppAPITemplate_got - . + 1460,8498
 	.no_dead_strip plt__jit_icall_mono_generic_class_init
 plt__jit_icall_mono_generic_class_init:
 _p_157:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1460,8497
+	.long mono_aot_AppAPITemplate_got - . + 1464,8506
 	.no_dead_strip plt__rgctx_fetch_10
 plt__rgctx_fetch_10:
 _p_158:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1464,8523
+	.long mono_aot_AppAPITemplate_got - . + 1468,8532
 	.no_dead_strip plt__rgctx_fetch_11
 plt__rgctx_fetch_11:
 _p_159:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1468,8557
+	.long mono_aot_AppAPITemplate_got - . + 1472,8566
 	.no_dead_strip plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr
 plt_wrapper_castclass_object___isinst_with_cache_object_intptr_intptr:
 _p_160:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1472,8565
+	.long mono_aot_AppAPITemplate_got - . + 1476,8574
 	.no_dead_strip plt__rgctx_fetch_12
 plt__rgctx_fetch_12:
 _p_161:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1476,8585
+	.long mono_aot_AppAPITemplate_got - . + 1480,8594
 	.no_dead_strip plt__rgctx_fetch_13
 plt__rgctx_fetch_13:
 _p_162:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1480,8620
+	.long mono_aot_AppAPITemplate_got - . + 1484,8629
 	.no_dead_strip plt__rgctx_fetch_14
 plt__rgctx_fetch_14:
 _p_163:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1484,8628
+	.long mono_aot_AppAPITemplate_got - . + 1488,8637
 	.no_dead_strip plt__rgctx_fetch_15
 plt__rgctx_fetch_15:
 _p_164:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1488,8678
+	.long mono_aot_AppAPITemplate_got - . + 1492,8687
 	.no_dead_strip plt__rgctx_fetch_16
 plt__rgctx_fetch_16:
 _p_165:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1492,8686
+	.long mono_aot_AppAPITemplate_got - . + 1496,8695
 	.no_dead_strip plt_System_Threading_Tasks_TaskScheduler_get_Current
 plt_System_Threading_Tasks_TaskScheduler_get_Current:
 _p_166:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1496,8709
+	.long mono_aot_AppAPITemplate_got - . + 1500,8718
 	.no_dead_strip plt__rgctx_fetch_17
 plt__rgctx_fetch_17:
 _p_167:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1500,8732
+	.long mono_aot_AppAPITemplate_got - . + 1504,8741
 	.no_dead_strip plt__rgctx_fetch_18
 plt__rgctx_fetch_18:
 _p_168:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1504,8773
+	.long mono_aot_AppAPITemplate_got - . + 1508,8782
 	.no_dead_strip plt__rgctx_fetch_19
 plt__rgctx_fetch_19:
 _p_169:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1508,8814
+	.long mono_aot_AppAPITemplate_got - . + 1512,8823
 	.no_dead_strip plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_
 plt_System_Threading_Tasks_Task_CreationOptionsFromContinuationOptions_System_Threading_Tasks_TaskContinuationOptions_System_Threading_Tasks_TaskCreationOptions__System_Threading_Tasks_InternalTaskOptions_:
 _p_170:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1512,8837
+	.long mono_aot_AppAPITemplate_got - . + 1516,8846
 	.no_dead_strip plt__rgctx_fetch_20
 plt__rgctx_fetch_20:
 _p_171:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1516,8869
+	.long mono_aot_AppAPITemplate_got - . + 1520,8878
 	.no_dead_strip plt__rgctx_fetch_21
 plt__rgctx_fetch_21:
 _p_172:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1520,8877
+	.long mono_aot_AppAPITemplate_got - . + 1524,8886
 	.no_dead_strip plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions
 plt_System_Threading_Tasks_Task_ContinueWithCore_System_Threading_Tasks_Task_System_Threading_Tasks_TaskScheduler_System_Threading_CancellationToken_System_Threading_Tasks_TaskContinuationOptions:
 _p_173:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1524,8900
+	.long mono_aot_AppAPITemplate_got - . + 1528,8909
 	.no_dead_strip plt__rgctx_fetch_22
 plt__rgctx_fetch_22:
 _p_174:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1528,8932
+	.long mono_aot_AppAPITemplate_got - . + 1532,8941
 	.no_dead_strip plt__rgctx_fetch_23
 plt__rgctx_fetch_23:
 _p_175:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1532,8940
+	.long mono_aot_AppAPITemplate_got - . + 1536,8949
 	.no_dead_strip plt__rgctx_fetch_24
 plt__rgctx_fetch_24:
 _p_176:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1536,8963
+	.long mono_aot_AppAPITemplate_got - . + 1540,8972
 	.no_dead_strip plt__rgctx_fetch_25
 plt__rgctx_fetch_25:
 _p_177:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1540,8971
+	.long mono_aot_AppAPITemplate_got - . + 1544,8980
 	.no_dead_strip plt__jit_icall_mono_ldftn
 plt__jit_icall_mono_ldftn:
 _p_178:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1544,8994
+	.long mono_aot_AppAPITemplate_got - . + 1548,9003
 	.no_dead_strip plt__rgctx_fetch_26
 plt__rgctx_fetch_26:
 _p_179:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1548,9018
+	.long mono_aot_AppAPITemplate_got - . + 1552,9027
 	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr
 plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_BOOL__ctor_object_intptr:
 _p_180:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1552,9026
+	.long mono_aot_AppAPITemplate_got - . + 1556,9035
 	.no_dead_strip plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result
 plt_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_get_Result:
 _p_181:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1556,9048
+	.long mono_aot_AppAPITemplate_got - . + 1560,9057
 	.no_dead_strip plt__rgctx_fetch_27
 plt__rgctx_fetch_27:
 _p_182:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1560,9086
+	.long mono_aot_AppAPITemplate_got - . + 1564,9095
 	.no_dead_strip plt__rgctx_fetch_28
 plt__rgctx_fetch_28:
 _p_183:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1564,9112
+	.long mono_aot_AppAPITemplate_got - . + 1568,9121
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions
 plt_System_Threading_Tasks_TaskFactory_CheckMultiTaskContinuationOptions_System_Threading_Tasks_TaskContinuationOptions:
 _p_184:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1568,9135
+	.long mono_aot_AppAPITemplate_got - . + 1572,9144
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions
 plt_System_Threading_Tasks_TaskFactory_CheckCreationOptions_System_Threading_Tasks_TaskCreationOptions:
 _p_185:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1572,9140
+	.long mono_aot_AppAPITemplate_got - . + 1576,9149
 	.no_dead_strip plt_System_OperationCanceledException_get_CancellationToken
 plt_System_OperationCanceledException_get_CancellationToken:
 _p_186:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1576,9145
+	.long mono_aot_AppAPITemplate_got - . + 1580,9154
 	.no_dead_strip plt__rgctx_fetch_29
 plt__rgctx_fetch_29:
 _p_187:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1580,9177
+	.long mono_aot_AppAPITemplate_got - . + 1584,9186
 	.no_dead_strip plt__rgctx_fetch_30
 plt__rgctx_fetch_30:
 _p_188:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1584,9185
+	.long mono_aot_AppAPITemplate_got - . + 1588,9194
 	.no_dead_strip plt__rgctx_fetch_31
 plt__rgctx_fetch_31:
 _p_189:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1588,9208
+	.long mono_aot_AppAPITemplate_got - . + 1592,9217
 	.no_dead_strip plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool
 plt_System_Threading_Tasks_TaskExceptionHolder_MarkAsHandled_bool:
 _p_190:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1592,9231
+	.long mono_aot_AppAPITemplate_got - . + 1596,9240
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn
 plt_System_Threading_Tasks_AsyncCausalityTracer_get_LoggingOn:
 _p_191:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1596,9236
+	.long mono_aot_AppAPITemplate_got - . + 1600,9245
 	.no_dead_strip plt_System_Threading_Tasks_Task_get_Id
 plt_System_Threading_Tasks_Task_get_Id:
 _p_192:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1600,9241
+	.long mono_aot_AppAPITemplate_got - . + 1604,9250
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus
 plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCompletion_System_Threading_Tasks_CausalityTraceLevel_int_System_Threading_Tasks_AsyncCausalityStatus:
 _p_193:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1604,9246
+	.long mono_aot_AppAPITemplate_got - . + 1608,9255
 	.no_dead_strip plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int
 plt_System_Threading_Tasks_Task_RemoveFromActiveTasks_int:
 _p_194:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1608,9251
+	.long mono_aot_AppAPITemplate_got - . + 1612,9260
 	.no_dead_strip plt__rgctx_fetch_32
 plt__rgctx_fetch_32:
 _p_195:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1612,9256
+	.long mono_aot_AppAPITemplate_got - . + 1616,9265
 	.no_dead_strip plt__rgctx_fetch_33
 plt__rgctx_fetch_33:
 _p_196:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1616,9279
+	.long mono_aot_AppAPITemplate_got - . + 1620,9288
 	.no_dead_strip plt__rgctx_fetch_34
 plt__rgctx_fetch_34:
 _p_197:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1620,9320
+	.long mono_aot_AppAPITemplate_got - . + 1624,9329
 	.no_dead_strip plt__rgctx_fetch_35
 plt__rgctx_fetch_35:
 _p_198:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1624,9328
+	.long mono_aot_AppAPITemplate_got - . + 1628,9337
 	.no_dead_strip plt__rgctx_fetch_36
 plt__rgctx_fetch_36:
 _p_199:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1628,9378
+	.long mono_aot_AppAPITemplate_got - . + 1632,9387
 	.no_dead_strip plt__rgctx_fetch_37
 plt__rgctx_fetch_37:
 _p_200:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1632,9386
+	.long mono_aot_AppAPITemplate_got - . + 1636,9395
 	.no_dead_strip plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool
 plt_System_Threading_Tasks_TaskFactory_CheckFromAsyncOptions_System_Threading_Tasks_TaskCreationOptions_bool:
 _p_201:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1636,9409
+	.long mono_aot_AppAPITemplate_got - . + 1640,9418
 	.no_dead_strip plt__rgctx_fetch_38
 plt__rgctx_fetch_38:
 _p_202:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1640,9414
+	.long mono_aot_AppAPITemplate_got - . + 1644,9423
 	.no_dead_strip plt__rgctx_fetch_39
 plt__rgctx_fetch_39:
 _p_203:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1644,9422
+	.long mono_aot_AppAPITemplate_got - . + 1648,9431
 	.no_dead_strip plt_System_Delegate_get_Method
 plt_System_Delegate_get_Method:
 _p_204:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1648,9445
+	.long mono_aot_AppAPITemplate_got - . + 1652,9454
 	.no_dead_strip plt_string_Concat_string_string
 plt_string_Concat_string_string:
 _p_205:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1652,9450
+	.long mono_aot_AppAPITemplate_got - . + 1656,9459
 	.no_dead_strip plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong
 plt_System_Threading_Tasks_AsyncCausalityTracer_TraceOperationCreation_System_Threading_Tasks_CausalityTraceLevel_int_string_ulong:
 _p_206:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1656,9455
+	.long mono_aot_AppAPITemplate_got - . + 1660,9464
 	.no_dead_strip plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task
 plt_System_Threading_Tasks_Task_AddToActiveTasks_System_Threading_Tasks_Task:
 _p_207:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1660,9460
+	.long mono_aot_AppAPITemplate_got - . + 1664,9469
 	.no_dead_strip plt_System_Runtime_Versioning_BinaryCompatibility_get_TargetsAtLeast_Desktop_V4_5
 plt_System_Runtime_Versioning_BinaryCompatibility_get_TargetsAtLeast_Desktop_V4_5:
 _p_208:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1664,9465
+	.long mono_aot_AppAPITemplate_got - . + 1668,9474
 	.no_dead_strip plt__rgctx_fetch_40
 plt__rgctx_fetch_40:
 _p_209:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1668,9479
+	.long mono_aot_AppAPITemplate_got - . + 1672,9488
 	.no_dead_strip plt__rgctx_fetch_41
 plt__rgctx_fetch_41:
 _p_210:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1672,9487
+	.long mono_aot_AppAPITemplate_got - . + 1676,9496
 	.no_dead_strip plt_System_Threading_AtomicBoolean__ctor
 plt_System_Threading_AtomicBoolean__ctor:
 _p_211:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1676,9510
+	.long mono_aot_AppAPITemplate_got - . + 1680,9519
 	.no_dead_strip plt__rgctx_fetch_42
 plt__rgctx_fetch_42:
 _p_212:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1680,9515
+	.long mono_aot_AppAPITemplate_got - . + 1684,9524
 	.no_dead_strip plt__rgctx_fetch_43
 plt__rgctx_fetch_43:
 _p_213:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1684,9538
+	.long mono_aot_AppAPITemplate_got - . + 1688,9547
 	.no_dead_strip plt_System_Threading_AtomicBoolean_TryRelaxedSet
 plt_System_Threading_AtomicBoolean_TryRelaxedSet:
 _p_214:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1688,9561
+	.long mono_aot_AppAPITemplate_got - . + 1692,9570
 	.no_dead_strip plt__rgctx_fetch_44
 plt__rgctx_fetch_44:
 _p_215:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1692,9566
+	.long mono_aot_AppAPITemplate_got - . + 1696,9575
 	.no_dead_strip plt__rgctx_fetch_45
 plt__rgctx_fetch_45:
 _p_216:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1696,9574
+	.long mono_aot_AppAPITemplate_got - . + 1700,9583
 	.no_dead_strip plt__rgctx_fetch_46
 plt__rgctx_fetch_46:
 _p_217:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1700,9597
+	.long mono_aot_AppAPITemplate_got - . + 1704,9606
 	.no_dead_strip plt__rgctx_fetch_47
 plt__rgctx_fetch_47:
 _p_218:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1704,9620
+	.long mono_aot_AppAPITemplate_got - . + 1708,9629
 	.no_dead_strip plt__rgctx_fetch_48
 plt__rgctx_fetch_48:
 _p_219:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1708,9643
+	.long mono_aot_AppAPITemplate_got - . + 1712,9652
 	.no_dead_strip plt__jit_icall_mono_arch_rethrow_exception
 plt__jit_icall_mono_arch_rethrow_exception:
 _p_220:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1712,9666
+	.long mono_aot_AppAPITemplate_got - . + 1716,9675
 	.no_dead_strip plt__rgctx_fetch_49
 plt__rgctx_fetch_49:
 _p_221:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1716,9714
+	.long mono_aot_AppAPITemplate_got - . + 1720,9723
 	.no_dead_strip plt__rgctx_fetch_50
 plt__rgctx_fetch_50:
 _p_222:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1720,9755
+	.long mono_aot_AppAPITemplate_got - . + 1724,9764
 	.no_dead_strip plt__rgctx_fetch_51
 plt__rgctx_fetch_51:
 _p_223:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1724,9796
+	.long mono_aot_AppAPITemplate_got - . + 1728,9805
 	.no_dead_strip plt__rgctx_fetch_52
 plt__rgctx_fetch_52:
 _p_224:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1728,9804
+	.long mono_aot_AppAPITemplate_got - . + 1732,9813
 	.no_dead_strip plt__rgctx_fetch_53
 plt__rgctx_fetch_53:
 _p_225:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1732,9845
+	.long mono_aot_AppAPITemplate_got - . + 1736,9854
 	.no_dead_strip plt__rgctx_fetch_54
 plt__rgctx_fetch_54:
 _p_226:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1736,9886
+	.long mono_aot_AppAPITemplate_got - . + 1740,9895
 	.no_dead_strip plt__rgctx_fetch_55
 plt__rgctx_fetch_55:
 _p_227:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1740,9927
+	.long mono_aot_AppAPITemplate_got - . + 1744,9936
 	.no_dead_strip plt__rgctx_fetch_56
 plt__rgctx_fetch_56:
 _p_228:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1744,9968
+	.long mono_aot_AppAPITemplate_got - . + 1748,9977
 	.no_dead_strip plt__rgctx_fetch_57
 plt__rgctx_fetch_57:
 _p_229:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1748,9976
+	.long mono_aot_AppAPITemplate_got - . + 1752,9985
 	.no_dead_strip plt__rgctx_fetch_58
 plt__rgctx_fetch_58:
 _p_230:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1752,10010
+	.long mono_aot_AppAPITemplate_got - . + 1756,10019
 	.no_dead_strip plt__rgctx_fetch_59
 plt__rgctx_fetch_59:
 _p_231:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1756,10030
+	.long mono_aot_AppAPITemplate_got - . + 1760,10039
 	.no_dead_strip plt__rgctx_fetch_60
 plt__rgctx_fetch_60:
 _p_232:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1760,10065
+	.long mono_aot_AppAPITemplate_got - . + 1764,10074
 	.no_dead_strip plt__rgctx_fetch_61
 plt__rgctx_fetch_61:
 _p_233:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1764,10073
+	.long mono_aot_AppAPITemplate_got - . + 1768,10082
 	.no_dead_strip plt__rgctx_fetch_62
 plt__rgctx_fetch_62:
 _p_234:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1768,10123
+	.long mono_aot_AppAPITemplate_got - . + 1772,10132
 	.no_dead_strip plt__rgctx_fetch_63
 plt__rgctx_fetch_63:
 _p_235:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1772,10131
+	.long mono_aot_AppAPITemplate_got - . + 1776,10140
 	.no_dead_strip plt__rgctx_fetch_64
 plt__rgctx_fetch_64:
 _p_236:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1776,10172
+	.long mono_aot_AppAPITemplate_got - . + 1780,10181
 	.no_dead_strip plt__rgctx_fetch_65
 plt__rgctx_fetch_65:
 _p_237:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1780,10213
+	.long mono_aot_AppAPITemplate_got - . + 1784,10222
 	.no_dead_strip plt__rgctx_fetch_66
 plt__rgctx_fetch_66:
 _p_238:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1784,10254
+	.long mono_aot_AppAPITemplate_got - . + 1788,10263
 	.no_dead_strip plt__rgctx_fetch_67
 plt__rgctx_fetch_67:
 _p_239:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1788,10304
+	.long mono_aot_AppAPITemplate_got - . + 1792,10313
 	.no_dead_strip plt__rgctx_fetch_68
 plt__rgctx_fetch_68:
 _p_240:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1792,10312
+	.long mono_aot_AppAPITemplate_got - . + 1796,10321
 	.no_dead_strip plt__rgctx_fetch_69
 plt__rgctx_fetch_69:
 _p_241:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1796,10362
+	.long mono_aot_AppAPITemplate_got - . + 1800,10371
 	.no_dead_strip plt__rgctx_fetch_70
 plt__rgctx_fetch_70:
 _p_242:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1800,10370
+	.long mono_aot_AppAPITemplate_got - . + 1804,10379
 	.no_dead_strip plt__rgctx_fetch_71
 plt__rgctx_fetch_71:
 _p_243:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1804,10393
+	.long mono_aot_AppAPITemplate_got - . + 1808,10402
 	.no_dead_strip plt__rgctx_fetch_72
 plt__rgctx_fetch_72:
 _p_244:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1808,10401
+	.long mono_aot_AppAPITemplate_got - . + 1812,10410
 	.no_dead_strip plt__rgctx_fetch_73
 plt__rgctx_fetch_73:
 _p_245:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1812,10435
+	.long mono_aot_AppAPITemplate_got - . + 1816,10444
 	.no_dead_strip plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr
 plt_System_Func_2_System_Threading_Tasks_Task_1_System_Threading_Tasks_Task_System_Threading_Tasks_Task_1_TResult_INT__ctor_object_intptr:
 _p_246:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1816,10443
+	.long mono_aot_AppAPITemplate_got - . + 1820,10452
 	.no_dead_strip plt__rgctx_fetch_74
 plt__rgctx_fetch_74:
 _p_247:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1820,10483
+	.long mono_aot_AppAPITemplate_got - . + 1824,10492
 	.no_dead_strip plt__rgctx_fetch_75
 plt__rgctx_fetch_75:
 _p_248:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1824,10509
+	.long mono_aot_AppAPITemplate_got - . + 1828,10518
 	.no_dead_strip plt__rgctx_fetch_76
 plt__rgctx_fetch_76:
 _p_249:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1828,10559
+	.long mono_aot_AppAPITemplate_got - . + 1832,10568
 	.no_dead_strip plt__rgctx_fetch_77
 plt__rgctx_fetch_77:
 _p_250:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1832,10567
+	.long mono_aot_AppAPITemplate_got - . + 1836,10576
 	.no_dead_strip plt__rgctx_fetch_78
 plt__rgctx_fetch_78:
 _p_251:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1836,10590
+	.long mono_aot_AppAPITemplate_got - . + 1840,10599
 	.no_dead_strip plt__rgctx_fetch_79
 plt__rgctx_fetch_79:
 _p_252:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1840,10613
+	.long mono_aot_AppAPITemplate_got - . + 1844,10622
 	.no_dead_strip plt__rgctx_fetch_80
 plt__rgctx_fetch_80:
 _p_253:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1844,10636
+	.long mono_aot_AppAPITemplate_got - . + 1848,10645
 	.no_dead_strip plt__rgctx_fetch_81
 plt__rgctx_fetch_81:
 _p_254:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1848,10677
+	.long mono_aot_AppAPITemplate_got - . + 1852,10686
 	.no_dead_strip plt__rgctx_fetch_82
 plt__rgctx_fetch_82:
 _p_255:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1852,10685
+	.long mono_aot_AppAPITemplate_got - . + 1856,10694
 	.no_dead_strip plt__rgctx_fetch_83
 plt__rgctx_fetch_83:
 _p_256:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1856,10735
+	.long mono_aot_AppAPITemplate_got - . + 1860,10744
 	.no_dead_strip plt__rgctx_fetch_84
 plt__rgctx_fetch_84:
 _p_257:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1860,10743
+	.long mono_aot_AppAPITemplate_got - . + 1864,10752
 	.no_dead_strip plt__rgctx_fetch_85
 plt__rgctx_fetch_85:
 _p_258:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1864,10766
+	.long mono_aot_AppAPITemplate_got - . + 1868,10775
 	.no_dead_strip plt__rgctx_fetch_86
 plt__rgctx_fetch_86:
 _p_259:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1868,10774
+	.long mono_aot_AppAPITemplate_got - . + 1872,10783
 	.no_dead_strip plt__rgctx_fetch_87
 plt__rgctx_fetch_87:
 _p_260:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1872,10806
+	.long mono_aot_AppAPITemplate_got - . + 1876,10815
 	.no_dead_strip plt__rgctx_fetch_88
 plt__rgctx_fetch_88:
 _p_261:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1876,10814
+	.long mono_aot_AppAPITemplate_got - . + 1880,10823
 	.no_dead_strip plt__rgctx_fetch_89
 plt__rgctx_fetch_89:
 _p_262:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1880,10837
+	.long mono_aot_AppAPITemplate_got - . + 1884,10846
 	.no_dead_strip plt__rgctx_fetch_90
 plt__rgctx_fetch_90:
 _p_263:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1884,10860
+	.long mono_aot_AppAPITemplate_got - . + 1888,10869
 	.no_dead_strip plt__rgctx_fetch_91
 plt__rgctx_fetch_91:
 _p_264:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1888,10883
+	.long mono_aot_AppAPITemplate_got - . + 1892,10892
 	.no_dead_strip plt__rgctx_fetch_92
 plt__rgctx_fetch_92:
 _p_265:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1892,10891
+	.long mono_aot_AppAPITemplate_got - . + 1896,10900
 	.no_dead_strip plt__rgctx_fetch_93
 plt__rgctx_fetch_93:
 _p_266:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1896,10914
+	.long mono_aot_AppAPITemplate_got - . + 1900,10923
 	.no_dead_strip plt__rgctx_fetch_94
 plt__rgctx_fetch_94:
 _p_267:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1900,10937
+	.long mono_aot_AppAPITemplate_got - . + 1904,10946
 	.no_dead_strip plt__rgctx_fetch_95
 plt__rgctx_fetch_95:
 _p_268:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1904,10960
+	.long mono_aot_AppAPITemplate_got - . + 1908,10969
 	.no_dead_strip plt__rgctx_fetch_96
 plt__rgctx_fetch_96:
 _p_269:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1908,11002
+	.long mono_aot_AppAPITemplate_got - . + 1912,11011
 	.no_dead_strip plt__rgctx_fetch_97
 plt__rgctx_fetch_97:
 _p_270:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1912,11045
+	.long mono_aot_AppAPITemplate_got - . + 1916,11054
 	.no_dead_strip plt__rgctx_fetch_98
 plt__rgctx_fetch_98:
 _p_271:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1916,11088
+	.long mono_aot_AppAPITemplate_got - . + 1920,11097
 	.no_dead_strip plt__rgctx_fetch_99
 plt__rgctx_fetch_99:
 _p_272:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1920,11130
+	.long mono_aot_AppAPITemplate_got - . + 1924,11139
 	.no_dead_strip plt__rgctx_fetch_100
 plt__rgctx_fetch_100:
 _p_273:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1924,11154
+	.long mono_aot_AppAPITemplate_got - . + 1928,11163
 	.no_dead_strip plt__rgctx_fetch_101
 plt__rgctx_fetch_101:
 _p_274:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1928,11196
+	.long mono_aot_AppAPITemplate_got - . + 1932,11205
 	.no_dead_strip plt__rgctx_fetch_102
 plt__rgctx_fetch_102:
 _p_275:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1932,11204
+	.long mono_aot_AppAPITemplate_got - . + 1936,11213
 	.no_dead_strip plt__rgctx_fetch_103
 plt__rgctx_fetch_103:
 _p_276:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1936,11227
+	.long mono_aot_AppAPITemplate_got - . + 1940,11236
 	.no_dead_strip plt__rgctx_fetch_104
 plt__rgctx_fetch_104:
 _p_277:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1940,11263
+	.long mono_aot_AppAPITemplate_got - . + 1944,11272
 	.no_dead_strip plt__rgctx_fetch_105
 plt__rgctx_fetch_105:
 _p_278:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1944,11271
+	.long mono_aot_AppAPITemplate_got - . + 1948,11280
 	.no_dead_strip plt_System_Collections_Generic_EqualityComparer_1_object_get_Default
 plt_System_Collections_Generic_EqualityComparer_1_object_get_Default:
 _p_279:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1948,11294
+	.long mono_aot_AppAPITemplate_got - . + 1952,11303
 	.no_dead_strip plt__rgctx_fetch_106
 plt__rgctx_fetch_106:
 _p_280:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1952,11335
+	.long mono_aot_AppAPITemplate_got - . + 1956,11344
 	.no_dead_strip plt__rgctx_fetch_107
 plt__rgctx_fetch_107:
 _p_281:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1956,11343
+	.long mono_aot_AppAPITemplate_got - . + 1960,11352
 	.no_dead_strip plt__rgctx_fetch_108
 plt__rgctx_fetch_108:
 _p_282:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1960,11351
+	.long mono_aot_AppAPITemplate_got - . + 1964,11360
 	.no_dead_strip plt_System_Collections_Generic_Comparer_1_object_get_Default
 plt_System_Collections_Generic_Comparer_1_object_get_Default:
 _p_283:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1964,11359
+	.long mono_aot_AppAPITemplate_got - . + 1968,11368
 	.no_dead_strip plt__rgctx_fetch_109
 plt__rgctx_fetch_109:
 _p_284:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1968,11400
+	.long mono_aot_AppAPITemplate_got - . + 1972,11409
 	.no_dead_strip plt__rgctx_fetch_110
 plt__rgctx_fetch_110:
 _p_285:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1972,11408
+	.long mono_aot_AppAPITemplate_got - . + 1976,11417
 	.no_dead_strip plt__rgctx_fetch_111
 plt__rgctx_fetch_111:
 _p_286:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1976,11416
+	.long mono_aot_AppAPITemplate_got - . + 1980,11425
 	.no_dead_strip plt_System_Environment_GetResourceString_string_object__
 plt_System_Environment_GetResourceString_string_object__:
 _p_287:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1980,11424
+	.long mono_aot_AppAPITemplate_got - . + 1984,11433
 	.no_dead_strip plt__rgctx_fetch_112
 plt__rgctx_fetch_112:
 _p_288:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1984,11450
+	.long mono_aot_AppAPITemplate_got - . + 1988,11459
 	.no_dead_strip plt__rgctx_fetch_113
 plt__rgctx_fetch_113:
 _p_289:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1988,11458
+	.long mono_aot_AppAPITemplate_got - . + 1992,11467
 	.no_dead_strip plt_System_Tuple_CombineHashCodes_int_int
 plt_System_Tuple_CombineHashCodes_int_int:
 _p_290:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1992,11466
+	.long mono_aot_AppAPITemplate_got - . + 1996,11475
 	.no_dead_strip plt_System_Text_StringBuilder__ctor
 plt_System_Text_StringBuilder__ctor:
 _p_291:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 1996,11471
+	.long mono_aot_AppAPITemplate_got - . + 2000,11480
 	.no_dead_strip plt_System_Text_StringBuilder_Append_string
 plt_System_Text_StringBuilder_Append_string:
 _p_292:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2000,11476
+	.long mono_aot_AppAPITemplate_got - . + 2004,11485
 	.no_dead_strip plt__rgctx_fetch_114
 plt__rgctx_fetch_114:
 _p_293:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2004,11502
+	.long mono_aot_AppAPITemplate_got - . + 2008,11511
 	.no_dead_strip plt_System_Text_StringBuilder_Append_object
 plt_System_Text_StringBuilder_Append_object:
 _p_294:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2008,11510
+	.long mono_aot_AppAPITemplate_got - . + 2012,11519
 	.no_dead_strip plt__rgctx_fetch_115
 plt__rgctx_fetch_115:
 _p_295:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2012,11515
+	.long mono_aot_AppAPITemplate_got - . + 2016,11524
 	.no_dead_strip plt__rgctx_fetch_116
 plt__rgctx_fetch_116:
 _p_296:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2016,11542
+	.long mono_aot_AppAPITemplate_got - . + 2020,11551
 	.no_dead_strip plt__rgctx_fetch_117
 plt__rgctx_fetch_117:
 _p_297:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2020,11566
+	.long mono_aot_AppAPITemplate_got - . + 2024,11575
 	.no_dead_strip plt__rgctx_fetch_118
 plt__rgctx_fetch_118:
 _p_298:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2024,11574
+	.long mono_aot_AppAPITemplate_got - . + 2028,11583
 	.no_dead_strip plt__rgctx_fetch_119
 plt__rgctx_fetch_119:
 _p_299:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2028,11588
+	.long mono_aot_AppAPITemplate_got - . + 2032,11597
 	.no_dead_strip plt__rgctx_fetch_120
 plt__rgctx_fetch_120:
 _p_300:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2032,11621
+	.long mono_aot_AppAPITemplate_got - . + 2036,11630
 	.no_dead_strip plt__rgctx_fetch_121
 plt__rgctx_fetch_121:
 _p_301:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2036,11668
+	.long mono_aot_AppAPITemplate_got - . + 2040,11677
 	.no_dead_strip plt_wrapper_alloc_object_Alloc_intptr
 plt_wrapper_alloc_object_Alloc_intptr:
 _p_302:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2040,11676
+	.long mono_aot_AppAPITemplate_got - . + 2044,11685
 	.no_dead_strip plt__rgctx_fetch_122
 plt__rgctx_fetch_122:
 _p_303:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2044,11684
+	.long mono_aot_AppAPITemplate_got - . + 2048,11693
 	.no_dead_strip plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions
 plt_System_Runtime_CompilerServices_RuntimeHelpers_PrepareConstrainedRegions:
 _p_304:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2048,11692
+	.long mono_aot_AppAPITemplate_got - . + 2052,11701
 	.no_dead_strip plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_
 plt_System_Threading_ExecutionContext_EstablishCopyOnWriteScope_System_Threading_ExecutionContextSwitcher_:
 _p_305:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2052,11697
+	.long mono_aot_AppAPITemplate_got - . + 2056,11706
 	.no_dead_strip plt__jit_icall_mono_gsharedvt_constrained_call
 plt__jit_icall_mono_gsharedvt_constrained_call:
 _p_306:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2056,11702
+	.long mono_aot_AppAPITemplate_got - . + 2060,11711
 	.no_dead_strip plt_System_Threading_ExecutionContextSwitcher_Undo
 plt_System_Threading_ExecutionContextSwitcher_Undo:
 _p_307:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2060,11736
+	.long mono_aot_AppAPITemplate_got - . + 2064,11745
 	.no_dead_strip plt_AppAPITemplate_FirstMenu__CallAPIc__async1_MoveNext
 plt_AppAPITemplate_FirstMenu__CallAPIc__async1_MoveNext:
 _p_308:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2064,11741
+	.long mono_aot_AppAPITemplate_got - . + 2068,11750
 	.no_dead_strip plt_string_memcpy_byte__byte__int
 plt_string_memcpy_byte__byte__int:
 _p_309:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2068,11743
+	.long mono_aot_AppAPITemplate_got - . + 2072,11752
 	.no_dead_strip plt_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_MoveNext
 plt_AppAPITemplate_FirstMenu__GetResponseFromAPIc__async2_MoveNext:
 _p_310:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2072,11748
+	.long mono_aot_AppAPITemplate_got - . + 2076,11757
 	.no_dead_strip plt__rgctx_fetch_123
 plt__rgctx_fetch_123:
 _p_311:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2076,11772
+	.long mono_aot_AppAPITemplate_got - . + 2080,11781
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task
 plt_System_Runtime_CompilerServices_AsyncVoidMethodBuilder_get_Task:
 _p_312:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2080,11822
+	.long mono_aot_AppAPITemplate_got - . + 2084,11831
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_GetCompletionAction_System_Threading_Tasks_Task_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_:
 _p_313:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2084,11827
+	.long mono_aot_AppAPITemplate_got - . + 2088,11836
 	.no_dead_strip plt__rgctx_fetch_124
 plt__rgctx_fetch_124:
 _p_314:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2088,11832
+	.long mono_aot_AppAPITemplate_got - . + 2092,11841
 	.no_dead_strip plt__rgctx_fetch_125
 plt__rgctx_fetch_125:
 _p_315:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2092,11840
+	.long mono_aot_AppAPITemplate_got - . + 2096,11849
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_PostBoxInitialization_System_Runtime_CompilerServices_IAsyncStateMachine_System_Runtime_CompilerServices_AsyncMethodBuilderCore_MoveNextRunner_System_Threading_Tasks_Task:
 _p_316:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2096,11848
+	.long mono_aot_AppAPITemplate_got - . + 2100,11857
 	.no_dead_strip plt__rgctx_fetch_126
 plt__rgctx_fetch_126:
 _p_317:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2100,11853
+	.long mono_aot_AppAPITemplate_got - . + 2104,11862
 	.no_dead_strip plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext
 plt_System_Runtime_CompilerServices_AsyncMethodBuilderCore_ThrowAsync_System_Exception_System_Threading_SynchronizationContext:
 _p_318:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2104,11861
+	.long mono_aot_AppAPITemplate_got - . + 2108,11870
 	.no_dead_strip plt__jit_icall_mono_gc_wbarrier_value_copy_bitmap
 plt__jit_icall_mono_gc_wbarrier_value_copy_bitmap:
 _p_319:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2108,11866
+	.long mono_aot_AppAPITemplate_got - . + 2112,11875
 	.no_dead_strip plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_UnsafeOnCompleted_System_Action
 plt_System_Runtime_CompilerServices_TaskAwaiter_1_string_UnsafeOnCompleted_System_Action:
 _p_320:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2112,11903
+	.long mono_aot_AppAPITemplate_got - . + 2116,11912
 	.no_dead_strip plt_AppAPITemplate_SecondMenu__CallAPIc__async1_MoveNext
 plt_AppAPITemplate_SecondMenu__CallAPIc__async1_MoveNext:
 _p_321:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2116,11925
+	.long mono_aot_AppAPITemplate_got - . + 2120,11934
 	.no_dead_strip plt_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_MoveNext
 plt_AppAPITemplate_SecondMenu__GetResponseFromAPIc__async2_MoveNext:
 _p_322:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2120,11927
+	.long mono_aot_AppAPITemplate_got - . + 2124,11936
 	.no_dead_strip plt_AppAPITemplate_InfoPage__CallAPIc__async1_MoveNext
 plt_AppAPITemplate_InfoPage__CallAPIc__async1_MoveNext:
 _p_323:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2124,11929
+	.long mono_aot_AppAPITemplate_got - . + 2128,11938
 	.no_dead_strip plt_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_MoveNext
 plt_AppAPITemplate_InfoPage__GetResponseFromAPIc__async2_MoveNext:
 _p_324:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2128,11931
+	.long mono_aot_AppAPITemplate_got - . + 2132,11940
 	.no_dead_strip plt__rgctx_fetch_127
 plt__rgctx_fetch_127:
 _p_325:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2132,11960
+	.long mono_aot_AppAPITemplate_got - . + 2136,11969
 	.no_dead_strip plt__rgctx_fetch_128
 plt__rgctx_fetch_128:
 _p_326:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2136,11968
+	.long mono_aot_AppAPITemplate_got - . + 2140,11977
 	.no_dead_strip plt__rgctx_fetch_129
 plt__rgctx_fetch_129:
 _p_327:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2140,12018
+	.long mono_aot_AppAPITemplate_got - . + 2144,12027
 	.no_dead_strip plt__rgctx_fetch_130
 plt__rgctx_fetch_130:
 _p_328:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2144,12026
+	.long mono_aot_AppAPITemplate_got - . + 2148,12035
 	.no_dead_strip plt__rgctx_fetch_131
 plt__rgctx_fetch_131:
 _p_329:
 
 	.byte 0,192,159,229,12,240,159,231
-	.long mono_aot_AppAPITemplate_got - . + 2148,12068
+	.long mono_aot_AppAPITemplate_got - . + 2152,12077
 plt_end:
 .section __DATA, __bss
 	.align 3
-.lcomm mono_aot_AppAPITemplate_got, 2156
+.lcomm mono_aot_AppAPITemplate_got, 2160
 got_end:
 .section __TEXT, __const
 	.align 3
@@ -12062,7 +12070,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "4375D87E-C12F-4CAD-AF1E-43D6EF717A3F"
+	.asciz "655393D8-9038-40F9-947C-09A545417736"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -12139,13 +12147,13 @@ _mono_aot_file_info:
 	.align 2
 	.long unbox_trampoline_addresses
 
-	.long 209,2156,330,245,66,923871743,0,17578
-	.long 128,4,4,10,0,14,26248,8664
+	.long 210,2160,330,245,66,923871743,0,17587
+	.long 128,4,4,10,0,14,26264,8664
 	.long 8032,7160,0,7624,7976,7328,0,5656
 	.long 352,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 209,242,153,162,242,119,59,226,26,44,81,64,248,167,108,107
+	.byte 39,111,180,116,71,20,54,37,127,141,215,51,125,72,183,4
 	.globl _mono_aot_module_AppAPITemplate_info
 	.align 2
 _mono_aot_module_AppAPITemplate_info:
@@ -18197,7 +18205,7 @@ LTDIE_157:
 LDIFF_SYM1050=LTDIE_14 - Ldebug_info_start
 	.long LDIFF_SYM1050
 	.byte 2,35,0,6
-	.asciz "<fake>__0"
+	.asciz "<fake>__1"
 
 LDIFF_SYM1051=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1051
@@ -18388,7 +18396,7 @@ LDIFF_SYM1078=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1079=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1079
 	.byte 2,35,0,6
-	.asciz "<response>__0"
+	.asciz "<response>__1"
 
 LDIFF_SYM1080=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1080
@@ -19614,17 +19622,17 @@ LDIFF_SYM1250=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1251=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1251
 	.byte 2,35,0,6
-	.asciz "<query>__0"
+	.asciz "<query>__1"
 
 LDIFF_SYM1252=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1252
 	.byte 2,35,4,6
-	.asciz "<client>__1"
+	.asciz "<client>__2"
 
 LDIFF_SYM1253=LTDIE_162_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1253
 	.byte 2,35,8,6
-	.asciz "<response>__2"
+	.asciz "<response>__3"
 
 LDIFF_SYM1254=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1254
@@ -20294,7 +20302,7 @@ LDIFF_SYM1337=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1338=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1338
 	.byte 2,35,0,6
-	.asciz "<response>__0"
+	.asciz "<response>__1"
 
 LDIFF_SYM1339=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1339
@@ -20433,17 +20441,17 @@ LDIFF_SYM1357=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1358=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1358
 	.byte 2,35,0,6
-	.asciz "<query>__0"
+	.asciz "<query>__1"
 
 LDIFF_SYM1359=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1359
 	.byte 2,35,4,6
-	.asciz "<client>__1"
+	.asciz "<client>__2"
 
 LDIFF_SYM1360=LTDIE_162_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1360
 	.byte 2,35,8,6
-	.asciz "<response>__2"
+	.asciz "<response>__3"
 
 LDIFF_SYM1361=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1361
@@ -20677,7 +20685,7 @@ Lfde35_start:
 
 LDIFF_SYM1393=Lme_23 - AppAPITemplate_InfoPage__ctor_AppAPITemplate_MenuItem
 	.long LDIFF_SYM1393
-	.byte 68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,32,2,80,10,68,14,16,68,8,6,8,8,14,8,68,11
+	.byte 68,14,8,135,2,72,14,16,134,4,136,3,142,1,68,14,32,2,104,10,68,14,16,68,8,6,8,8,14,8,68,11
 	.align 2
 Lfde35_end:
 
@@ -21552,7 +21560,7 @@ LTDIE_202:
 LDIFF_SYM1525=LTDIE_14 - Ldebug_info_start
 	.long LDIFF_SYM1525
 	.byte 2,35,0,6
-	.asciz "<list>__0"
+	.asciz "<list>__1"
 
 LDIFF_SYM1526=LTDIE_188_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1526
@@ -21686,7 +21694,7 @@ LDIFF_SYM1543=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1544=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1544
 	.byte 2,35,0,6
-	.asciz "<response>__0"
+	.asciz "<response>__1"
 
 LDIFF_SYM1545=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1545
@@ -21825,17 +21833,17 @@ LDIFF_SYM1563=LTDIE_14 - Ldebug_info_start
 LDIFF_SYM1564=LTDIE_152_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1564
 	.byte 2,35,0,6
-	.asciz "<query>__0"
+	.asciz "<query>__1"
 
 LDIFF_SYM1565=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1565
 	.byte 2,35,4,6
-	.asciz "<client>__1"
+	.asciz "<client>__2"
 
 LDIFF_SYM1566=LTDIE_162_REFERENCE - Ldebug_info_start
 	.long LDIFF_SYM1566
 	.byte 2,35,8,6
-	.asciz "<response>__2"
+	.asciz "<response>__3"
 
 LDIFF_SYM1567=LDIE_STRING - Ldebug_info_start
 	.long LDIFF_SYM1567
@@ -30084,7 +30092,7 @@ Lfde163_start:
 
 LDIFF_SYM2726=Lme_a4 - System_Array_InternalArray__set_Item_T_REF_int_T_REF
 	.long LDIFF_SYM2726
-	.byte 68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,56,2,212,10,68,14,28,68,8,4
+	.byte 68,14,8,135,2,72,14,28,132,7,133,6,134,5,136,4,138,3,142,1,68,14,64,2,224,10,68,14,28,68,8,4
 	.byte 8,5,8,6,8,8,8,10,14,8,68,11
 	.align 2
 Lfde163_end:

@@ -31,7 +31,7 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcons.appiconset/[iphone][57x57][][][1x]</string>
+				<string>./AppIcons.appiconset/[][iphone][57x57][][][1x]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/thomascartwright/Documents/Development/Xamarin/API Apps/YahooFinanceAPI/iOS/Assets.xcassets</string>
@@ -43,7 +43,7 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcons.appiconset/[iphone][57x57][][][2x]</string>
+				<string>./AppIcons.appiconset/[][iphone][57x57][][][2x]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/thomascartwright/Documents/Development/Xamarin/API Apps/YahooFinanceAPI/iOS/Assets.xcassets</string>
@@ -55,7 +55,7 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcons.appiconset/[ipad][50x50][][][1x]</string>
+				<string>./AppIcons.appiconset/[][ipad][50x50][][][1x]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/thomascartwright/Documents/Development/Xamarin/API Apps/YahooFinanceAPI/iOS/Assets.xcassets</string>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcons.appiconset/[ipad][50x50][][][2x]</string>
+				<string>./AppIcons.appiconset/[][ipad][50x50][][][2x]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/thomascartwright/Documents/Development/Xamarin/API Apps/YahooFinanceAPI/iOS/Assets.xcassets</string>
@@ -79,7 +79,7 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcons.appiconset/[ipad][72x72][][][1x]</string>
+				<string>./AppIcons.appiconset/[][ipad][72x72][][][1x]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/thomascartwright/Documents/Development/Xamarin/API Apps/YahooFinanceAPI/iOS/Assets.xcassets</string>
@@ -91,7 +91,7 @@
 		<dict>
 			<key>affected-items</key>
 			<array>
-				<string>./AppIcons.appiconset/[ipad][72x72][][][2x]</string>
+				<string>./AppIcons.appiconset/[][ipad][72x72][][][2x]</string>
 			</array>
 			<key>catalog</key>
 			<string>/Users/thomascartwright/Documents/Development/Xamarin/API Apps/YahooFinanceAPI/iOS/Assets.xcassets</string>

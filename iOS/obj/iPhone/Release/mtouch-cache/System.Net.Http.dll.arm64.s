@@ -21,7 +21,7 @@ Ldebug_info_begin:
 	.short 2
 	.long 0
 	.byte 8,1
-	.asciz "Mono AOT Compiler 4.6.0 (tarball Fri Sep  9 12:44:29 EDT 2016)"
+	.asciz "Mono AOT Compiler 4.6.2 (tarball Tue Dec 20 02:40:33 EST 2016)"
 	.asciz "System.Net.Http.dll"
 	.asciz ""
 
@@ -146,7 +146,7 @@ Lme_0:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpClient__ctor_System_Net_Http_HttpMessageHandler
 System_Net_Http_HttpClient__ctor_System_Net_Http_HttpMessageHandler:
-.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpClient.cs"
+.file 2 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpClient.cs"
 .loc 2 55 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -725,7 +725,7 @@ Lme_b:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpClient__cctor
 System_Net_Http_HttpClient__cctor:
-.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/HttpClientEx.cs"
+.file 3 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/HttpClientEx.cs"
 .loc 3 38 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -1578,7 +1578,7 @@ Lme_11:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpClientHandler__ctor
 System_Net_Http_HttpClientHandler__ctor:
-.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpClientHandler.cs"
+.file 4 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpClientHandler.cs"
 .loc 4 63 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -3832,7 +3832,7 @@ Lme_21:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpContent_get_Headers
 System_Net_Http_HttpContent_get_Headers:
-.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpContent.cs"
+.file 5 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpContent.cs"
 .loc 5 74 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -5736,7 +5736,7 @@ Lme_3f:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpMessageHandler_Dispose
 System_Net_Http_HttpMessageHandler_Dispose:
-.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpMessageHandler.cs"
+.file 6 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpMessageHandler.cs"
 .loc 6 38 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -5770,7 +5770,7 @@ Lme_41:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpMessageInvoker__ctor_System_Net_Http_HttpMessageHandler_bool
 System_Net_Http_HttpMessageInvoker__ctor_System_Net_Http_HttpMessageHandler_bool:
-.file 7 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpMessageInvoker.cs"
+.file 7 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpMessageInvoker.cs"
 .loc 7 46 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -5882,7 +5882,7 @@ Lme_46:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpMethod__ctor_string
 System_Net_Http_HttpMethod__ctor_string:
-.file 8 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpMethod.cs"
+.file 8 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpMethod.cs"
 .loc 8 45 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -6295,7 +6295,7 @@ Lme_52:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpRequestException__ctor
 System_Net_Http_HttpRequestException__ctor:
-.file 9 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpRequestException.cs"
+.file 9 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpRequestException.cs"
 .loc 9 34 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -6328,7 +6328,7 @@ Lme_54:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpRequestMessage__ctor_System_Net_Http_HttpMethod_string
 System_Net_Http_HttpRequestMessage__ctor_System_Net_Http_HttpMethod_string:
-.file 10 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpRequestMessage.cs"
+.file 10 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpRequestMessage.cs"
 .loc 10 51 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -6908,7 +6908,7 @@ Lme_62:
 	.align 4
 	.no_dead_strip System_Net_Http_HttpResponseMessage__ctor_System_Net_HttpStatusCode
 System_Net_Http_HttpResponseMessage__ctor_System_Net_HttpStatusCode:
-.file 11 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpResponseMessage.cs"
+.file 11 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/HttpResponseMessage.cs"
 .loc 11 49 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -7420,7 +7420,7 @@ Lme_71:
 	.align 4
 	.no_dead_strip System_Net_Http_StreamContent__ctor_System_IO_Stream
 System_Net_Http_StreamContent__ctor_System_IO_Stream:
-.file 12 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http/StreamContent.cs"
+.file 12 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http/StreamContent.cs"
 .loc 12 42 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -7636,7 +7636,7 @@ Lme_78:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_AuthenticationHeaderValue__ctor
 System_Net_Http_Headers_AuthenticationHeaderValue__ctor:
-.file 13 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/AuthenticationHeaderValue.cs"
+.file 13 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/AuthenticationHeaderValue.cs"
 .loc 13 48 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -8130,7 +8130,7 @@ Lme_85:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_CacheControlHeaderValue_get_Extensions
 System_Net_Http_Headers_CacheControlHeaderValue_get_Extensions:
-.file 14 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/CacheControlHeaderValue.cs"
+.file 14 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/CacheControlHeaderValue.cs"
 .loc 14 42 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -10996,7 +10996,7 @@ Lme_a7:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_CollectionExtensions_SequenceEqual_TSource_REF_System_Collections_Generic_List_1_TSource_REF_System_Collections_Generic_List_1_TSource_REF
 System_Net_Http_Headers_CollectionExtensions_SequenceEqual_TSource_REF_System_Collections_Generic_List_1_TSource_REF_System_Collections_Generic_List_1_TSource_REF:
-.file 15 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/CollectionExtensions.cs"
+.file 15 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/CollectionExtensions.cs"
 .loc 15 39 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -11231,7 +11231,7 @@ Lme_aa:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_CollectionParser_TryParse_T_REF_string_int_System_Net_Http_Headers_ElementTryParser_1_T_REF_System_Collections_Generic_List_1_T_REF_
 System_Net_Http_Headers_CollectionParser_TryParse_T_REF_string_int_System_Net_Http_Headers_ElementTryParser_1_T_REF_System_Collections_Generic_List_1_T_REF_:
-.file 16 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/CollectionParser.cs"
+.file 16 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/CollectionParser.cs"
 .loc 16 39 0 prologue_end
 .word 0xa9b77bfd
 .word 0x910003fd
@@ -11524,7 +11524,7 @@ Lme_b1:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_ContentDispositionHeaderValue__ctor
 System_Net_Http_Headers_ContentDispositionHeaderValue__ctor:
-.file 17 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ContentDispositionHeaderValue.cs"
+.file 17 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ContentDispositionHeaderValue.cs"
 .loc 17 40 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -11957,7 +11957,7 @@ Lme_b9:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_ContentRangeHeaderValue__ctor
 System_Net_Http_Headers_ContentRangeHeaderValue__ctor:
-.file 18 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ContentRangeHeaderValue.cs"
+.file 18 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ContentRangeHeaderValue.cs"
 .loc 18 37 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -13107,7 +13107,7 @@ Lme_c6:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_EntityTagHeaderValue__ctor
 System_Net_Http_Headers_EntityTagHeaderValue__ctor:
-.file 19 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/EntityTagHeaderValue.cs"
+.file 19 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/EntityTagHeaderValue.cs"
 .loc 19 49 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -13674,7 +13674,7 @@ Lme_d3:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_HashCodeCalculator_Calculate_T_REF_System_Collections_Generic_ICollection_1_T_REF
 System_Net_Http_Headers_HashCodeCalculator_Calculate_T_REF_System_Collections_Generic_ICollection_1_T_REF:
-.file 20 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HashCodeCalculator.cs"
+.file 20 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HashCodeCalculator.cs"
 .loc 20 37 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
@@ -13768,7 +13768,7 @@ Lme_d4:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_HeaderInfo__ctor_string_System_Net_Http_Headers_HttpHeaderKind
 System_Net_Http_Headers_HeaderInfo__ctor_string_System_Net_Http_Headers_HttpHeaderKind:
-.file 21 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HeaderInfo.cs"
+.file 21 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HeaderInfo.cs"
 .loc 21 133 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -14320,7 +14320,7 @@ Lme_ef:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_HttpContentHeaders__ctor_System_Net_Http_HttpContent
 System_Net_Http_Headers_HttpContentHeaders__ctor_System_Net_Http_HttpContent:
-.file 22 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpContentHeaders.cs"
+.file 22 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpContentHeaders.cs"
 .loc 22 38 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -14489,7 +14489,7 @@ Lme_f2:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_HttpHeaders__cctor
 System_Net_Http_Headers_HttpHeaders__cctor:
-.file 23 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpHeaders.cs"
+.file 23 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpHeaders.cs"
 .loc 23 88 0 prologue_end
 .word 0xa9bc7bfd
 .word 0x910003fd
@@ -19566,7 +19566,7 @@ Lme_10c:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_HttpHeaderValueCollection_1_T_REF__ctor_System_Net_Http_Headers_HttpHeaders_System_Net_Http_Headers_HeaderInfo
 System_Net_Http_Headers_HttpHeaderValueCollection_1_T_REF__ctor_System_Net_Http_Headers_HttpHeaders_System_Net_Http_Headers_HeaderInfo:
-.file 24 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpHeaderValueCollection.cs"
+.file 24 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpHeaderValueCollection.cs"
 .loc 24 42 0 prologue_end
 .word 0xa9bb7bfd
 .word 0x910003fd
@@ -19972,7 +19972,7 @@ Lme_119:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_HttpRequestHeaders__ctor
 System_Net_Http_Headers_HttpRequestHeaders__ctor:
-.file 25 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpRequestHeaders.cs"
+.file 25 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpRequestHeaders.cs"
 .loc 25 38 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -20502,7 +20502,7 @@ Lme_124:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_HttpResponseHeaders__ctor
 System_Net_Http_Headers_HttpResponseHeaders__ctor:
-.file 26 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpResponseHeaders.cs"
+.file 26 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/HttpResponseHeaders.cs"
 .loc 26 36 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -20523,7 +20523,7 @@ b System_Net_Http_Headers_Token__ctor_System_Net_Http_Headers_Token_Type_int_int
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_Token__ctor_System_Net_Http_Headers_Token_Type_int_int
 System_Net_Http_Headers_Token__ctor_System_Net_Http_Headers_Token_Type_int_int:
-.file 27 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/Lexer.cs"
+.file 27 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/Lexer.cs"
 .loc 27 54 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -21888,7 +21888,7 @@ Lme_143:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_MediaTypeHeaderValue__ctor_System_Net_Http_Headers_MediaTypeHeaderValue
 System_Net_Http_Headers_MediaTypeHeaderValue__ctor_System_Net_Http_Headers_MediaTypeHeaderValue:
-.file 28 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/MediaTypeHeaderValue.cs"
+.file 28 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/MediaTypeHeaderValue.cs"
 .loc 28 45 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
@@ -22589,7 +22589,7 @@ Lme_14e:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_MediaTypeWithQualityHeaderValue__ctor
 System_Net_Http_Headers_MediaTypeWithQualityHeaderValue__ctor:
-.file 29 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/MediaTypeWithQualityHeaderValue.cs"
+.file 29 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/MediaTypeWithQualityHeaderValue.cs"
 .loc 29 46 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -22795,7 +22795,7 @@ Lme_151:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_NameValueHeaderValue__ctor_System_Net_Http_Headers_NameValueHeaderValue
 System_Net_Http_Headers_NameValueHeaderValue__ctor_System_Net_Http_Headers_NameValueHeaderValue:
-.file 30 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/NameValueHeaderValue.cs"
+.file 30 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/NameValueHeaderValue.cs"
 .loc 30 52 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -23561,7 +23561,7 @@ Lme_15e:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_NameValueWithParametersHeaderValue__ctor_System_Net_Http_Headers_NameValueWithParametersHeaderValue
 System_Net_Http_Headers_NameValueWithParametersHeaderValue__ctor_System_Net_Http_Headers_NameValueWithParametersHeaderValue:
-.file 31 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/NameValueWithParametersHeaderValue.cs"
+.file 31 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/NameValueWithParametersHeaderValue.cs"
 .loc 31 48 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
@@ -24109,7 +24109,7 @@ Lme_167:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_Parser_Token_Check_string
 System_Net_Http_Headers_Parser_Token_Check_string:
-.file 32 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/Parser.cs"
+.file 32 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/Parser.cs"
 .loc 32 52 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -24640,7 +24640,7 @@ Lme_175:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_ProductHeaderValue__ctor
 System_Net_Http_Headers_ProductHeaderValue__ctor:
-.file 33 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ProductHeaderValue.cs"
+.file 33 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ProductHeaderValue.cs"
 .loc 33 50 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -25108,7 +25108,7 @@ Lme_180:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_ProductInfoHeaderValue__ctor_System_Net_Http_Headers_ProductHeaderValue
 System_Net_Http_Headers_ProductInfoHeaderValue__ctor_System_Net_Http_Headers_ProductHeaderValue:
-.file 34 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ProductInfoHeaderValue.cs"
+.file 34 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ProductInfoHeaderValue.cs"
 .loc 34 37 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -25681,7 +25681,7 @@ Lme_18c:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_RangeConditionHeaderValue__ctor_System_DateTimeOffset
 System_Net_Http_Headers_RangeConditionHeaderValue__ctor_System_DateTimeOffset:
-.file 35 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/RangeConditionHeaderValue.cs"
+.file 35 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/RangeConditionHeaderValue.cs"
 .loc 35 37 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
@@ -26307,7 +26307,7 @@ Lme_197:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_RangeHeaderValue__ctor
 System_Net_Http_Headers_RangeHeaderValue__ctor:
-.file 36 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/RangeHeaderValue.cs"
+.file 36 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/RangeHeaderValue.cs"
 .loc 36 41 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -27257,7 +27257,7 @@ Lme_1a0:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_RangeItemHeaderValue__ctor_System_Nullable_1_long_System_Nullable_1_long
 System_Net_Http_Headers_RangeItemHeaderValue__ctor_System_Nullable_1_long_System_Nullable_1_long:
-.file 37 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/RangeItemHeaderValue.cs"
+.file 37 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/RangeItemHeaderValue.cs"
 .loc 37 35 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
@@ -27869,7 +27869,7 @@ Lme_1a9:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_RetryConditionHeaderValue__ctor_System_DateTimeOffset
 System_Net_Http_Headers_RetryConditionHeaderValue__ctor_System_DateTimeOffset:
-.file 38 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/RetryConditionHeaderValue.cs"
+.file 38 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/RetryConditionHeaderValue.cs"
 .loc 38 37 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
@@ -28589,7 +28589,7 @@ Lme_1b4:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_StringWithQualityHeaderValue__ctor
 System_Net_Http_Headers_StringWithQualityHeaderValue__ctor:
-.file 39 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/StringWithQualityHeaderValue.cs"
+.file 39 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/StringWithQualityHeaderValue.cs"
 .loc 39 51 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -29253,7 +29253,7 @@ Lme_1bf:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_TransferCodingHeaderValue__ctor_System_Net_Http_Headers_TransferCodingHeaderValue
 System_Net_Http_Headers_TransferCodingHeaderValue__ctor_System_Net_Http_Headers_TransferCodingHeaderValue:
-.file 40 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/TransferCodingHeaderValue.cs"
+.file 40 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/TransferCodingHeaderValue.cs"
 .loc 40 46 0 prologue_end
 .word 0xa9b97bfd
 .word 0x910003fd
@@ -29756,7 +29756,7 @@ Lme_1c9:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_TransferCodingWithQualityHeaderValue__ctor
 System_Net_Http_Headers_TransferCodingWithQualityHeaderValue__ctor:
-.file 41 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/TransferCodingWithQualityHeaderValue.cs"
+.file 41 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/TransferCodingWithQualityHeaderValue.cs"
 .loc 41 46 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -29966,7 +29966,7 @@ Lme_1cc:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_ViaHeaderValue__ctor
 System_Net_Http_Headers_ViaHeaderValue__ctor:
-.file 42 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ViaHeaderValue.cs"
+.file 42 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/ViaHeaderValue.cs"
 .loc 42 62 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -30732,7 +30732,7 @@ Lme_1db:
 	.align 4
 	.no_dead_strip System_Net_Http_Headers_WarningHeaderValue__ctor
 System_Net_Http_Headers_WarningHeaderValue__ctor:
-.file 43 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.0.0.6/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/WarningHeaderValue.cs"
+.file 43 "/Library/Frameworks/Xamarin.iOS.framework/Versions/10.3.1.8/src/mono/mcs/class/System.Net.Http/System.Net.Http.Headers/WarningHeaderValue.cs"
 .loc 43 55 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -35681,7 +35681,7 @@ Lme_229:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_Task_1_TResult_BOOL__ctor
 System_Threading_Tasks_Task_1_TResult_BOOL__ctor:
-.file 44 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
+.file 44 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/Future.cs"
 .loc 44 91 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -36817,7 +36817,7 @@ Lme_244:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor
 System_Threading_Tasks_TaskFactory_1_TResult_BOOL__ctor:
-.file 45 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
+.file 45 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/FutureFactory.cs"
 .loc 45 93 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -39956,7 +39956,7 @@ b System_Nullable_1_bool__ctor_bool
 	.align 4
 	.no_dead_strip System_Nullable_1_bool__ctor_bool
 System_Nullable_1_bool__ctor_bool:
-.file 46 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Nullable.cs"
+.file 46 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Nullable.cs"
 .loc 46 94 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -40364,7 +40364,7 @@ b System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 	.align 4
 	.no_dead_strip System_Array_InternalEnumerator_1_T_INST__ctor_System_Array
 System_Array_InternalEnumerator_1_T_INST__ctor_System_Array:
-.file 47 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
+.file 47 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/corlib/System/Array.cs"
 .loc 47 239 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -43390,7 +43390,7 @@ Lme_2b9:
 	.align 4
 	.no_dead_strip System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT__ctor
 System_Collections_Generic_Dictionary_2_TKey_REF_TValue_INT__ctor:
-.file 48 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/dictionary.cs"
+.file 48 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/dictionary.cs"
 .loc 48 85 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -58984,7 +58984,7 @@ b System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Net_Http_HttpR
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Net_Http_HttpResponseMessage_Start_System_Net_Http_HttpClient__SendAsyncWorkerc__async0_System_Net_Http_HttpClient__SendAsyncWorkerc__async0_
 System_Runtime_CompilerServices_AsyncTaskMethodBuilder_1_System_Net_Http_HttpResponseMessage_Start_System_Net_Http_HttpClient__SendAsyncWorkerc__async0_System_Net_Http_HttpClient__SendAsyncWorkerc__async0_:
-.file 49 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
+.file 49 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/AsyncMethodBuilder.cs"
 .loc 49 459 0 prologue_end
 .word 0xa9b17bfd
 .word 0x910003fd
@@ -60651,7 +60651,7 @@ Lme_3bb:
 	.align 4
 	.no_dead_strip System_Linq_Enumerable_SequenceEqual_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF
 System_Linq_Enumerable_SequenceEqual_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF_System_Collections_Generic_IEnumerable_1_TSource_REF:
-.file 50 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Core/System/Linq/Enumerable.cs"
+.file 50 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/System.Core/System/Linq/Enumerable.cs"
 .loc 50 829 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -60675,7 +60675,7 @@ Lme_3bc:
 	.align 4
 	.no_dead_strip System_Collections_Generic_List_1_T_REF_get_Count
 System_Collections_Generic_List_1_T_REF_get_Count:
-.file 51 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/list.cs"
+.file 51 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/list.cs"
 .loc 51 140 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -61585,7 +61585,7 @@ Lme_3cf:
 	.align 4
 	.no_dead_strip string_Join_T_REF_string_System_Collections_Generic_IEnumerable_1_T_REF
 string_Join_T_REF_string_System_Collections_Generic_IEnumerable_1_T_REF:
-.file 52 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/string.cs"
+.file 52 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/string.cs"
 .loc 52 123 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
@@ -61910,7 +61910,7 @@ b System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Thread
 	.align 4
 	.no_dead_strip System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL
 System_Runtime_CompilerServices_TaskAwaiter_1_TResult_BOOL__ctor_System_Threading_Tasks_Task_1_TResult_BOOL:
-.file 53 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
+.file 53 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/runtime/compilerservices/TaskAwaiter.cs"
 .loc 53 317 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -61983,7 +61983,7 @@ Lme_3d4:
 	.align 4
 	.no_dead_strip System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_
 System_Threading_Tasks_ContinuationTaskFromResultTask_1_TAntecedentResult_BOOL__ctor_System_Threading_Tasks_Task_1_TAntecedentResult_BOOL_System_Delegate_object_System_Threading_Tasks_TaskCreationOptions_System_Threading_Tasks_InternalTaskOptions_System_Threading_StackCrawlMark_:
-.file 54 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
+.file 54 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/threading/Tasks/TaskContinuation.cs"
 .loc 54 131 0 prologue_end
 .word 0xa9ba7bfd
 .word 0x910003fd
@@ -62297,7 +62297,7 @@ Lme_3de:
 	.align 4
 	.no_dead_strip System_Collections_Generic_EqualityComparer_1_T_REF_get_Default
 System_Collections_Generic_EqualityComparer_1_T_REF_get_Default:
-.file 55 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/equalitycomparer.cs"
+.file 55 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/equalitycomparer.cs"
 .loc 55 32 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -62341,7 +62341,7 @@ b System_Collections_Generic_KeyValuePair_2_TKey_REF_TValue_INT_get_Value
 	.align 4
 	.no_dead_strip System_Collections_Generic_KeyValuePair_2_TKey_REF_TValue_INT_get_Value
 System_Collections_Generic_KeyValuePair_2_TKey_REF_TValue_INT_get_Value:
-.file 56 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/keyvaluepair.cs"
+.file 56 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/collections/generic/keyvaluepair.cs"
 .loc 56 40 0 prologue_end
 .word 0xa9be7bfd
 .word 0x910003fd
@@ -62577,7 +62577,7 @@ Lme_3e5:
 	.align 4
 	.no_dead_strip System_ThrowHelper_IfNullAndNullsAreIllegalThenThrow_T_INT_object_System_ExceptionArgument
 System_ThrowHelper_IfNullAndNullsAreIllegalThenThrow_T_INT_object_System_ExceptionArgument:
-.file 57 "/Users/builder/data/lanes/3426/6c3fee4d/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/throwhelper.cs"
+.file 57 "/Users/builder/data/lanes/3969/7beaef43/source/xamarin-macios/_ios-build/Library/Frameworks/Xamarin.iOS.framework/Versions/git/src/mono/mcs/class/referencesource/mscorlib/system/throwhelper.cs"
 .loc 57 125 0 prologue_end
 .word 0xa9bd7bfd
 .word 0x910003fd
@@ -77483,7 +77483,7 @@ runtime_version:
 .section __TEXT, __const
 	.align 2
 assembly_guid:
-	.asciz "AAEB065C-6D3F-4413-812E-633DDE7724DD"
+	.asciz "BE266F84-543A-4677-8192-0063D63CE5DF"
 .section __TEXT, __const
 	.align 2
 assembly_name:
@@ -77566,7 +77566,7 @@ _mono_aot_file_info:
 	.long 1512,0,0,0,0,0,0,0
 	.long 0,0,0,0,0,0,0,0
 	.long 0
-	.byte 72,151,181,99,4,136,133,116,9,249,106,225,117,30,58,192
+	.byte 82,230,55,223,173,234,131,205,127,143,117,9,70,180,226,111
 	.globl _mono_aot_module_System_Net_Http_info
 	.align 3
 _mono_aot_module_System_Net_Http_info:

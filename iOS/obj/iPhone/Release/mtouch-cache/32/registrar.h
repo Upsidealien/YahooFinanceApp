@@ -7,9 +7,9 @@
 #include <objc/runtime.h>
 #include <objc/message.h>
 #import <Foundation/Foundation.h>
+#import <CloudKit/CloudKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import <QuartzCore/CAEmitterBehavior.h>
-#import <CloudKit/CloudKit.h>
 #import <UIKit/UIKit.h>
 #import <GLKit/GLKit.h>
 #import <CoreGraphics/CoreGraphics.h>
@@ -26,6 +26,7 @@
 @class UIKit_UIActionSheet__UIActionSheetDelegate;
 @class UIKit_UIAlertView__UIAlertViewDelegate;
 @class UIKit_UIBarButtonItem_Callback;
+@class UIKit_UISearchBar__UISearchBarDelegate;
 @class __UIGestureRecognizerToken;
 @class __UIGestureRecognizerParameterlessToken;
 @class __UIGestureRecognizerParametrizedToken;
@@ -34,12 +35,11 @@
 @class __UITapGestureRecognizer;
 @class __UIPanGestureRecognizer;
 @class __UIPinchGestureRecognizer;
-@class UIKit_UISearchBar__UISearchBarDelegate;
+@class UIKit_UIView_UIViewAppearance;
+@class UIKit_UINavigationBar_UINavigationBarAppearance;
 @class UIKit_UITextField__UITextFieldDelegate;
 @class UIKit_UIScrollView__UIScrollViewDelegate;
 @class UIKit_UITextView__UITextViewDelegate;
-@class UIKit_UIView_UIViewAppearance;
-@class UIKit_UINavigationBar_UINavigationBarAppearance;
 @class __NSObject_Disposer;
 @class GLKit_GLKView__GLKViewDelegate;
 @class UIKit_UISplitViewController__UISplitViewControllerDelegate;
