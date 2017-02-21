@@ -91,8 +91,6 @@ namespace AppAPITemplate
 
 		}
 
-
-
 		static string ConstructQuery(MenuItem menuItem)
 		{
 			string query = "http://upsidealienappapi.s3.amazonaws.com/StockExchanges.json";

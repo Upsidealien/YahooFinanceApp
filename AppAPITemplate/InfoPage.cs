@@ -13,11 +13,11 @@ namespace AppAPITemplate
 		/*
 			Displays all the information for the API menus	
 		*/
-		static Label One = new Label
+		static Label CompanyName = new Label
 		{
 			Text = "",
-			TextColor = Color.Gray,
-			FontSize = 25,
+			TextColor = Color.Black,
+			FontSize = 35,
 	        HorizontalTextAlignment = TextAlignment.Center,
 	        VerticalTextAlignment = TextAlignment.Center,
 			HorizontalOptions = LayoutOptions.Fill,
@@ -40,22 +40,51 @@ namespace AppAPITemplate
 				null
 			),
 		};
-		static Label TitleOne = new Label
+		static Label TitleLow = new Label
 		{
 			Text = "Days Low",
+			FontSize = 25,
 			HorizontalTextAlignment = TextAlignment.Center,
 			VerticalTextAlignment = TextAlignment.Center,
 			HorizontalOptions = LayoutOptions.FillAndExpand,
-			TextColor = Color.Gray,
+			TextColor = Color.Black,
 			FontFamily = Device.OnPlatform(
 				"Oswald-Bold",
 				null,
 				null
 			),
 		};
-		static Label TitleTwo = new Label
+		static Label TitleHigh = new Label
 		{
 			Text = "Days High",
+			FontSize = 25,
+			HorizontalTextAlignment = TextAlignment.Center,
+			VerticalTextAlignment = TextAlignment.Center,
+			HorizontalOptions = LayoutOptions.FillAndExpand,
+			TextColor = Color.Black,
+			FontFamily = Device.OnPlatform(
+				"Oswald-Bold",
+				null,
+				null
+			),
+		};
+		static Label MarketCap = new Label
+		{
+			Text = "",
+			FontSize = 35,
+			HorizontalOptions = LayoutOptions.FillAndExpand,
+			HorizontalTextAlignment = TextAlignment.Center,
+			TextColor = Color.Gray,
+			FontFamily = Device.OnPlatform(
+				"Oswald-Bold",
+				null,
+				null
+			),
+		};
+		static Label DayLow = new Label
+		{
+			Text = "",
+			FontSize = 20,
 			HorizontalTextAlignment = TextAlignment.Center,
 			VerticalTextAlignment = TextAlignment.Center,
 			HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -66,37 +95,10 @@ namespace AppAPITemplate
 				null
 			),
 		};
-		static Label Three = new Label
+		static Label DayHigh = new Label
 		{
 			Text = "",
-			WidthRequest = 0,
-			HorizontalOptions = LayoutOptions.FillAndExpand,
-			VerticalOptions = LayoutOptions.FillAndExpand,
-			VerticalTextAlignment = TextAlignment.End,
-			HorizontalTextAlignment = TextAlignment.Center,
-			TextColor = Color.Gray,
-			FontFamily = Device.OnPlatform(
-				"Oswald-Bold",
-				null,
-				null
-			),
-		};
-		static Label Four = new Label
-		{
-			Text = "",
-			HorizontalTextAlignment = TextAlignment.Center,
-			VerticalTextAlignment = TextAlignment.Center,
-			HorizontalOptions = LayoutOptions.FillAndExpand,
-			TextColor = Color.Gray,
-			FontFamily = Device.OnPlatform(
-				"Oswald-Bold",
-				null,
-				null
-			),
-		};
-		static Label Five = new Label
-		{
-			Text = "",
+			FontSize = 20,
 			HorizontalTextAlignment = TextAlignment.Center,
 			VerticalTextAlignment = TextAlignment.Center,
 			HorizontalOptions = LayoutOptions.FillAndExpand,
@@ -115,14 +117,15 @@ namespace AppAPITemplate
 				Spacing = 2;
 				WidthRequest = 0;
 				Orientation = StackOrientation.Horizontal;
+				Padding = new Thickness(30, 50, 30, 10);
 				Children.Add(new StackLayout
 				{
 					Spacing = 2,
 					WidthRequest = 0,
 					HorizontalOptions = LayoutOptions.FillAndExpand,
 					Children = {
-						TitleOne,
-						Four,
+						TitleLow,
+						DayLow,
 					}
 				});
 					
@@ -132,8 +135,8 @@ namespace AppAPITemplate
 					WidthRequest = 0,
 					HorizontalOptions = LayoutOptions.FillAndExpand,
 					Children = {
-						TitleTwo,
-						Five
+						TitleHigh,
+						DayHigh
 					},
 				});
 					
@@ -144,19 +147,17 @@ namespace AppAPITemplate
 		{
 			public InfoPageLayout()
 			{
-				HeightRequest = 70;
+				//HeightRequest = 140;
 				Spacing = 5;
 				Orientation = StackOrientation.Vertical;
+				Padding = new Thickness(30, 10, 30, 10);
 				Children.Add(
-					One
+					CompanyName
 				);
 				Children.Add(
-					Two
+					MarketCap
 				);
 				Children.Add(new InfoPageLayoutChildren());
-				Children.Add(
-					Three
-				);
 			}
 		}
 
@@ -178,10 +179,10 @@ namespace AppAPITemplate
 
 			List<string> list = await CallAPI(currentItem);
 			Title = list[0];
-			One.Text = list[1];
-			Three.Text = list[2];
-			Four.Text = list[3];
-			Five.Text = list[4];
+			CompanyName.Text = list[1];
+			MarketCap.Text = list[2];
+			DayLow.Text = list[3];
+			DayHigh.Text = list[4];
 		}
 
 		static async Task<List<string>> CallAPI(MenuItem menuItem)
@@ -197,7 +198,6 @@ namespace AppAPITemplate
 		{
 			string query = ConstructQuery(menuItem);
 
-			//string results = "[{ One : \"Thomas 2\", Two : \"Is the best 2\", Three : \"And number three \", Four : \"And is four too much\", Five : \"A a high five\"}]"; //string results = call query.
 			using (var client = new HttpClient())
 			{
 				var response = await client.GetStringAsync(query);
@@ -224,11 +224,11 @@ namespace AppAPITemplate
 			string name = jsonResult["query"]["results"]["quote"]["Name"].Value;
 			string daysLow = jsonResult["query"]["results"]["quote"]["DaysLow"].Value;
 			string daysHigh = jsonResult["query"]["results"]["quote"]["DaysHigh"].Value;
-			string time = jsonResult["query"]["created"].Value.ToString();
+			string marketcap = jsonResult["query"]["results"]["quote"]["MarketCapitalization"].Value.ToString();
 
 			items.Add(symbol);
 			items.Add(name);
-			items.Add(time);
+			items.Add(marketcap);
 			items.Add(daysLow);
 			items.Add(daysHigh);
 
