@@ -15,7 +15,7 @@ namespace AppAPITemplate
 		{
 			clicked = menuItem;
 
-			Title = "API Template";
+			Title = "Companies";
 			Content = list;
 
 			list.ItemTapped += (sender, e) =>

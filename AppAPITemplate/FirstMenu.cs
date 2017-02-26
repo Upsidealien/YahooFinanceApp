@@ -11,7 +11,7 @@ namespace AppAPITemplate
 	{
 		public FirstMenu()
 		{
-			Title = "API Template";
+			Title = "Markets";
 			Content = list;
 
 			list.ItemTapped += (sender, e) =>
@@ -28,8 +28,8 @@ namespace AppAPITemplate
 
 			MenuItem fake = new MenuItem
 			{
-				Name = "Thomas",
-				Description = "Cartwright"
+				Name = "Please Wait",
+				Description = "..."
 			};
 
 			list.ItemsSource = await CallAPI(fake);

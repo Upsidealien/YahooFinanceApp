@@ -14,7 +14,7 @@ namespace AppAPITemplate
 			*/
 			ItemsSource = new List<MenuItem>
 			{
-				new MenuItem { Name = "Loading...", Description = "If you click this everything breaks" },
+				new MenuItem { Name = "Please Wait", Description = "..." },
 			},
 			ItemTemplate = new DataTemplate(typeof(MenuCell)),
 			RowHeight = MenuCell.RowHeight,

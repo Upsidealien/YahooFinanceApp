@@ -15,7 +15,7 @@ namespace AppAPITemplate
 		*/
 		static Label CompanyName = new Label
 		{
-			Text = "",
+			Text = "-",
 			TextColor = Color.Black,
 			FontSize = 35,
 	        HorizontalTextAlignment = TextAlignment.Center,
@@ -83,7 +83,7 @@ namespace AppAPITemplate
 		};
 		static Label DayLow = new Label
 		{
-			Text = "",
+			Text = "-",
 			FontSize = 20,
 			HorizontalTextAlignment = TextAlignment.Center,
 			VerticalTextAlignment = TextAlignment.Center,
@@ -97,7 +97,7 @@ namespace AppAPITemplate
 		};
 		static Label DayHigh = new Label
 		{
-			Text = "",
+			Text = "-",
 			FontSize = 20,
 			HorizontalTextAlignment = TextAlignment.Center,
 			VerticalTextAlignment = TextAlignment.Center,
